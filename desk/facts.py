@@ -338,14 +338,16 @@ def build_facts(*, params, universe, markets, liq, fund, risk, capacity, stats, 
         if sym in fund.index:
             f = fund.loc[sym]
             both = llama + mk
-            for layer in ("fees", "revenue", "holders_revenue"):
+            for layer, dt in (("fees", "dailyFees"), ("revenue", "dailyRevenue"),
+                              ("holders_revenue", "dailyHoldersRevenue")):
+                one = b.src(("defillama", f"{t.llama_slug}_{dt}"))
                 b.add(f"fund.{sym}.{layer}_365d_usd", f[f"{layer}_ann"], "usd",
-                      f"DefiLlama {layer.replace('_', ' ')}, trailing 365 complete days", llama)
+                      f"DefiLlama {layer.replace('_', ' ')}, trailing 365 complete days", one)
                 b.add(f"fund.{sym}.{layer}_runrate_usd", f[f"{layer}_runrate"], "usd",
-                      f"DefiLlama {layer.replace('_', ' ')}, last 30 days x 365/30", llama)
+                      f"DefiLlama {layer.replace('_', ' ')}, last 30 days x 365/30", one)
                 if f[f"{layer}_coverage_days"] and f[f"{layer}_coverage_days"] > 0:
                     b.add(f"fund.{sym}.{layer}_coverage_days", f[f"{layer}_coverage_days"], "days",
-                          f"Days of {layer.replace('_', ' ')} data in the trailing window", llama)
+                          f"Days of {layer.replace('_', ' ')} data in the trailing window", one)
             b.add(f"fund.{sym}.take_rate_365d_pct", f["take_rate"], "pct", "Revenue / fees (trailing 365d)", llama, scale=100)
             b.add(f"fund.{sym}.holder_share_365d_pct", f["holder_accrual_ratio"], "pct",
                   "Holders revenue / fees (trailing 365d)", llama, scale=100)
