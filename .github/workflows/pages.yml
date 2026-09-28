@@ -1,0 +1,62 @@
+# Build the static site from the committed reports and deploy it to GitHub Pages.
+# Runs after a successful weekly run (a commit pushed by the Actions token does not
+# trigger `push` workflows, so `workflow_run` is how the new data reaches the site),
+# on pushes that change reports or docs, and on demand.
+# One-time setup: repository Settings -> Pages -> Source: "GitHub Actions".
+name: pages
+
+on:
+  workflow_run:
+    workflows: ["weekly research run"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ["reports/**", "desk/**", "agents/**", "ARCHITECTURE.md", ".github/workflows/pages.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main              # for workflow_run: pick up the commit the weekly job just pushed
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # The site build and the verifier use only the standard library.
+      - name: Re-verify before publishing
+        # Freshness against the clock was enforced when the weekly run committed these
+        # reports; here we re-check everything else, so a doc-only push weeks later still deploys.
+        run: python -m desk.verify --no-wall-clock --report -
+
+      - name: Build site
+        run: python -m desk.site --out site
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

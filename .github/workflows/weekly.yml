@@ -1,0 +1,67 @@
+# Weekly research run: fetch live data, rebuild facts and memos, verify every number,
+# archive a dated snapshot and commit. If verification fails, the job fails and nothing
+# is committed, so a memo with an untraceable number can never land on main.
+name: weekly research run
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"        # Mondays 06:17 UTC (off the hour to avoid the cron rush)
+  workflow_dispatch:
+
+permissions:
+  contents: write               # to commit the refreshed reports
+
+concurrency:
+  group: weekly-research-run
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45         # a live run takes ~5 min; CoinGecko rate limits can stretch it
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Unit tests (on the committed outputs, before touching anything)
+        run: python -m pytest -q
+
+      - name: Pull live data and recompute (also refreshes data/snapshot/)
+        run: python -m desk.run --mode live --save-snapshot
+
+      - name: Render deterministic memos from facts.json
+        run: python -m desk.memo
+
+      - name: Verify every number (the gate)
+        # Wall-clock freshness is on for live registries: every fact must be under 24h old,
+        # and no fact may lag the newest data in the run by more than 48h (stale cache fallback).
+        run: python -m desk.verify --max-age-hours 24
+
+      - name: Tests again, on the new outputs
+        run: python -m pytest -q
+
+      - name: Archive dated snapshot (facts.json + memos only)
+        run: python -m desk.history
+
+      - name: Build site (smoke test; deployment is in pages.yml)
+        run: python -m desk.site --out site
+
+      - name: Commit refreshed reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports data/snapshot
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          DATE=$(python -c "import json; print(json.load(open('reports/facts.json'))['registry']['data_as_of'][:10])")
+          git commit -m "Weekly run: data as of ${DATE} (all memos verified)"
+          git push

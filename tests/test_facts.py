@@ -46,13 +46,21 @@ def test_every_data_fact_has_as_of_and_resolvable_sources(reg):
 def test_registry_agrees_with_report_tables(reg):
     liq = pd.read_csv(REPORTS_DIR / "liquidity.csv", index_col=0)
     fund = pd.read_csv(REPORTS_DIR / "fundamentals.csv", index_col=0)
-    assert reg["liq.AAVE.slip_1m_bps"].value == pytest.approx(liq.loc["AAVE", "slip_1m_bps"], rel=1e-5)
-    # ratios are stored in percent, never as 0-1
-    assert reg["fund.HYPE.holder_share_365d_pct"].value == pytest.approx(
-        100 * fund.loc["HYPE", "holder_accrual_ratio"], rel=1e-5)
-    # "not available" is never a number: no 10m slippage fact where the book ran out
-    assert pd.isna(liq.loc["AAVE", "slip_10m_bps"]) and "liq.AAVE.slip_10m_bps" not in reg
-    assert "AAVE" in [s for s, t in reg.labels["tokens"].items() if "10m" in t["slippage_na"]]
+    for sym in liq.index:
+        for tag in ("100k", "1m", "10m"):
+            cell, fid = liq.loc[sym, f"slip_{tag}_bps"], f"liq.{sym}.slip_{tag}_bps"
+            if pd.isna(cell):
+                # "not available" is never a number: no fact, and the label says why
+                assert fid not in reg and tag in reg.labels["tokens"][sym]["slippage_na"]
+            else:
+                assert reg[fid].value == pytest.approx(cell, rel=1e-5)
+    for sym in fund.index:
+        ratio = fund.loc[sym, "holder_accrual_ratio"]
+        fid = f"fund.{sym}.holder_share_365d_pct"
+        if pd.isna(ratio):
+            assert fid not in reg
+        else:   # ratios are stored in percent, never as 0-1
+            assert reg[fid].value == pytest.approx(100 * ratio, rel=1e-5, abs=1e-9)
 
 
 def test_builder_skips_non_finite_rejects_duplicates_and_bad_units():

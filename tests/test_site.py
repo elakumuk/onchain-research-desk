@@ -8,6 +8,7 @@ import pytest
 from desk import history as H
 from desk import mdhtml
 from desk import site as S
+from desk.config import REPORTS_DIR
 
 VOID = {"meta", "link", "br", "hr", "img", "input", "source", "wbr", "col", "area", "base", "embed", "track"}
 
@@ -58,7 +59,7 @@ def test_site_pages_exist(site):
     for p in ["index.html", "methodology.html", "track-record.html", "facts.json", "assets/style.css",
               "memos/AAVE.html"]:
         assert (site / p).exists(), p
-    assert len(list((site / "memos").glob("*.html"))) == 20
+    assert len(list((site / "memos").glob("*.html"))) == len(list((REPORTS_DIR / "memos").glob("*.md")))
 
 
 def test_every_page_is_well_formed_and_every_local_link_resolves(site):
@@ -84,15 +85,21 @@ def test_every_page_is_well_formed_and_every_local_link_resolves(site):
 
 
 def test_index_values_come_from_facts_and_show_verification(site):
+    from desk.config import REPORTS_DIR
+    from desk.facts import load_registry
+    from desk.memo import format_value
+    reg = load_registry(REPORTS_DIR / "facts.json")
     text = (site / "index.html").read_text()
-    assert 'title="liq.AAVE.slip_1m_bps">371 bps<' in text
-    assert "Verified: 20 of 20 memos pass" in text
+    f = reg["mkt.BTC.price_usd"]
+    assert f'title="mkt.BTC.price_usd">{format_value(f.value, f.unit)}<' in text
+    n = len(list((REPORTS_DIR / "memos").glob("*.md")))
+    assert f"Verified: {n} of {n} memos pass" in text
     assert "prefers-color-scheme: dark" in (site / "assets" / "style.css").read_text()
 
 
 def test_memo_page_footnotes_link_to_sources(site):
     text = (site / "memos" / "AAVE.html").read_text()
-    assert 'href="#fn-liq.AAVE.slip_1m_bps"' in text and 'id="fn-liq.AAVE.slip_1m_bps"' in text
+    assert 'href="#fn-mkt.AAVE.price_usd"' in text and 'id="fn-mkt.AAVE.price_usd"' in text
 
 
 def test_markdown_is_escaped():
@@ -107,7 +114,9 @@ def test_history_archive_refuses_unverified_memos(tmp_path):
     shutil.copytree(REPORTS_DIR / "memos", rep / "memos")
     shutil.copy2(REPORTS_DIR / "facts.json", rep / "facts.json")
     dest = H.archive(rep, rep / "history")
-    assert dest.name == "2026-09-28" and len(list((dest / "memos").glob("*.md"))) == 20
+    from desk.facts import load_registry
+    assert dest.name == load_registry(rep / "facts.json").meta["data_as_of"][:10]
+    assert len(list((dest / "memos").glob("*.md"))) == len(list((rep / "memos").glob("*.md")))
     (rep / "memos" / "AAVE.md").write_text((rep / "memos" / "AAVE.md").read_text() + "\nMade up: 42%.\n")
     with pytest.raises(SystemExit, match="unverified"):
         H.archive(rep, rep / "history")
