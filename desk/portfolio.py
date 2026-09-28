@@ -187,3 +187,29 @@ def perf_stats(r: pd.Series, periods: int, turnover_per_rebalance: float = 0.0,
     return {"days": n, "total_return": total, "ann_return": ann_ret, "ann_vol": ann_vol,
             "sharpe_rf0": sharpe, "sharpe_se": se, "max_drawdown": mdd,
             "total_return_net_of_cost": (1 + total) * (1 - cost_total) - 1}
+
+
+# ---------------------------------------------------------------- per-token risk
+def token_risk(price: pd.Series, btc_price: pd.Series | None, window: int, periods: int) -> dict:
+    """Market-risk descriptors for one token, from its daily close series.
+
+    vol_ann        annualized std of the last `window` daily *log* returns (x sqrt(periods))
+    return_total   simple return from the first to the last available close
+    max_drawdown   worst peak-to-trough fall of the close series (a negative number)
+    corr_btc       correlation of the last `window` daily log returns with BTC's
+    """
+    p = price.dropna()
+    lr = np.log(p / p.shift(1)).dropna()
+    recent = lr.tail(window)
+    out = {"vol_ann": float(recent.std(ddof=1) * np.sqrt(periods)) if len(recent) > 1 else np.nan,
+           "return_total": float(p.iloc[-1] / p.iloc[0] - 1) if len(p) > 1 else np.nan,
+           "max_drawdown": float((p / p.cummax() - 1).min()) if len(p) else np.nan,
+           "history_days": int(len(p)),
+           "corr_btc": np.nan}
+    if btc_price is not None:
+        b = btc_price.dropna()
+        blr = np.log(b / b.shift(1)).dropna()
+        both = pd.concat([recent, blr], axis=1, join="inner").dropna()
+        if len(both) > 2:
+            out["corr_btc"] = float(both.iloc[:, 0].corr(both.iloc[:, 1]))
+    return out

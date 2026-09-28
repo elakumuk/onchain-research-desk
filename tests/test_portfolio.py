@@ -90,3 +90,14 @@ def test_backtest_equal_weight_first_day_matches_hand_calc():
     simple = prices.pct_change().iloc[1:]
     first = simple.index[60]
     assert r["returns"].iloc[0] == pytest.approx(simple.loc[first].mean())
+
+
+def test_token_risk_on_hand_computed_series():
+    idx = pd.date_range("2026-01-01", periods=4, freq="D")
+    price = pd.Series([100.0, 120.0, 90.0, 110.0], index=idx)
+    r = P.token_risk(price, price, window=3, periods=365)
+    assert r["return_total"] == pytest.approx(0.10)
+    assert r["max_drawdown"] == pytest.approx(90 / 120 - 1)      # -25%
+    assert r["corr_btc"] == pytest.approx(1.0)                    # a series vs itself
+    lr = np.log(price / price.shift(1)).dropna()
+    assert r["vol_ann"] == pytest.approx(lr.std(ddof=1) * np.sqrt(365))

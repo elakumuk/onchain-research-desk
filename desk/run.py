@@ -22,6 +22,7 @@ import numpy as np
 import pandas as pd
 
 from desk import charts
+from desk import facts as FA
 from desk.config import PARAMS, REPORTS_DIR, ROOT, UNIVERSE
 from desk.data.cache import Cache, DataUnavailable
 from desk.data import fetchers as F
@@ -118,6 +119,9 @@ def fundamentals_table(markets, as_of, fees) -> pd.DataFrame:
         fdv = float(m["fully_diluted_valuation"]) if m is not None and pd.notna(m["fully_diluted_valuation"]) else np.nan
         row = FU.value_accrual_row(series, mcap, fdv, as_of, PARAMS.runrate_window_days,
                                    PARAMS.min_fee_usd_for_flag, PARAMS.holder_accrual_flag_ratio)
+        circ = float(m["circulating_supply"]) if m is not None and pd.notna(m["circulating_supply"]) else np.nan
+        total = float(m["total_supply"]) if m is not None and pd.notna(m["total_supply"]) else np.nan
+        row["circulating_share_of_total"] = FU._div(circ, total)
         row["llama_name"] = meta.get("name")
         row["protocol_type"] = meta.get("protocolType")
         hr_method = (meta.get("methodology") or {}).get("HoldersRevenue") if isinstance(meta.get("methodology"), dict) else None
@@ -195,6 +199,29 @@ def portfolio_analysis(hist, liq):
     equity = pd.DataFrame({n: (1 + r["returns"]).cumprod() for n, r in runs.items()})
     btc_eq = (1 + btc).cumprod() if btc is not None else None
     return stats, capacity, curves, weights_now, equity, btc_eq, diag
+
+
+SCHEME_SLUG = {"Equal weight": "equal", "Inverse vol": "inverse_vol", "Min-var (LW)": "min_var"}
+
+
+def token_risk_table(hist, liq, weights_now) -> pd.DataFrame:
+    """Per-token market risk and position-sizing numbers (the memo's risk section)."""
+    btc = hist["BTC"]["price"] if "BTC" in hist else None
+    rows = {}
+    for sym in liq.index:
+        if sym not in hist:
+            continue
+        r = P.token_risk(hist[sym]["price"], btc if sym != "BTC" else None,
+                         PARAMS.est_window_days, PARAMS.periods_per_year)
+        r["max_position_at_cap_usd"] = PARAMS.max_adv_fraction * liq.loc[sym, "adv_30d_usd"]
+        for scheme, slug in SCHEME_SLUG.items():
+            w = float(weights_now.loc[sym, scheme]) if sym in weights_now.index else np.nan
+            w = 0.0 if np.isfinite(w) and w < 1e-6 else w          # optimizer dust -> 0
+            r[f"weight_{slug}"] = w
+            # AUM at which this token's target weight first hits its ADV cap
+            r[f"max_aum_before_cap_{slug}"] = r["max_position_at_cap_usd"] / w if w > 0 else np.nan
+        rows[sym] = r
+    return pd.DataFrame.from_dict(rows, orient="index").rename_axis("symbol")
 
 
 # ====================================================================== report
@@ -294,6 +321,10 @@ def write_summary(path, as_of, status_df, liq, fund, stats, capacity, diag, prov
     path.write_text("\n".join(out))
 
 
+def _rel(f) -> str:
+    return str(f).replace(str(ROOT) + "/", "")
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--mode", choices=("live", "offline", "snapshot"), default="live",
@@ -326,6 +357,8 @@ def main(argv=None) -> int:
     capacity.to_csv(REPORTS_DIR / "capacity.csv", index=False, float_format="%.6g")
     stats.to_csv(REPORTS_DIR / "backtest_stats.csv", float_format="%.6g")
     weights_now.to_csv(REPORTS_DIR / "current_weights.csv", float_format="%.6g")
+    risk = token_risk_table(hist, liq, weights_now)
+    risk.to_csv(REPORTS_DIR / "token_risk.csv", float_format="%.6g")
     prov.drop(columns=["params"]).to_csv(REPORTS_DIR / "data_provenance.csv", index=False)
 
     tags = [L._size_tag(n) for n in PARAMS.order_sizes_usd]
@@ -337,9 +370,21 @@ def main(argv=None) -> int:
     charts.equity_curves(equity[eq_cols], btc_eq, REPORTS_DIR / "backtest.png")
     write_summary(REPORTS_DIR / "summary.md", as_of, status_df, liq, fund, stats, capacity, diag, prov)
 
+    snapshot_paths = None
     if args.save_snapshot:
         n = cache.save_snapshot()
         print(f"snapshot: copied {n} raw files to data/snapshot/")
+        snapshot_paths = {(r["source"], r["key"]): _rel(cache.snapshot_path(r["source"], r["key"]))
+                          for r in cache.served if r.get("file")}
+
+    # ---- facts registry: the only place a memo may take a number from
+    served = [{**r, "file": _rel(r["file"]) if r.get("file") else None} for r in cache.served]
+    facts, labels = FA.build_facts(
+        params=PARAMS, universe=UNIVERSE, markets=markets, liq=liq, fund=fund, risk=risk,
+        capacity=capacity, stats=stats, diag=diag, status_df=status_df,
+        provenance=FA.provenance_index(served, snapshot_paths), market_as_of=as_of)
+    sha = FA.write_registry(REPORTS_DIR / "facts.json", facts, labels, args.mode)
+    print(f"facts: {len(facts)} facts -> reports/facts.json (sha256 {sha[:12]})")
     print(f"as of {as_of} UTC | liquidity {len(liq)} | fundamentals {len(fund)} | "
           f"portfolio {diag['n_assets']} assets | reports -> {REPORTS_DIR.relative_to(ROOT)}/")
     print(f"data origins: {prov['origin'].value_counts().to_dict()}")

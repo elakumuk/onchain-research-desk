@@ -75,6 +75,9 @@ def value_accrual_row(series: dict[str, pd.Series | None], mcap: float, fdv: flo
         row[f"p_holders_rev_{cap_name}"] = _div(cap, hr)
     # holder yield = holders revenue / market cap: the cash "earnings yield" to the token
     row["holder_yield_mcap"] = _div(hr, mcap)
+    # run-rate vs trailing: above 1 = the current pace is faster than the past year's
+    row["fees_runrate_vs_ann"] = _div(row["fees_runrate"], fees)
+    row["holders_revenue_runrate_vs_ann"] = _div(row["holders_revenue_runrate"], hr)
 
     ratio = row["holder_accrual_ratio"]
     if not (fees and fees >= min_fee_usd):
