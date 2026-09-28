@@ -132,7 +132,8 @@ class Cache:
             out = raw_dir / f"{_stamp(now)}.json"
             out.write_text(json.dumps(env))
             self.served.append({"source": source, "key": key, "origin": "network",
-                                "fetched_at": env["fetched_at"], "file": str(out)})
+                                "fetched_at": env["fetched_at"], "file": str(out), "url": url,
+                                "params": params or {}})
             if pause:
                 time.sleep(pause)
             return payload
@@ -147,7 +148,8 @@ class Cache:
             out = raw_dir / f"{_stamp(now)}.json"
             out.write_text(json.dumps(env))
             self.served.append({"source": source, "key": key, "origin": f"network http-{code}",
-                                "fetched_at": env["fetched_at"], "file": str(out)})
+                                "fetched_at": env["fetched_at"], "file": str(out), "url": url,
+                                "params": params or {}})
             raise DataUnavailable(str(e)) from e
         except DataUnavailable as e:
             log.warning("network failed for %s/%s (%s); falling back to cache", source, key, e)
@@ -161,7 +163,8 @@ class Cache:
         status = env.get("http_status")
         self.served.append({"source": source, "key": key,
                             "origin": origin if status is None else f"{origin} http-{status}",
-                            "fetched_at": env.get("fetched_at"), "file": str(path)})
+                            "fetched_at": env.get("fetched_at"), "file": str(path),
+                            "url": env.get("url"), "params": env.get("params") or {}})
         if status is not None:
             raise DataUnavailable(f"{source}/{key}: cached HTTP {status} from {env.get('url')}")
         return env["payload"]
@@ -170,7 +173,7 @@ class Cache:
         f = self._snap_file(source, key)
         if not f.exists():
             self.served.append({"source": source, "key": key, "origin": "missing",
-                                "fetched_at": None, "file": None})
+                                "fetched_at": None, "file": None, "url": None, "params": {}})
             raise DataUnavailable(f"no snapshot for {source}/{key}")
         return self._load(f, source, key, "snapshot")
 
@@ -179,17 +182,30 @@ class Cache:
 
         Only files actually used are copied, so the snapshot is the minimal set
         that reproduces this run's report with `--mode snapshot`.
+
+        The new snapshot is assembled in a staging directory and swapped in at
+        the end. Files that were themselves served *from* the old snapshot (a
+        live run that fell back because the network failed) are carried over,
+        so a partial network outage can never delete snapshot files that the
+        committed reports still depend on.
         """
-        if self.snapshot_dir.exists():
-            shutil.rmtree(self.snapshot_dir)
+        staging = self.snapshot_dir.with_name(self.snapshot_dir.name + ".staging")
+        if staging.exists():
+            shutil.rmtree(staging)
         n = 0
         for rec in self.served:
             f = rec.get("file")
-            if not f or rec["origin"] == "snapshot":
+            if not f:
                 continue
-            src = Path(f)
-            dst = self._snap_file(rec["source"], rec["key"])
+            dst = staging / rec["source"] / f"{rec['key']}.json"
             dst.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src, dst)
+            shutil.copy2(Path(f), dst)
             n += 1
+        if self.snapshot_dir.exists():
+            shutil.rmtree(self.snapshot_dir)
+        staging.rename(self.snapshot_dir)
         return n
+
+    def snapshot_path(self, source: str, key: str) -> Path:
+        """Where `save_snapshot` puts the file for (source, key)."""
+        return self._snap_file(source, key)

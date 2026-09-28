@@ -57,3 +57,25 @@ def test_http_4xx_is_cached_as_negative_result(tmp_path, monkeypatch):
     with pytest.raises(C.DataUnavailable, match="cached HTTP 400"):
         snap.get("src", "k", "u")
     assert snap.served[-1]["origin"] == "snapshot http-400"
+
+
+def test_save_snapshot_keeps_files_served_from_old_snapshot(tmp_path, monkeypatch):
+    """A live run that fell back to the snapshot for one key must not delete that key's file."""
+    first = C.Cache("live", raw_dir=tmp_path / "raw", snapshot_dir=tmp_path / "snap")
+    monkeypatch.setattr(C, "http_get_json", lambda *a, **k: {"v": 1})
+    first.get("src", "a", "u")
+    first.get("src", "b", "u")
+    first.save_snapshot()
+
+    def only_a(url, params=None):
+        if url == "down":
+            raise C.DataUnavailable("down")
+        return {"v": 2}
+    monkeypatch.setattr(C, "http_get_json", only_a)
+    second = C.Cache("live", ttl_hours=0, raw_dir=tmp_path / "raw2", snapshot_dir=tmp_path / "snap")
+    second.get("src", "a", "up")
+    assert second.get("src", "b", "down") == {"v": 1}          # served from the old snapshot
+    assert second.save_snapshot() == 2
+    snap = C.Cache("snapshot", raw_dir=tmp_path / "x", snapshot_dir=tmp_path / "snap")
+    assert snap.get("src", "a", "u") == {"v": 2} and snap.get("src", "b", "u") == {"v": 1}
+    assert second.served[0]["url"] == "up"                      # provenance records the URL

@@ -326,7 +326,7 @@ def main(argv=None) -> int:
     capacity.to_csv(REPORTS_DIR / "capacity.csv", index=False, float_format="%.6g")
     stats.to_csv(REPORTS_DIR / "backtest_stats.csv", float_format="%.6g")
     weights_now.to_csv(REPORTS_DIR / "current_weights.csv", float_format="%.6g")
-    prov.to_csv(REPORTS_DIR / "data_provenance.csv", index=False)
+    prov.drop(columns=["params"]).to_csv(REPORTS_DIR / "data_provenance.csv", index=False)
 
     tags = [L._size_tag(n) for n in PARAMS.order_sizes_usd]
     charts.slippage_dotplot(liq, tags, REPORTS_DIR / "liquidity_slippage.png")
