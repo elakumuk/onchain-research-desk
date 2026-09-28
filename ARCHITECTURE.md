@@ -445,9 +445,16 @@ commentary for that token), and commit to a review branch, never to main.
 ## 11. Automation and publication
 
 **`weekly.yml`** (Monday cron, plus manual dispatch): tests, then a live run with `--save-snapshot`,
-memo render, verification with a 24-hour freshness limit, tests again on the new outputs, history
-archive, a site smoke build, then a commit. If verification fails the job fails and nothing is
-committed. The gate is the job's exit code, not a convention.
+then a *second* run in snapshot mode that produces every committed output from the files just
+saved, memo render, verification against the clock with a 24-hour freshness limit, tests again on
+the new outputs, history archive, a site smoke build, then a commit. If verification fails the job
+fails and nothing is committed. The gate is the job's exit code, not a convention.
+
+*Why run twice?* A live registry records `mode: live` and network origins, so a later snapshot
+rerun would not reproduce it byte for byte. Producing the committed outputs from the snapshot makes
+"check out any weekly commit, run `--mode snapshot`, get identical files" true for every commit.
+This was found by running the whole live pipeline end to end before writing the workflow. The clock
+check still applies because `--now` forces it, and data timestamps survive the snapshot round-trip.
 
 *Why `--save-snapshot` every week?* The invariant "`--mode snapshot` reproduces the committed
 reports" must hold for every commit, not only the first. *Cost:* the snapshot is about 3.8 MB

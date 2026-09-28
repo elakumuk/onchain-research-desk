@@ -87,8 +87,9 @@ the standard library. Outputs are written to `reports/`:
 | `universe.csv` | Which tokens entered which table, with notes on missing data |
 | `data_provenance.csv` | Every payload used, where it came from (network, cache, snapshot), its URL and when it was fetched |
 
-**Automation.** `.github/workflows/weekly.yml` runs every Monday (and on demand): tests, live run,
-memos, verification, tests again, archive, commit. If verification fails, the job fails and
+**Automation.** `.github/workflows/weekly.yml` runs every Monday (and on demand): tests, live run
+(saved as the new snapshot), recompute from that snapshot, memos, verification against the clock,
+tests again, archive, commit. If verification fails, the job fails and
 nothing is committed. `.github/workflows/pages.yml` then re-verifies and publishes `site/` to GitHub
 Pages. (One-time setup: Settings, Pages, Source: GitHub Actions.)
 

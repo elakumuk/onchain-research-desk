@@ -33,16 +33,24 @@ jobs:
       - name: Unit tests (on the committed outputs, before touching anything)
         run: python -m pytest -q
 
-      - name: Pull live data and recompute (also refreshes data/snapshot/)
+      - name: Pull live data (network), saving the raw payloads to data/snapshot/
         run: python -m desk.run --mode live --save-snapshot
+
+      - name: Recompute every committed output from that snapshot
+        # The committed reports are produced from the snapshot, not the live pass, so that
+        # `python -m desk.run --mode snapshot` on this commit reproduces them byte for byte.
+        run: python -m desk.run --mode snapshot
 
       - name: Render deterministic memos from facts.json
         run: python -m desk.memo
 
-      - name: Verify every number (the gate)
-        # Wall-clock freshness is on for live registries: every fact must be under 24h old,
-        # and no fact may lag the newest data in the run by more than 48h (stale cache fallback).
-        run: python -m desk.verify --max-age-hours 24
+      - name: Verify every number against the clock (the gate)
+        # --now forces the wall-clock check: every fact must have been fetched in the last 24h,
+        # and none may lag the newest data in the run by more than 48h (stale cache fallback).
+        run: python -m desk.verify --now "$(date -u +%Y-%m-%dT%H:%M:%SZ)" --max-age-hours 24 --report -
+
+      - name: Write the verification report (deterministic, no clock time in it)
+        run: python -m desk.verify -q
 
       - name: Tests again, on the new outputs
         run: python -m pytest -q
