@@ -1,0 +1,10 @@
+scheme,aum,investable_fraction,names_at_cap,weight_moved,effective_n_target,effective_n_capped,btc_eth_sol_weight,max_aum_before_any_cap_binds,first_binding_name
+Equal weight,10000000,1,0,0,20,20,0.15,2.66118e+07,SKY
+Equal weight,100000000,1,6,0.110611,20,18.6179,0.173702,2.66118e+07,SKY
+Equal weight,1000000000,1,17,0.536343,20,6.89399,0.602264,2.66118e+07,SKY
+Inverse vol,10000000,1,0,0,18.1421,18.1421,0.238707,2.50864e+07,SKY
+Inverse vol,100000000,1,6,0.100139,18.1421,16.8432,0.270689,2.50864e+07,SKY
+Inverse vol,1000000000,1,17,0.477476,18.1421,6.73706,0.602264,2.50864e+07,SKY
+Min-var (LW),10000000,1,0,0,2.42955,2.42955,0.694858,1.34979e+07,COMP
+Min-var (LW),100000000,1,3,0.218415,2.42955,1.53816,0.907289,1.34979e+07,COMP
+Min-var (LW),1000000000,1,5,0.290872,2.42955,1.31066,0.984528,1.34979e+07,COMP

@@ -1,0 +1,21 @@
+symbol,kind,cg_id,llama_slug,notes,history_days,venues,in_liquidity,in_fundamentals,in_portfolio
+BTC,L1,bitcoin,bitcoin,DefiLlama does not report holders revenue,365,coinbase+kraken,True,True,True
+ETH,L1,ethereum,ethereum,,365,coinbase+kraken,True,True,True
+SOL,L1,solana,solana,,365,coinbase+kraken,True,True,True
+HYPE,DeFi,hyperliquid,hyperliquid,,365,coinbase+kraken,True,True,True
+UNI,DeFi,uniswap,uniswap,,365,coinbase+kraken,True,True,True
+AAVE,DeFi,aave,aave,,365,coinbase+kraken,True,True,True
+SKY,DeFi,sky,sky,,365,coinbase+kraken,True,True,True
+LDO,DeFi,lido-dao,lido,,365,coinbase+kraken,True,True,True
+LINK,Infra,chainlink,chainlink,,365,coinbase+kraken,True,True,True
+ARB,L2,arbitrum,arbitrum,DefiLlama does not report holders revenue,365,coinbase+kraken,True,True,True
+OP,L2,optimism,op-mainnet,DefiLlama does not report holders revenue,365,coinbase+kraken,True,True,True
+PENDLE,DeFi,pendle,pendle,,365,coinbase+kraken,True,True,True
+JUP,DeFi,jupiter-exchange-solana,jupiter,no coinbase USD pair,365,kraken,True,True,True
+CRV,DeFi,curve-dao-token,curve-finance,,365,coinbase+kraken,True,True,True
+ENA,DeFi,ethena,ethena,DefiLlama does not report holders revenue,365,coinbase+kraken,True,True,True
+COMP,DeFi,compound-governance-token,compound-finance,,365,coinbase+kraken,True,True,True
+AERO,DeFi,aerodrome-finance,aerodrome,,365,coinbase+kraken,True,True,True
+ONDO,DeFi,ondo-finance,ondo-finance,,365,coinbase+kraken,True,True,True
+MORPHO,DeFi,morpho,morpho,,365,coinbase+kraken,True,True,True
+JTO,DeFi,jito-governance-token,jito,,365,coinbase+kraken,True,True,True

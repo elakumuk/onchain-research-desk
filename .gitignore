@@ -1,0 +1,6 @@
+# raw API cache: every pull, timestamped (large, machine-specific)
+data/raw/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
