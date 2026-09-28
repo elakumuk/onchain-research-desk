@@ -22,7 +22,7 @@ table says which API endpoint and which cached file each id refers to.
 Portfolio-level facts depend on every token's price history, so they cite the
 group `group:all_price_histories` instead of repeating twenty ids.
 
-Design rules (see ARCHITECTURE.md section 8):
+Design rules (see ARCHITECTURE.md section 7):
   * This module does no analytics. It only reads the tables the run already
     computed, converts ratios to percent, and attaches provenance. A number
     that is not in a report table cannot become a fact.

@@ -1,7 +1,7 @@
 # onchain-research-desk
 
-A small, reproducible research toolkit for crypto tokens. It answers three questions an analyst
-has to answer before a token goes into an investment memo or a portfolio:
+A reproducible research pipeline for crypto tokens. It answers three questions an analyst has to
+answer before a token goes into an investment memo or a portfolio, and then writes the memo:
 
 1. **Can we trade it at size?** Liquidity profile: Amihud illiquidity, live order-book depth,
    slippage for $100k / $1M / $10M market orders, and days to exit a position.
@@ -16,8 +16,35 @@ has to answer before a token goes into an investment memo or a portfolio:
 Every number comes from free public APIs. Nothing is typed in by hand. The data used for the results
 below is committed in `data/snapshot/`, so the report can be reproduced exactly without network access.
 
-This is v0. It covers the quantitative inputs to a memo and does not write the memo itself.
-See "Next: v1".
+## v1: an LLM may write prose, but a deterministic verifier gates every number
+
+```
+ APIs -> desk.run -> reports/facts.json -> desk.memo -> reports/memos/<SYM>.md -> desk.verify -> archive, site, commit
+                     (1,152 facts, each     (every number is a     (+ optional LLM        (exit 1 = nothing
+                      with id, unit,         citation token)         commentary)            ships)
+                      as-of, source)
+```
+
+- **`reports/facts.json`**: every citable number from a run, with a stable id
+  (`liq.AAVE.slip_1m_bps`), unit, as-of time and source (API, endpoint, cached file). The single
+  source of truth.
+- **`reports/memos/<SYMBOL>.md`**: a deterministic memo per token, structured as an institutional
+  tokenomics review (supply, utility and demand, incentives and value accrual, governance,
+  liquidity and technical risk, portfolio context, and "what the data can't tell us"). Every number
+  is written as `371 bps[^liq.AAVE.slip_1m_bps]` with a footnote to its source. Anything the data
+  cannot support says "*Requires analyst research*".
+- **`desk/verify.py`**: parses any memo, including one written or edited by an LLM, and fails unless
+  every number cites a fact whose value matches within rounding, in the same unit, from fresh data,
+  with no recommendation language. It was built and tested against adversarial memos.
+- **`agents/MEMO_AGENT.md`**: instructions for a scheduled Claude agent that adds commentary on
+  top, citing fact ids only, and may commit only after the verifier passes. The code itself never
+  calls an LLM.
+- **`.github/workflows/`**: a weekly job (fetch, compute, render, verify, archive, commit) and a
+  Pages job that publishes a static site with the memos, the methodology and a track record of
+  dated snapshots.
+
+ARCHITECTURE.md (sections 7 to 12) explains why each piece exists and what the verifier does and
+does not catch. agents/README.md covers the LLM side.
 
 ---
 
@@ -31,22 +58,39 @@ pip install -r requirements.txt
 python -m desk.run --mode snapshot   # reproduce the committed results exactly, no network
 python -m desk.run                   # live: pull fresh data (cached 12h), recompute everything
 python -m desk.run --mode offline    # recompute from whatever is in the local cache
-python -m pytest                     # 27 unit tests
+
+python -m desk.memo                  # render reports/memos/<SYMBOL>.md from reports/facts.json
+python -m desk.verify                # check every number in every memo; exit 1 on any failure
+python -m desk.history               # archive facts.json + memos to reports/history/<data date>/
+python -m desk.site                  # build the static site into site/ (open site/index.html)
+
+python -m pytest                     # 105 tests
 ```
 
 A live run takes about 5 minutes, mostly because it waits between calls to stay within
-CoinGecko's keyless rate limit. Outputs are written to `reports/`:
+CoinGecko's keyless rate limit. `desk.memo`, `desk.verify` and `desk.site` take seconds and use only
+the standard library. Outputs are written to `reports/`:
 
 | File | Contents |
 |---|---|
+| `facts.json` | The facts registry: every citable number with id, unit, as-of and source |
+| `memos/<SYMBOL>.md` | One research memo per token, every number footnoted to a fact id |
+| `verification.json` | The verifier's report: claims checked per memo, and any issues |
+| `history/YYYY-MM-DD/` | Dated archive of `facts.json` + memos, one folder per weekly run |
 | `summary.md` | Headline tables and findings, generated from the CSVs |
 | `liquidity.csv`, `liquidity_slippage.png` | Liquidity profile per token |
 | `fundamentals.csv`, `value_accrual.png` | Value accrual table per token |
+| `token_risk.csv` | Per-token volatility, drawdown, BTC correlation, cap-limited position size |
 | `capacity.csv`, `capacity.png` | How far the liquidity cap pushes each scheme off target, by AUM |
 | `backtest_stats.csv`, `backtest.png` | Walk-forward performance |
 | `current_weights.csv` | Today's target weights per scheme |
 | `universe.csv` | Which tokens entered which table, with notes on missing data |
-| `data_provenance.csv` | Every payload used, where it came from (network, cache, snapshot) and when it was fetched |
+| `data_provenance.csv` | Every payload used, where it came from (network, cache, snapshot), its URL and when it was fetched |
+
+**Automation.** `.github/workflows/weekly.yml` runs every Monday (and on demand): tests, live run,
+memos, verification, tests again, archive, commit. If verification fails, the job fails and
+nothing is committed. `.github/workflows/pages.yml` then re-verifies and publishes `site/` to GitHub
+Pages. (One-time setup: Settings, Pages, Source: GitHub Actions.)
 
 ---
 
@@ -89,6 +133,12 @@ Data as of **2026-09-28 18:54 UTC**, universe of 20 tokens. The numbers below ar
   short, the differences are not statistically meaningful.** The test shows that capacity reshapes
   the portfolio. It does not show that any scheme is better.
 
+**Verification of the committed memos**
+
+- 20 memos, 1,212 numeric claims, **1,212 verified** against 1,152 facts
+  (`python -m desk.verify`; report in `reports/verification.json`). The snapshot run reproduces
+  `facts.json`, the memos and the verification report byte for byte.
+
 ---
 
 ## Data sources
@@ -114,7 +164,7 @@ No API keys are required. Every response is cached with its fetch timestamp (see
   Kraken's contribution to ±2% depth and to the $10M walk is slightly understated. Per-token
   coverage is in `liquidity.csv` (`min_venue_coverage_pct`).
 - **ADV is CoinGecko's aggregate volume**, which includes venues with questionable volume. Days to
-  liquidate and the capacity caps are therefore optimistic. A venue-level volume series is on the v1 list.
+  liquidate and the capacity caps are therefore optimistic. A venue-level volume series is on the Next list.
 - **DefiLlama definitions are DefiLlama's.** "Holders revenue" counts burns (ETH, SOL), buybacks and
   fee-switch distributions. Classifications can lag protocol changes, so verify on-chain before
   relying on one in a memo. "Fees" include supply-side payouts (LP fees, staking rewards, interest
@@ -127,14 +177,24 @@ No API keys are required. Every response is cached with its fetch timestamp (see
   slippage is not used historically, because it is a single present-day snapshot.
 - **Risk-free rate is 0%** in the Sharpe ratio.
 
-## Next: v1 (planned, not built)
+### Limits of the v1 pipeline
 
-- **Memo-writer agent.** An LLM drafts a token memo (technical design, security, value accrual,
-  liquidity, sizing) from the CSVs this pipeline produces.
-- **Verifier agent.** A second pass that checks every number in the draft traces back to a cell in
-  `reports/*.csv` and from there to a cached raw file. Any claim without a trace gets rejected.
-- **Scheduled automation.** A GitHub Actions workflow runs the pipeline on a schedule, commits a
-  dated snapshot and flags material changes, such as a fee switch turning on or depth collapsing.
+- **The verifier checks numbers, not meaning.** It proves that `$X[^id]` equals fact `id`. It does
+  not prove the sentence around it is true ("fees rose" when they fell), that the right fact was
+  cited, or that the reasoning holds. LLM commentary therefore goes to a human-reviewed branch.
+- **Small numbers spelled as words** ("three venues") are not detected. Magnitude words
+  ("million") are banned outright.
+- **No week-over-week numbers in memos yet.** Archived registries are not citable, so changes
+  cannot be quoted as numbers (see Next).
+- **The weekly job commits a fresh data snapshot** (about 1.2 MB compressed) so that snapshot mode
+  keeps reproducing the committed reports. Git history grows by roughly that much a week.
+
+## Next
+
+- **Citable changes.** A diff module that turns two dated registries into `delta.*` facts, so a memo
+  can say "holder revenue run-rate up X% week over week" and have it verified.
+- **Material-change alerts.** Flag when a fee switch appears to turn on, a flag flips, or depth
+  collapses between weekly snapshots.
 - **Broader liquidity.** Add offshore CEX and on-chain DEX depth, a venue-level ADV, and repeated
   book snapshots, so the tool reports a distribution of depth rather than a single point.
 
@@ -147,11 +207,18 @@ desk/
   data/fetchers.py   CoinGecko, DefiLlama, Coinbase, Kraken -> pandas
   liquidity.py       Amihud, ADV, book merge, depth, slippage walk, days to liquidate
   fundamentals.py    fee/revenue annualization, multiples, accrual flag
-  portfolio.py       returns, Ledoit-Wolf, EW / inverse-vol / min-var, ADV caps, walk-forward backtest
+  portfolio.py       returns, Ledoit-Wolf, EW / inverse-vol / min-var, ADV caps, walk-forward backtest, token risk
   charts.py          the four PNGs
-  run.py             entrypoint: python -m desk.run
-tests/               27 pytest tests
-data/snapshot/       the exact raw files behind the committed reports (~3.7 MB)
+  run.py             entrypoint: python -m desk.run (writes the CSVs and facts.json)
+  facts.py           the facts registry: ids, units, as-of, provenance
+  memo.py            deterministic memo templates + {{fact:id}} renderer
+  verify.py          the verifier (the gate)
+  history.py         dated archive of facts + memos
+  mdhtml.py, site.py static site, standard library only
+agents/              MEMO_AGENT.md (LLM agent procedure) and README.md (design)
+.github/workflows/   weekly.yml (run + verify + commit), pages.yml (publish)
+tests/               105 pytest tests
+data/snapshot/       the exact raw files behind the committed reports (~3.8 MB)
 reports/             outputs of the committed run
 ```
 
