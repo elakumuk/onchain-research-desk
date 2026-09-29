@@ -1,0 +1,8 @@
+strategy,date,asset,weight
+Equal weight,2022-05-14,LUNA,4.92291e-08
+Inverse vol,2022-05-14,LUNA,3.43328e-08
+Min-var (LW),2022-05-14,LUNA,1.58339e-24
+"Inverse vol, capped @ $10M",2022-05-14,LUNA,3.43328e-08
+"Inverse vol, capped @ $100M",2022-05-14,LUNA,3.43328e-08
+"Inverse vol, capped @ $1B",2022-05-14,LUNA,5.79064e-08
+stress: inverse vol,2022-05-14,LUNA,3.43328e-08

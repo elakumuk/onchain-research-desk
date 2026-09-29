@@ -1,0 +1,374 @@
+symbol,price_id,volume_id,first_price,last_price,last_traded,died,price_source,binance_volume_ratio,mapping_ok,binance_first,binance_last,months_eligible,first_eligible,last_eligible,note
+BTC,btc,btc,2015-01-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,129,2016-01-01,2026-09-01,
+ETH,eth,eth,2015-08-08,2026-09-27,2026-09-27,False,coinmetrics,,,,,127,2016-03-01,2026-09-01,
+XRP,xrp,xrp,2015-01-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,117,2016-12-01,2026-09-01,
+LTC,ltc,ltc,2015-01-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,106,2017-05-01,2026-09-01,
+BCH,bch,bch,2017-08-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,62,2017-11-01,2026-05-01,
+BNB,bnb,bnb,2017-07-15,2026-09-27,2026-09-27,False,coinmetrics,,,,,107,2017-11-01,2026-09-01,
+ADA,ada,ada,2017-12-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,102,2018-04-01,2026-09-01,
+DOGE,doge,doge,2015-01-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,74,2017-07-01,2026-09-01,
+TRX,trx,trx,2018-06-25,2026-09-27,2026-09-27,False,coinmetrics,,,,,82,2018-10-01,2026-09-01,
+XLM,xlm,xlm,2015-09-30,2026-09-27,2026-09-27,False,coinmetrics,,,,,58,2017-06-01,2026-09-01,
+XMR,xmr,xmr,2015-01-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,54,2016-11-01,2026-09-01,
+ETC,etc,etc,2016-07-25,2026-09-27,2026-09-27,False,coinmetrics,,,,,66,2016-11-01,2024-04-01,
+DASH,dash,dash,2015-01-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,37,2017-04-01,2020-07-01,
+ZEC,zec,zec,2016-10-29,2026-09-27,2026-09-27,False,coinmetrics,,,,,53,2017-05-01,2026-09-01,
+XEM,xem,xem,2015-04-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,17,2017-06-01,2020-03-01,
+DGB,dgb,dgb,2015-02-10,2026-09-27,2026-09-27,False,coinmetrics,,,,,6,2017-07-01,2017-12-01,
+DCR,dcr,dcr,2016-05-17,2026-09-27,2026-09-27,False,coinmetrics,,,,,3,2017-06-01,2017-08-01,
+NEO,neo,neo,2017-07-15,2026-09-27,2026-09-27,False,coinmetrics,,,,,36,2017-11-01,2020-11-01,
+GAS,gas,gas,2017-08-08,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+XTZ,xtz,xtz,2018-06-30,2026-09-27,2026-09-27,False,coinmetrics,,,,,10,2020-03-01,2020-12-01,
+ALGO,algo,algo,2019-06-22,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+DOT,dot,dot,2020-08-20,2026-09-27,2026-09-27,False,coinmetrics,,,,,33,2020-12-01,2026-06-01,
+ICP,icp,icp,2021-05-11,2026-09-27,2026-09-27,False,coinmetrics,,,,,1,2021-09-01,2021-09-01,
+FLOW,flow,flow,2021-02-10,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+QNT,qnt,qnt,2019-03-16,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+CRO,cro,cro,2019-03-20,2026-09-27,2026-09-27,False,coinmetrics,,,,,2,2020-08-01,2020-09-01,
+XVG,xvg,xvg,2017-09-30,2026-09-27,2026-09-27,False,coinmetrics,,,,,6,2018-02-01,2018-07-01,
+EOS,eos,eos,2018-06-09,2026-07-13,2026-07-03,True,coinmetrics,,,,,44,2018-10-01,2023-09-01,rebranded; price series ends 2026-07
+BSV,bsv,bsv,2018-11-15,2026-09-27,2026-09-27,False,coinmetrics,,,,,27,2019-03-01,2021-05-01,Bitcoin SV fork; delisted by several venues in 2019
+BTG,btg,btg,2017-10-25,2026-08-18,2026-07-27,True,coinmetrics,,,,,12,2018-02-01,2019-04-01,"Bitcoin Gold; 51% attacks 2018/2020, series ends 2026-08"
+VTC,vtc,vtc,2015-01-01,2023-12-10,2023-12-10,True,coinmetrics,,,,,1,2018-01-01,2018-01-01,Vertcoin; price series ends 2023-12
+MAID,maid,maid,2015-01-01,2025-01-23,2025-01-23,True,coinmetrics,,,,,7,2017-06-01,2017-12-01,"MaidSafeCoin; migrated, series ends 2025-01"
+LINK,link,link,2017-09-29,2026-09-27,2026-09-27,False,coinmetrics,,,,,87,2018-01-01,2026-09-01,
+UNI,uni,uni,2020-09-18,2026-09-27,2026-09-27,False,coinmetrics,,,,,14,2021-01-01,2026-09-01,
+AAVE,aave,aave,2020-10-10,2026-09-27,2026-09-27,False,coinmetrics,,,,,25,2021-02-01,2026-09-01,
+CRV,crv,crv,2020-08-15,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+COMP,comp,comp,2020-06-18,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+LDO,ldo,ldo,2021-09-11,2026-09-27,2026-09-27,False,coinmetrics,,,,,2,2023-04-01,2023-05-01,
+SNX,snx,snx,2020-04-09,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+YFI,yfi,yfi,2020-07-25,2026-09-27,2026-09-27,False,coinmetrics,,,,,5,2020-11-01,2021-03-01,
+SUSHI,sushi,sushi,2020-09-01,2026-09-27,2026-09-27,False,coinmetrics,,,,,5,2021-01-01,2021-05-01,
+BAL,bal,bal,2020-06-25,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+UMA,uma,uma,2020-09-08,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+1INCH,1inch,1inch,2020-12-26,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+PERP,perp,perp,2021-02-04,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+REN,ren,ren,2018-12-07,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+KNC,knc,knc,2017-09-27,2026-09-27,2026-09-27,False,coinmetrics,,,,,6,2018-01-01,2020-10-01,
+ZRX,zrx,zrx,2017-08-11,2026-09-27,2026-09-27,False,coinmetrics,,,,,10,2017-12-01,2019-02-01,
+BAT,bat,bat,2017-10-06,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+MANA,mana,mana,2017-08-25,2026-09-27,2026-09-27,False,coinmetrics,,,,,4,2022-01-01,2022-04-01,
+OMG,omg,omg,2017-07-15,2026-09-27,2026-09-27,False,coinmetrics,,,,,26,2017-11-01,2021-12-01,
+GNO,gno,gno,2017-05-02,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+SNT,snt,snt,2017-06-19,2026-09-27,2026-09-27,False,coinmetrics,,,,,2,2018-02-01,2019-12-01,
+CVC,cvc,cvc,2017-09-11,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+FUN,fun,fun,2017-09-02,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+POWR,powr,powr,2017-11-02,2026-09-27,2026-09-27,False,coinmetrics,,,,,1,2018-02-01,2018-02-01,
+ELF,elf,elf,2017-12-22,2026-09-27,2026-09-27,False,coinmetrics,,,,,4,2018-05-01,2018-08-01,
+POLY,poly,poly,2018-06-15,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+LPT,lpt,lpt,2018-12-20,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+GRIN,grin,grin,2019-01-29,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+DRGN,drgn,drgn,2018-01-03,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+ALPHA,alpha,alpha,2020-10-11,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+MKR,mkr,mkr,2017-12-26,2026-03-25,2026-03-16,True,coinmetrics,,,,,0,,,"Maker; migrated to SKY, price series ends 2026-03"
+LEND,lend,lend,2017-12-09,2026-09-27,2026-09-26,False,coinmetrics,,,,,0,,,Aave's predecessor token; migrated to AAVE in 2020
+GNT,gnt,gnt,2017-02-19,2026-09-27,2022-11-10,True,coinmetrics,,,,,5,2017-06-01,2017-10-01,"Golem; migrated to GLM, trading stops 2022-11"
+REP,rep,rep,2016-10-04,2026-09-27,2026-07-24,True,coinmetrics,,,,,5,2017-06-01,2017-10-01,Augur; migrated to REPv2
+ANT,ant,ant,2017-08-29,2024-11-07,2024-11-06,True,coinmetrics,,,,,0,,,"Aragon; DAO dissolved and token redeemed, 2023-24"
+FTT,ftt,ftt,2019-08-20,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,"FTX exchange token; collapsed with FTX, Nov 2022"
+SRM,srm,srm,2020-08-11,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,"Serum; FTX/Alameda-linked, collapsed Nov 2022"
+HT,ht,ht,2019-03-06,2026-09-27,2026-09-27,False,coinmetrics,,,,,11,2019-07-01,2020-05-01,Huobi exchange token
+LEO,leo_eth,leo,2019-05-21,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,Bitfinex exchange token
+HEDG,hedg,hedg,2019-11-02,2022-01-27,2022-01-25,True,coinmetrics,,,,,0,,,"HedgeTrade; collapsed 2020-21, series ends 2022-01"
+PPT,ppt,ppt,2017-09-20,2022-09-12,2022-09-12,True,coinmetrics,,,,,0,,,Populous; series ends 2022-09
+WTC,wtc,wtc,2017-08-28,2024-06-16,2024-06-14,True,coinmetrics,,,,,5,2017-12-01,2018-04-01,Waltonchain; series ends 2024-06
+PAY,pay,pay,2017-10-03,2025-06-25,2025-06-16,True,coinmetrics,,,,,0,,,"TenX; wound down, series ends 2025-06"
+QASH,qash,qash,2017-11-06,2024-12-12,2024-12-12,True,coinmetrics,,,,,0,,,"Liquid exchange token; Liquid hacked 2021, bankrupt with FTX 2022"
+SWRV,swrv,swrv,2020-09-22,2025-03-27,2025-03-27,True,coinmetrics,,,,,0,,,"Swerve; abandoned DeFi fork, series ends 2025-03"
+REV,rev_eth,rev_eth,2020-03-26,2024-03-27,2024-03-27,True,coinmetrics,,,,,0,,,Revain; series ends 2024-03
+AVAX,avaxc,avax,2020-09-23,2026-09-27,2026-09-27,False,coinmetrics,,,,,57,2021-10-01,2026-07-01,
+MATIC,matic_eth,matic,2019-04-27,2025-10-22,2025-10-14,True,coinmetrics,,,,,35,2020-02-01,2024-04-01,migrated to POL in 2024-25
+POL,pol_eth,pol,2023-10-25,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+SHIB,shib_eth,shib,2021-05-11,2026-09-27,2026-09-27,False,coinmetrics,,,,,40,2021-12-01,2025-06-01,
+LRC,lrc_eth,lrc,2017-09-02,2026-09-27,2026-09-27,False,coinmetrics,,,,,0,,,
+ICX,icx_eth,icx,2017-09-23,2026-09-27,2026-09-27,False,coinmetrics,,,,,10,2018-03-01,2018-12-01,
+QTUM,qtum_eth,qtum,2017-07-28,2026-09-27,2026-09-27,False,coinmetrics,,,,,23,2017-11-01,2020-05-01,
+VET,vet_eth,vet,2018-07-14,2026-09-27,2026-09-27,False,coinmetrics,,,,,12,2018-11-01,2021-09-01,
+ZIL,zil_eth,zil,2018-01-27,2026-09-27,2026-09-27,False,coinmetrics,,,,,6,2018-06-01,2022-06-01,
+AE,ae_eth,ae,2017-09-02,2026-09-27,2026-09-27,False,coinmetrics,,,,,8,2019-05-01,2020-01-01,
+AION,aion_eth,aion,2017-12-22,2023-03-03,2023-02-27,True,coinmetrics,,,,,1,2018-05-01,2018-05-01,"Aion; merged into OAN, series ends 2023-03"
+NAS,nas_eth,nas,2017-12-26,2024-12-12,2024-12-05,True,coinmetrics,,,,,1,2018-09-01,2018-09-01,Nebulas; series ends 2024-12
+BTM,btm_eth,btm,2017-10-02,2025-06-25,2025-06-12,True,coinmetrics,,,,,0,,,Bytom; series ends 2025-06
+LSK,LSKUSDT,lsk,2020-02-06,2026-09-27,2026-09-27,False,binance,0.128512,True,2020-02-06,2026-09-27,0,,,Lisk
+LUNA,LUNAUSDT,luna,2020-08-21,2022-05-13,2022-05-13,True,binance,0.285259,True,2020-08-21,2022-05-13,9,2021-09-01,2022-05-01,Terra Classic
+SOL,SOLUSDT,sol,2020-08-11,2026-09-27,2026-09-27,False,binance,0.268771,True,2020-08-11,2026-09-27,63,2021-07-01,2026-09-01,Solana
+BTS,BTSUSDT,bts,2020-02-06,2023-12-07,2023-12-07,True,binance,0.57518,True,2020-02-06,2023-12-07,0,,,BitShares
+FCT,FCTUSDT,fct,,,,False,none,,False,,,0,,,Factom
+PEPE,PEPEUSDT,pepe,2023-05-05,2026-09-27,2026-09-27,False,binance,0.349439,True,2023-05-05,2026-09-27,29,2023-10-01,2026-08-01,Pepe
+ZB,ZBUSDT,zb,,,,False,none,,False,,,0,,,ZB
+APT,APTUSDT,apt,2022-10-19,2026-09-27,2026-09-27,False,binance,0.321211,True,2022-10-19,2026-09-27,15,2023-02-01,2025-01-01,Aptos
+HYPE,HYPEUSDT,hype,,,,False,none,,False,2026-09-24,2026-09-27,0,,,Hyperliquid
+CHZ,CHZUSDT,chz,2019-09-06,2026-09-27,2026-09-27,False,binance,0.285715,True,2019-09-06,2026-09-27,7,2021-05-01,2023-02-01,Chiliz
+SUI,SUIUSDT,sui,2023-05-03,2026-09-27,2026-09-27,False,binance,0.264673,True,2023-05-03,2026-09-27,35,2023-09-01,2026-09-01,Sui
+ARB,ARBUSDT,arb,2023-03-23,2026-09-27,2026-09-27,False,binance,0.341167,True,2023-03-23,2026-09-27,14,2023-07-01,2024-08-01,Arbitrum
+TRUMP,TRUMPUSDT,trump,2025-01-19,2026-09-27,2026-09-27,False,binance,0.262055,True,2025-01-19,2026-09-27,7,2025-05-01,2025-12-01,OFFICIAL TRUMP
+BCN,BCNUSDT,bcn,,,,False,none,,False,,,0,,,Bytecoin
+FTM,FTMUSDT,ftm,2019-06-11,2025-01-13,2025-01-13,True,binance,0.456818,True,2019-06-11,2025-01-13,15,2021-11-01,2024-12-01,Fantom
+MIOTA,MIOTAUSDT,miota,,,,False,none,,False,,,0,,,IOTA
+NEAR,NEARUSDT,near,2020-10-14,2026-09-27,2026-09-27,False,binance,0.334086,True,2020-10-14,2026-09-27,29,2022-03-01,2026-09-01,NEAR Protocol
+OKB,OKBUSDT,okb,,,,False,none,,False,,,0,,,OKB
+SC,SCUSDT,sc,2020-07-06,2026-09-27,2026-09-27,False,binance,0.142739,True,2020-07-06,2026-09-27,0,,,Siacoin
+SEI,SEIUSDT,sei,2023-08-15,2026-09-27,2026-09-27,False,binance,0.308844,True,2023-08-15,2026-09-27,6,2024-02-01,2024-12-01,Sei
+WIF,WIFUSDT,wif,2024-03-05,2026-09-27,2026-09-27,False,binance,0.323417,True,2024-03-05,2026-09-27,14,2024-07-01,2025-08-01,dogwifhat
+APE,APEUSDT,ape,2022-03-17,2026-09-27,2026-09-27,False,binance,0.343068,True,2022-03-17,2026-09-27,6,2022-07-01,2023-02-01,ApeCoin
+ATOM,ATOMUSDT,atom,2019-04-29,2026-09-27,2026-09-27,False,binance,0.241524,True,2019-04-29,2026-09-27,20,2020-09-01,2024-01-01,Cosmos
+BTT,BTTUSDT,btt,2019-01-31,2022-01-17,2022-01-17,True,binance,0.242206,True,2019-01-31,2022-01-17,11,2019-06-01,2021-10-01,BitTorrent (old)
+LUNA2,LUNA2USDT,luna2,,,,False,none,,False,,,0,,,Terra 2.0
+NOT,NOTUSDT,not,2024-05-16,2026-09-27,2026-09-27,False,binance,0.3746,True,2024-05-16,2026-09-27,2,2024-09-01,2024-10-01,Notcoin
+ONT,ONTUSDT,ont,2018-06-08,2026-09-27,2026-09-27,False,binance,0.264344,True,2018-06-08,2026-09-27,13,2018-10-01,2020-10-01,Ontology
+SYS,SYSUSDT,sys,2021-09-24,2026-05-27,2026-05-27,True,binance,0.561238,True,2021-09-24,2026-05-27,0,,,Syscoin
+WLD,WLDUSDT,wld,2023-07-24,2026-09-27,2026-09-27,False,binance,0.338034,True,2023-07-24,2026-09-27,16,2023-11-01,2026-09-01,Worldcoin
+ASTER,ASTERUSDT,aster,2025-10-06,2026-09-27,2026-09-27,False,binance,0.33991,True,2025-10-06,2026-09-27,2,2026-02-01,2026-03-01,Aster
+AXS,AXSUSDT,axs,2020-11-04,2026-09-27,2026-09-27,False,binance,0.284807,True,2020-11-04,2026-09-27,3,2021-09-01,2021-11-01,Axie Infinity
+BONK,BONKUSDT,bonk,2023-12-15,2026-09-27,2026-09-27,False,binance,0.315062,True,2023-12-15,2026-09-27,10,2024-06-01,2025-11-01,Bonk
+CFX,CFXUSDT,cfx,2021-03-29,2026-09-27,2026-09-27,False,binance,0.394328,True,2021-03-29,2026-09-27,5,2023-04-01,2023-08-01,Conflux
+HBAR,HBARUSDT,hbar,2019-09-29,2026-09-27,2026-09-27,False,binance,0.227811,True,2019-09-29,2026-09-27,15,2025-01-01,2026-04-01,Hedera
+NXT,NXTUSDT,nxt,,,,False,none,,False,,,0,,,Nxt
+ORDI,ORDIUSDT,ordi,2023-11-07,2026-09-27,2026-09-27,False,binance,0.398663,True,2023-11-07,2026-09-27,5,2024-03-01,2024-08-01,ORDI
+STRAT,STRATUSDT,strat,2020-02-19,2020-11-12,2020-11-12,True,binance,0.120389,True,2020-02-19,2020-11-12,0,,,Stratis (strat)
+ENA,ENAUSDT,ena,2024-04-02,2026-09-27,2026-09-27,False,binance,0.392215,True,2024-04-02,2026-09-27,15,2025-01-01,2026-09-01,Ethena
+FIL,FILUSDT,fil,2020-10-15,2026-09-27,2026-09-27,False,binance,0.269491,True,2020-10-15,2026-09-27,25,2021-04-01,2024-05-01,Filecoin
+GALA,GALAUSDT,gala,2021-09-13,2026-09-27,2026-09-27,False,binance,0.356326,True,2021-09-13,2026-09-27,9,2022-02-01,2023-06-01,Gala
+NEIROCTO,NEIROCTOUSDT,neirocto,,,,False,none,,False,,,0,,,First Neiro On Ethereum
+PENGU,PENGUUSDT,pengu,2024-12-17,2026-09-27,2026-09-27,False,binance,0.238782,True,2024-12-17,2026-09-27,7,2025-09-01,2026-06-01,Pudgy Penguins
+SAND,SANDUSDT,sand,2020-08-14,2026-09-27,2026-09-27,False,binance,0.233172,True,2020-08-14,2026-09-27,12,2022-01-01,2023-03-01,The Sandbox
+OP,OPUSDT,op,2022-06-01,2026-09-27,2026-09-27,False,binance,0.329887,True,2022-06-01,2026-09-27,13,2022-10-01,2024-04-01,Optimism
+STEEM,STEEMUSDT,steem,2022-04-22,2026-09-27,2026-09-27,False,binance,0.0750165,True,2022-04-22,2026-09-27,0,,,Steem
+WAVES,WAVESUSDT,waves,2019-01-18,2024-06-17,2024-06-17,True,binance,0.250432,True,2019-01-18,2024-06-17,5,2022-05-01,2022-09-01,Waves
+NAV,NAVUSDT,nav,,,,False,none,,False,,,0,,,Navcoin
+RNDR,RNDRUSDT,rndr,2021-11-27,2024-07-22,2024-07-22,True,binance,0.407081,True,2021-11-27,2024-07-22,1,2023-07-01,2023-07-01,Render Token
+SEELE,SEELEUSDT,seele,,,,False,none,,False,,,0,,,Seele
+TAO,TAOUSDT,tao_bittensor,2024-04-11,2026-09-27,2026-09-27,False,binance,0.415383,True,2024-04-11,2026-09-27,5,2026-04-01,2026-08-01,Bittensor
+BOME,BOMEUSDT,bome,2024-03-16,2026-09-27,2026-09-27,False,binance,0.467985,True,2024-03-16,2026-09-27,2,2024-07-01,2024-08-01,BOOK OF MEME
+ONDO,ONDOUSDT,ondo,2025-04-11,2026-09-27,2026-09-27,False,binance,0.163902,True,2025-04-11,2026-09-27,3,2026-07-01,2026-09-01,Ondo
+TIA,TIAUSDT,tia,2023-10-31,2026-09-27,2026-09-27,False,binance,0.352832,True,2023-10-31,2026-09-27,2,2024-02-01,2024-03-01,Celestia
+BLUR,BLURUSDT,blur,2023-11-24,2026-09-27,2026-09-27,False,binance,0.199787,True,2023-11-24,2026-09-27,0,,,Blur
+FET,FETUSDT,fet,2019-02-28,2026-09-27,2026-09-27,False,binance,0.48797,True,2019-02-28,2026-09-27,4,2024-05-01,2024-12-01,Artificial Superintelligence Alliance
+FLOKI,FLOKIUSDT,floki,2023-05-05,2026-09-27,2026-09-27,False,binance,0.409326,True,2023-05-05,2026-09-27,4,2024-06-01,2024-09-01,FLOKI
+LBC,LBCUSDT,lbc,,,,False,none,,False,,,0,,,LBRY Credits
+MNT,MNTUSDT,mnt,,,,False,none,,False,,,0,,,Mantle
+YFII,YFIIUSDT,yfii,2020-09-01,2023-08-22,2023-08-22,True,binance,0.352696,True,2020-09-01,2023-08-22,1,2020-12-01,2020-12-01,DFI.Money
+ARDR,ARDRUSDT,ardr,2020-05-15,2026-07-10,2026-07-10,True,binance,0.139149,True,2020-05-15,2026-07-10,0,,,Ardor
+ARK,ARKUSDT,ark,2023-09-22,2026-09-27,2026-09-27,False,binance,0.224464,True,2023-09-22,2026-09-27,0,,,Ark
+MASK,MASKUSDT,mask,2021-05-25,2026-09-27,2026-09-27,False,binance,0.236532,True,2021-05-25,2026-09-27,2,2023-06-01,2023-08-01,Mask Network
+PUMP,PUMPUSDT,pump,2025-09-11,2026-09-27,2026-09-27,False,binance,0.29845,True,2025-09-11,2026-09-27,1,2026-01-01,2026-01-01,Pump Fun
+STX,STXUSDT,stx,2019-10-25,2026-09-27,2026-09-27,False,binance,0.209683,True,2019-10-25,2026-09-27,2,2023-05-01,2023-06-01,Stacks
+GRT,GRTUSDT,grt,2020-12-17,2026-09-27,2026-09-27,False,binance,0.255778,True,2020-12-17,2026-09-27,1,2021-04-01,2021-04-01,The Graph
+MCO,MCOUSDT,mco,2019-11-19,2020-10-23,2020-10-23,True,binance,0.0238142,True,2019-11-19,2020-10-23,2,2020-06-01,2020-07-01,MCO
+PNUT,PNUTUSDT,pnut,2024-11-11,2026-09-27,2026-09-27,False,binance,0.376587,True,2024-11-11,2026-09-27,0,,,Peanut the Squirrel
+SXP,SXPUSDT,sxp,2020-07-20,2026-04-01,2026-04-01,True,binance,0.30432,True,2020-07-20,2026-04-01,1,2020-11-01,2020-11-01,Solar
+ETP,ETPUSDT,etp,,,,False,none,,False,,,0,,,Metaverse ETP
+GMT,GMTUSDT,gmt,2022-03-09,2026-09-27,2026-09-27,False,binance,0.414428,True,2022-03-09,2026-09-27,2,2022-08-01,2022-09-01,GMT
+NANO,NANOUSDT,nano,2019-04-03,2022-01-24,2022-01-24,True,binance,0.215824,True,2019-04-03,2022-01-24,0,,,Nano (New)
+PEOPLE,PEOPLEUSDT,people,2021-12-23,2026-09-27,2026-09-27,False,binance,0.366317,True,2021-12-23,2026-09-27,1,2024-08-01,2024-08-01,ConstitutionDAO
+VIRTUAL,VIRTUALUSDT,virtual,2025-04-11,2026-09-27,2026-09-27,False,binance,0.237318,True,2025-04-11,2026-09-27,1,2025-08-01,2025-08-01,Virtuals Protocol
+XPL,XPLUSDT,xpl,2025-09-25,2026-09-27,2026-09-27,False,binance,0.320239,True,2025-09-25,2026-09-27,1,2026-01-01,2026-01-01,Plasma
+MITH,MITHUSDT,mith,2019-04-19,2022-12-22,2022-12-22,True,binance,0.335258,True,2019-04-19,2022-12-22,0,,,Mithril
+THETA,THETAUSDT,theta,2019-04-10,2026-09-27,2026-09-27,False,binance,0.335994,True,2019-04-10,2026-09-27,2,2021-06-01,2021-08-01,Theta Network
+LOOM,LOOMUSDT,loom,2023-03-24,2024-08-26,2024-08-26,True,binance,0.254931,True,2023-03-24,2024-08-26,1,2023-12-01,2023-12-01,Loom Network
+VIA,VIAUSDT,via,,,,False,none,,False,,,0,,,Viacoin
+WLFI,WLFIUSDT,wlfi,2025-09-01,2026-09-27,2026-09-27,False,binance,0.305953,True,2025-09-01,2026-09-27,1,2025-12-01,2025-12-01,World Liberty Financial
+IOST,IOSTUSDT,iost,2019-03-22,2026-09-27,2026-09-27,False,binance,0.247355,True,2019-03-22,2026-09-27,0,,,IOST
+MXC,MXCUSDT,mxc,,,,False,none,,False,,,0,,,MXC
+00,00USDT,00,,,,False,none,,False,,,0,,,00 Token
+INJ,INJUSDT,inj,2020-10-21,2026-09-27,2026-09-27,False,binance,0.437549,True,2020-10-21,2026-09-27,0,,,Injective
+JST,JSTUSDT,jst,2020-08-11,2026-09-27,2026-09-27,False,binance,0.0899088,True,2020-08-11,2026-09-27,1,2020-12-01,2020-12-01,JUST
+NCASH,NCASHUSDT,ncash,,,,False,none,,False,,,0,,,Nitro Network
+QKC,QKCUSDT,qkc,2023-03-17,2026-09-27,2026-09-27,False,binance,0.275293,True,2023-03-17,2026-09-27,0,,,QuarkChain
+0G,0GUSDT,0g,2025-09-22,2026-09-27,2026-09-27,False,binance,0.198583,True,2025-09-22,2026-09-27,0,,,0G
+DYDX,DYDXUSDT,dydx,2021-09-09,2026-09-27,2026-09-27,False,binance,0.391584,True,2021-09-09,2026-09-27,0,,,dYdX
+LAYER,LAYERUSDT,layer,2025-02-11,2026-09-27,2026-09-27,False,binance,0.177597,True,2025-02-11,2026-09-27,0,,,Solayer
+1,1USDT,1,,,,False,none,,False,,,0,,,Ucan fix life in1day
+DGD,DGDUSDT,dgd,,,,False,none,,False,,,0,,,DigixDAO
+HTX,HTXUSDT,htx,,,,False,none,,False,,,0,,,HTX
+ID,IDUSDT,id,2023-03-22,2026-09-27,2026-09-27,False,binance,0.268898,True,2023-03-22,2026-09-27,0,,,SPACE ID
+JASMY,JASMYUSDT,jasmy,2021-11-22,2026-09-27,2026-09-27,False,binance,0.303645,True,2021-11-22,2026-09-27,0,,,JasmyCoin
+LAMB,LAMBUSDT,lamb,,,,False,none,,False,,,0,,,Lambda
+1000SATS,1000SATSUSDT,1000sats,2023-12-12,2026-09-27,2026-09-27,False,binance,0.715673,True,2023-12-12,2026-09-27,0,,,1000SATS (Ordinals)
+BAND,BANDUSDT,band,2019-09-18,2026-09-27,2026-09-27,False,binance,0.419378,True,2019-09-18,2026-09-27,0,,,Band
+ENJ,ENJUSDT,enj,2019-04-18,2026-09-27,2026-09-27,False,binance,0.309395,True,2019-04-18,2026-09-27,0,,,Enjin Coin
+NFT,NFTUSDT,nft,,,,False,none,,False,,,0,,,APENFT
+OM,OMUSDT,om,2021-03-08,2026-03-02,2026-03-02,True,binance,0.495754,True,2021-03-08,2026-03-02,0,,,MANTRA (Old)
+10SET,10SETUSDT,10set,,,,False,none,,False,,,0,,,Tenset
+MDA,MDAUSDT,mda,,,,False,none,,False,,,0,,,Moeda Loyalty Points
+MTL,MTLUSDT,mtl_metal,2019-08-23,2026-09-27,2026-09-27,False,binance,0.208145,True,2019-08-23,2026-09-27,0,,,Metal DAO
+RUNE,RUNEUSDT,rune,2020-09-04,2026-09-27,2026-09-27,False,binance,0.554243,True,2020-09-04,2026-09-27,0,,,THORChain
+WAN,WANUSDT,wan,2019-08-27,2026-04-23,2026-04-23,True,binance,0.421421,True,2019-08-27,2026-04-23,0,,,Wanchain
+1CAT,1CATUSDT,1cat,,,,False,none,,False,,,0,,,Bitcoin Cats
+HOT,HOTUSDT,hot_holo,2019-02-18,2026-09-27,2026-09-27,False,binance,0.571898,True,2019-02-18,2026-09-27,0,,,Holo
+IRR,IRRUSDT,irr,,,,False,none,,False,,,0,,,Iranian Rial
+KITE,KITEUSDT,kite,2025-11-03,2026-09-27,2026-09-27,False,binance,0.262812,True,2025-11-03,2026-09-27,0,,,Kite
+MLN,MLNUSDT,mln,2021-07-05,2026-05-27,2026-05-27,True,binance,0.277326,True,2021-07-05,2026-05-27,0,,,Enzyme
+MOVE,MOVEUSDT,move,2024-12-09,2026-09-27,2026-09-27,False,binance,0.159349,True,2024-12-09,2026-09-27,0,,,Movement
+S,SUSDT,s,2025-01-16,2026-09-27,2026-09-27,False,binance,0.417427,True,2025-01-16,2026-09-27,0,,,Sonic (prev. FTM)
+SLP,SLPUSDT,slp,2021-04-30,2026-09-27,2026-09-27,False,binance,0.489488,True,2021-04-30,2026-09-27,0,,,Smooth Love Potion
+STORJ,STORJUSDT,storj,2020-07-30,2026-09-03,2026-09-03,False,binance,0.208629,True,2020-07-30,2026-09-03,0,,,Storj
+ZRO,ZROUSDT,zro,2024-06-20,2026-09-27,2026-09-27,False,binance,0.335898,True,2024-06-20,2026-09-27,0,,,LayerZero
+MAGIC,MAGICUSDT,magic,2022-12-12,2026-09-27,2026-09-27,False,binance,0.340965,True,2022-12-12,2026-09-27,0,,,Treasure
+QSP,QSPUSDT,qsp,,,,False,none,,False,,,0,,,Quantstamp
+RDN,RDNUSDT,rdn,,,,False,none,,False,,,0,,,Raiden Network Token
+1MBABYDOGE,1MBABYDOGEUSDT,1mbabydoge,2024-09-16,2026-09-27,2026-09-27,False,binance,0.768425,True,2024-09-16,2026-09-27,0,,,Baby Doge Coin (1 Million)
+ADX,ADXUSDT,adx,2021-10-29,2026-09-27,2026-09-27,False,binance,0.430933,True,2021-10-29,2026-09-27,0,,,AdEx
+CND,CNDUSDT,cnd,,,,False,none,,False,,,0,,,Cindicator
+KSM,KSMUSDT,ksm,2020-09-04,2026-09-27,2026-09-27,False,binance,0.272843,True,2020-09-04,2026-09-27,0,,,Kusama
+MANTA,MANTAUSDT,manta,2024-01-18,2026-09-27,2026-09-27,False,binance,0.413433,True,2024-01-18,2026-09-27,0,,,Manta Network
+NPXS,NPXSUSDT,npxs,2019-08-13,2021-04-05,2021-04-05,True,binance,0.255442,True,2019-08-13,2021-04-05,0,,,Pundi X (Old)
+PI,PIUSDT,pi,,,,False,none,,False,,,0,,,Pi
+RVN,RVNUSDT,rvn,2019-09-25,2026-09-27,2026-09-27,False,binance,0.271096,True,2019-09-25,2026-09-27,0,,,Ravencoin
+YOYOW,YOYOWUSDT,yoyow,,,,False,none,,False,,,0,,,YOYOW
+2Z,2ZUSDT,2z,2025-10-02,2026-09-27,2026-09-27,False,binance,0.272104,True,2025-10-02,2026-09-27,0,,,DoubleZero
+DOGS,DOGSUSDT,dogs,2024-08-26,2026-09-27,2026-09-27,False,binance,0.423578,True,2024-08-26,2026-09-27,0,,,Dogs
+DOP,DOPUSDT,dop,,,,False,none,,False,,,0,,,Data Ownership Protocol
+LAB,LABUSDT,lab,,,,False,none,,False,,,0,,,LAB
+ONE,ONEUSDT,one_harmony,2019-06-01,2026-09-27,2026-09-27,False,binance,0.424077,True,2019-06-01,2026-09-27,0,,,Harmony
+WIN,WINUSDT,win_wink,2019-08-01,2026-09-27,2026-09-27,False,binance,0.143549,True,2019-08-01,2026-09-27,0,,,WINkLink
+4,4USDT,4,,,,False,none,,False,,,0,,,4
+CELR,CELRUSDT,celr,2019-03-25,2026-09-27,2026-09-27,False,binance,0.538204,True,2019-03-25,2026-09-27,0,,,Celer Network
+DNT,DNTUSDT,dnt,2020-11-10,2022-10-24,2022-10-24,True,binance,0.353032,True,2020-11-10,2022-10-24,0,,,district0x
+ETHFI,ETHFIUSDT,ethfi,2024-03-18,2026-09-27,2026-09-27,False,binance,0.370416,True,2024-03-18,2026-09-27,0,,,ether.fi
+ETHOS,ETHOSUSDT,ethos,,,,False,none,,False,,,0,,,Voyager Token (ethos)
+LIT,LITUSDT,lit_lighter,,,,False,none,,False,2021-02-04,2025-02-10,0,,,Lighter
+42,42USDT,42,,,,False,none,,False,,,0,,,Semantic Layer
+ALLO,ALLOUSDT,allo,2025-11-11,2026-09-27,2026-09-27,False,binance,0.30371,True,2025-11-11,2026-09-27,0,,,Allora
+AVNT,AVNTUSDT,avnt,2025-09-15,2026-09-27,2026-09-27,False,binance,0.16822,True,2025-09-15,2026-09-27,0,,,Avantis
+CRC,CRCUSDT,crc,,,,False,none,,False,,,0,,,Costa Rican Colon
+FARTCOIN,FARTCOINUSDT,fartcoin,,,,False,none,,False,,,0,,,Fartcoin
+JUP,JUPUSDT,jup,2024-01-31,2026-09-27,2026-09-27,False,binance,0.313533,True,2024-01-31,2026-09-27,0,,,Jupiter
+LINA,LINAUSDT,lina,2021-03-18,2025-03-28,2025-03-28,True,binance,0.6065,True,2021-03-18,2025-03-28,0,,,Linear
+MEW,MEWUSDT,mew,,,,False,none,,False,,,0,,,cat in a dogs world
+MON,MONUSDT,mon_monad,,,,False,none,,False,,,0,,,Monad
+WEMIX,WEMIXUSDT,wemix,,,,False,none,,False,,,0,,,WEMIX
+4STOCK,4STOCKUSDT,4stock,,,,False,none,,False,,,0,,,4Stock
+AGIX,AGIXUSDT,agix,2023-02-17,2024-07-01,2024-07-01,True,binance,0.394215,True,2023-02-17,2024-07-01,0,,,SingularityNET
+BIT,BITUSDT,bit,,,,False,none,,False,,,0,,,BitDAO
+BNT,BNTUSDT,bnt,2020-02-06,2026-09-27,2026-09-27,False,binance,0.236987,True,2020-02-06,2026-09-27,0,,,Bancor
+INIT,INITUSDT,init,2025-04-24,2026-09-27,2026-09-27,False,binance,0.313535,True,2025-04-24,2026-09-27,0,,,Initia
+IP,IPUSDT,ip,,,,False,none,,False,,,0,,,Story
+KEY,KEYUSDT,key,2019-08-27,2023-02-10,2023-02-10,True,binance,0.810695,True,2019-08-27,2023-02-10,0,,,SelfKey
+MONA,MONAUSDT,mona,,,,False,none,,False,,,0,,,MonaCoin
+RCN,RCNUSDT,rcn_ripiocreditnetwork,,,,False,none,,False,,,0,,,Ripio Credit Network
+UBTC,UBTCUSDT,ubtc_unitbitcoin,,,,False,none,,False,,,0,,,Unit Bitcoin
+A,AUSDT,a,2025-05-28,2026-09-27,2026-09-27,False,binance,0.152958,True,2025-05-28,2026-09-27,0,,,Vaulta
+BCD,BCDUSDT,bcd,,,,False,none,,False,,,0,,,Bitcoin Diamond
+CAKE,CAKEUSDT,cake,2021-02-19,2026-09-27,2026-09-27,False,binance,0.542748,True,2021-02-19,2026-09-27,0,,,PancakeSwap
+ENS,ENSUSDT,ens,2021-11-10,2026-09-27,2026-09-27,False,binance,0.321947,True,2021-11-10,2026-09-27,0,,,Ethereum Name Service
+KAVA,KAVAUSDT,kava,2019-10-25,2026-09-27,2026-09-27,False,binance,0.440661,True,2019-10-25,2026-09-27,0,,,Kava
+REQ,REQUSDT,req,2021-08-20,2026-09-27,2026-09-27,False,binance,0.364141,True,2021-08-20,2026-09-27,0,,,Request
+SUN,SUNUSDT,sun,2020-09-21,2026-09-27,2026-09-27,False,binance,0.0724527,True,2020-09-21,2026-09-27,0,,,Sun Token
+UXLINK,UXLINKUSDT,uxlink,,,,False,none,,False,,,0,,,UXLINK
+A2Z,A2ZUSDT,a2z,2025-07-30,2026-04-01,2026-04-01,True,binance,0.284505,True,2025-07-30,2026-04-01,0,,,Arena-Z
+MOF,MOFUSDT,mof,,,,False,none,,False,,,0,,,Molecular Future
+NULS,NULSUSDT,nuls,2018-07-23,2025-04-16,2025-04-16,True,binance,0.33409,True,2018-07-23,2025-04-16,0,,,NULS
+PAB,PABUSDT,pab,,,,False,none,,False,,,0,,,Panamanian Balboa
+TLM,TLMUSDT,tlm,2021-04-13,2026-09-27,2026-09-27,False,binance,0.471463,True,2021-04-13,2026-09-27,0,,,Alien Worlds
+TURBO,TURBOUSDT,turbo,2024-09-16,2026-09-27,2026-09-27,False,binance,0.222612,True,2024-09-16,2026-09-27,0,,,Turbo
+A47,A47USDT,a47,,,,False,none,,False,,,0,,,AGENDA 47
+ABBC,ABBCUSDT,abbc,,,,False,none,,False,,,0,,,ABBC Coin
+BCPT,BCPTUSDT,bcpt,,,,False,none,,False,,,0,,,Blockmason Credit Protocol
+HIFI,HIFIUSDT,hifi,2023-01-12,2025-09-17,2025-09-17,True,binance,0.292702,True,2023-01-12,2025-09-17,0,,,Hifi Finance
+OCN,OCNUSDT,ocn,,,,False,none,,False,,,0,,,Odyssey
+SUNDOG,SUNDOGUSDT,sundog,,,,False,none,,False,,,0,,,SUNDOG
+A8,A8USDT,a8,,,,False,none,,False,,,0,,,Ancient8
+AMP,AMPUSDT,amp,2021-11-23,2026-09-27,2026-09-27,False,binance,0.343381,True,2021-11-23,2026-09-27,0,,,Amp
+CMT,CMTUSDT,cmt,,,,False,none,,False,,,0,,,CyberMiles
+EGLD,EGLDUSDT,egld,2020-09-03,2026-09-27,2026-09-27,False,binance,0.374174,True,2020-09-03,2026-09-27,0,,,MultiversX
+MEME,MEMEUSDT,meme,2023-11-03,2026-09-27,2026-09-27,False,binance,0.429727,True,2023-11-03,2026-09-27,0,,,Memecoin
+STMX,STMXUSDT,stmx,2020-06-11,2025-02-24,2025-02-24,True,binance,0.277783,True,2020-06-11,2025-02-24,0,,,StormX
+SWFTC,SWFTCUSDT,swftc,,,,False,none,,False,,,0,,,SwftCoin
+WRX,WRXUSDT,wrx,2020-02-05,2024-12-25,2024-12-25,True,binance,0.732471,True,2020-02-05,2024-12-25,0,,,WazirX
+AAA,AAAUSDT,aaa,,,,False,none,,False,,,0,,,Abulaba
+APEX,APEXUSDT,apex,,,,False,none,,False,,,0,,,ApeX
+GT,GTUSDT,gt,,,,False,none,,False,,,0,,,GateToken
+HOOK,HOOKUSDT,hook,2022-12-01,2026-04-01,2026-04-01,True,binance,0.617318,True,2022-12-01,2026-04-01,0,,,Hooked Protocol
+ROSE,ROSEUSDT,rose,2020-11-19,2026-09-27,2026-09-27,False,binance,0.581922,True,2020-11-19,2026-09-27,0,,,Oasis
+SNGLS,SNGLSUSDT,sngls,,,,False,none,,False,,,0,,,SingularDTV
+TRB,TRBUSDT,trb,2020-08-29,2026-09-27,2026-09-27,False,binance,0.415648,True,2020-08-29,2026-09-27,0,,,Tellor
+AARK,AARKUSDT,aark,,,,False,none,,False,,,0,,,Aark Digital
+GTC,GTCUSDT,gtc_gamecom,,,,False,none,98.9395,False,2021-06-10,2026-09-27,0,,,Game.com
+KMD,KMDUSDT,kmd,2020-08-11,2025-07-04,2025-07-04,True,binance,0.453228,True,2020-08-11,2025-07-04,0,,,Komodo
+MFT,MFTUSDT,mft,2019-08-27,2023-01-03,2023-01-03,True,binance,0.209756,True,2019-08-27,2023-01-03,0,,,Hifi Finance (Old)
+RENDER,RENDERUSDT,render,2024-07-26,2026-09-27,2026-09-27,False,binance,0.329059,True,2024-07-26,2026-09-27,0,,,Render
+RLC,RLCUSDT,rlc,2019-11-14,2026-09-27,2026-09-27,False,binance,0.501777,True,2019-11-14,2026-09-27,0,,,iExec RLC
+MOODENG,MOODENGUSDT,moodeng,,,,False,none,,False,,,0,,,Moo Deng (moodengsol.com)
+TOMI,TOMIUSDT,tomi,,,,False,none,,False,,,0,,,TOMI
+AAVE0,AAVE0USDT,aave0,,,,False,none,,False,,,0,,,AAVE spot asset deployed by HyBridge
+ACH,ACHUSDT,ach,2022-01-10,2026-09-27,2026-09-27,False,binance,0.410188,True,2022-01-10,2026-09-27,0,,,Alchemy Pay
+EDU,EDUUSDT,edu,2023-04-28,2026-09-27,2026-09-27,False,binance,0.703007,True,2023-04-28,2026-09-27,0,,,Open Campus
+H,HUSDT,h,,,,False,none,,False,,,0,,,Humanity
+W,WUSDT,w,2024-04-03,2026-09-27,2026-09-27,False,binance,0.261279,True,2024-04-03,2026-09-27,0,,,Wormhole
+AAVE3L,AAVE3LUSDT,aave3l,,,,False,none,,False,,,0,,,Aave 3x Leveraged Long Token
+JTO,JTOUSDT,jto,2023-12-07,2026-09-27,2026-09-27,False,binance,0.307542,True,2023-12-07,2026-09-27,0,,,Jito
+KCS,KCSUSDT,kcs,,,,False,none,,False,,,0,,,KuCoin Token
+LUN,LUNUSDT,lun,,,,False,none,,False,,,0,,,Lunyr
+TMTG,TMTGUSDT,tmtg,,,,False,none,,False,,,0,,,The Midas Touch Gold
+TWT,TWTUSDT,twt,2021-01-27,2026-09-27,2026-09-27,False,binance,0.645249,True,2021-01-27,2026-09-27,0,,,Trust Wallet Token
+AAVE3S,AAVE3SUSDT,aave3s,,,,False,none,,False,,,0,,,Aave 3x Leveraged Short Token
+ASTR,ASTRUSDT,astr,2022-02-28,2026-09-27,2026-09-27,False,binance,0.322369,True,2022-02-28,2026-09-27,0,,,Astar
+DOCK,DOCKUSDT,dock,2019-08-27,2024-07-22,2024-07-22,True,binance,0.585986,True,2019-08-27,2024-07-22,0,,,Dock
+GOAT,GOATUSDT,goat,,,,False,none,,False,,,0,,,Goatseus Maximus
+GXS,GXSUSDT,gxs,2020-05-13,2022-04-25,2022-04-25,True,binance,0.289207,True,2020-05-13,2022-04-25,0,,,GXChain
+LYM,LYMUSDT,lym,,,,False,none,,False,,,0,,,Lympo
+AB,ABUSDT,ab,,,,False,none,,False,,,0,,,AB
+EIGEN,EIGENUSDT,eigen,2024-10-01,2026-09-27,2026-09-27,False,binance,0.351692,True,2024-10-01,2026-09-27,0,,,EigenLayer
+FTN,FTNUSDT,ftn,,,,False,none,,False,,,0,,,Fasttoken
+HOME,HOMEUSDT,home,2025-06-12,2026-09-27,2026-09-27,False,binance,0.259276,True,2025-06-12,2026-09-27,0,,,HOME
+LINEA,LINEAUSDT,linea,2025-09-10,2026-09-27,2026-09-27,False,binance,0.232775,True,2025-09-10,2026-09-27,0,,,Linea
+STRK,STRKUSDT,strk,2024-02-20,2026-09-27,2026-09-27,False,binance,0.341363,True,2024-02-20,2026-09-27,0,,,Starknet
+SYRUP,SYRUPUSDT,syrup,2025-05-06,2026-09-27,2026-09-27,False,binance,0.332222,True,2025-05-06,2026-09-27,0,,,Maple Finance
+TOMO,TOMOUSDT,tomo,2019-08-24,2023-11-20,2023-11-20,True,binance,0.665475,True,2019-08-24,2023-11-20,0,,,TomoChain
+ACT,ACTUSDT,act,2024-11-11,2026-09-27,2026-09-27,False,binance,0.443641,True,2024-11-11,2026-09-27,0,,,Act I The AI Prophecy
+ALICE,ALICEUSDT,alice,2021-03-15,2026-09-27,2026-09-27,False,binance,0.430489,True,2021-03-15,2026-09-27,0,,,My Neighbor Alice
+ARPA,ARPAUSDT,arpa,2019-11-06,2026-09-27,2026-09-27,False,binance,0.36163,True,2019-11-06,2026-09-27,0,,,ARPA
+BTTC,BTTCUSDT,bttc,2022-01-25,2026-09-27,2026-09-27,False,binance,0.115885,True,2022-01-25,2026-09-27,0,,,BitTorrent (new)
+ENSO,ENSOUSDT,enso,2025-10-14,2026-09-27,2026-09-27,False,binance,0.164173,True,2025-10-14,2026-09-27,0,,,Enso
+GRAM,GRAMUSDT,gram,2026-07-02,2026-09-27,2026-09-27,False,binance,0.32499,True,2026-07-02,2026-09-27,0,,,Gram (prev. Toncoin)
+IMX,IMXUSDT,imx,2022-01-10,2026-09-27,2026-09-27,False,binance,0.23134,True,2022-01-10,2026-09-27,0,,,Immutable
+MEGA,MEGAUSDT,mega,2026-04-30,2026-09-27,2026-09-27,False,binance,0.223599,True,2026-04-30,2026-09-27,0,,,MegaETH
+MINA,MINAUSDT,mina,2021-08-10,2026-09-27,2026-09-27,False,binance,0.317632,True,2021-08-10,2026-09-27,0,,,Mina
+OMR,OMRUSDT,omr,,,,False,none,,False,,,0,,,Omani Rial
+PHX,PHXUSDT,phx,,,,False,none,,False,,,0,,,Phoenix Global
+POA,POAUSDT,poa,,,,False,none,,False,,,0,,,POA Network
+SAHARA,SAHARAUSDT,sahara,2025-06-26,2026-09-27,2026-09-27,False,binance,0.181484,True,2025-06-26,2026-09-27,0,,,Sahara AI
+STRAX,STRAXUSDT,strax,2020-11-18,2024-03-20,2024-03-20,True,binance,0.170029,True,2020-11-18,2024-03-20,0,,,Stratis
+ABT,ABTUSDT,abt,,,,False,none,,False,,,0,,,Arcblock
+APPC,APPCUSDT,appc,,,,False,none,,False,,,0,,,AppCoins
+CTXC,CTXCUSDT,ctxc,2019-11-22,2025-04-16,2025-04-16,True,binance,0.457163,True,2019-11-22,2025-04-16,0,,,Cortex
+ENG,ENGUSDT,eng,,,,False,none,,False,,,0,,,Enigma
+GAL,GALUSDT,gal,2022-05-05,2024-07-15,2024-07-15,True,binance,0.57669,True,2022-05-05,2024-07-15,0,,,Galxe
+GRS,GRSUSDT,grs,,,,False,none,,False,,,0,,,Groestlcoin
+LQTY,LQTYUSDT,lqty,2023-02-28,2026-09-27,2026-09-27,False,binance,0.241447,True,2023-02-28,2026-09-27,0,,,Liquity
+PYG,PYGUSDT,pyg,,,,False,none,,False,,,0,,,Paraguayan Guarani
+SANTOS,SANTOSUSDT,santos,2021-12-01,2026-09-27,2026-09-27,False,binance,0.475654,True,2021-12-01,2026-09-27,0,,,Santos FC Fan Token
+AC,ACUSDT,ac,,,,False,none,,False,,,0,,,ArtCoin
+BAKE,BAKEUSDT,bake,2021-04-30,2025-09-17,2025-09-17,True,binance,0.586838,True,2021-04-30,2025-09-17,0,,,BakeryToken
+ETHW,ETHWUSDT,ethw,,,,False,none,,False,,,0,,,EthereumPoW
+GHST,GHSTUSDT,ghst,2021-08-20,2026-02-13,2026-02-13,True,binance,0.359486,True,2021-08-20,2026-02-13,0,,,Aavegotchi
+HC,HCUSDT,hc_hypercash,2019-09-25,2020-11-10,2020-11-10,True,binance,0.112259,True,2019-09-25,2020-11-10,0,,,HyperCash
+IO,IOUSDT,io,2024-06-11,2026-09-27,2026-09-27,False,binance,0.395687,True,2024-06-11,2026-09-27,0,,,io.net
+POPCAT,POPCATUSDT,popcat,,,,False,none,,False,,,0,,,Popcat (SOL)
+PYTH,PYTHUSDT,pyth,2024-02-02,2026-09-27,2026-09-27,False,binance,0.232414,True,2024-02-02,2026-09-27,0,,,Pyth Network
+RSR,RSRUSDT,rsr,2020-08-27,2026-09-27,2026-09-27,False,binance,0.433714,True,2020-08-27,2026-09-27,0,,,Reserve Rights
+VVV,VVVUSDT,vvv,,,,False,none,,False,,,0,,,Venice Token
+ACA,ACAUSDT,aca,2022-01-25,2026-02-13,2026-02-13,True,binance,0.485268,True,2022-01-25,2026-02-13,0,,,Acala Token
+BARD,BARDUSDT,bard,2025-09-18,2026-09-27,2026-09-27,False,binance,0.197714,True,2025-09-18,2026-09-27,0,,,Lombard
+BERA,BERAUSDT,bera,2025-02-06,2026-09-27,2026-09-27,False,binance,0.229192,True,2025-02-06,2026-09-27,0,,,Berachain
+BLZ,BLZUSDT,blz,2020-08-11,2024-12-25,2024-12-25,True,binance,0.737765,True,2020-08-11,2024-12-25,0,,,Bluzelle
+GIGGLE,GIGGLEUSDT,giggle,2025-10-25,2026-09-27,2026-09-27,False,binance,0.559109,True,2025-10-25,2026-09-27,0,,,Giggle Fund
+ACE,ACEUSDT,ace,,,,False,none,40.1005,False,2023-12-18,2026-09-27,0,,,ACENT
+AIXBT,AIXBTUSDT,aixbt,2025-01-10,2026-09-27,2026-09-27,False,binance,0.379507,True,2025-01-10,2026-09-27,0,,,aixbt by Virtuals
+BGB,BGBUSDT,bgb,,,,False,none,,False,,,0,,,Bitget Token
+CTC,CTCUSDT,ctc,,,,False,none,,False,,,0,,,Creditcoin
+DENT,DENTUSDT,dent,2019-08-27,2026-04-28,2026-04-28,True,binance,0.738508,True,2019-08-27,2026-04-28,0,,,Dent
+DUSK,DUSKUSDT,dusk,2019-07-22,2026-09-27,2026-09-27,False,binance,0.479138,True,2019-07-22,2026-09-27,0,,,Dusk
+TNB,TNBUSDT,tnb,,,,False,none,,False,,,0,,,Time New Bank
+TNT,TNTUSDT,tnt,,,,False,none,,False,,,0,,,Tierion
+ACE_FUSIONIST,ACEUSDT,ace_fusionist,2023-12-18,2026-09-27,2026-09-27,False,binance,0.496528,True,2023-12-18,2026-09-27,0,,,Fusionist
+ANC,ANCUSDT,anc,2022-01-25,2022-12-27,2022-12-27,True,binance,0.438273,True,2022-01-25,2022-12-27,0,,,Anchor Protocol
+ANKR,ANKRUSDT,ankr,2019-07-23,2026-09-27,2026-09-27,False,binance,0.275177,True,2019-07-23,2026-09-27,0,,,Ankr
+AVT,AVTUSDT,avt,,,,False,none,,False,,,0,,,Aventus
+HFT,HFTUSDT,hft,2022-11-07,2026-08-17,2026-08-17,True,binance,0.325945,True,2022-11-07,2026-08-17,0,,,Hashflow
+NEXO,NEXOUSDT,nexo,2022-04-29,2026-09-27,2026-09-27,False,binance,0.357812,True,2022-04-29,2026-09-27,0,,,Nexo
+OAX,OAXUSDT,oax,2023-03-24,2024-12-10,2024-12-10,True,binance,0.523338,True,2023-03-24,2024-12-10,0,,,OAX
+SLX,SLXUSDT,slx,,,,False,none,,False,,,0,,,Solstice
+ZEN,ZENUSDT,zen,2020-07-06,2026-09-27,2026-09-27,False,binance,0.431901,True,2020-07-06,2026-09-27,0,,,Horizen

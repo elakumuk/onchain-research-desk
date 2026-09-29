@@ -6,7 +6,9 @@ everything to reports/:
     liquidity.csv             liquidity profile per token
     fundamentals.csv          value-accrual table per token
     capacity.csv              investable fraction per weighting scheme x AUM
-    backtest_stats.csv        walk-forward performance per strategy
+    backtest_stats.csv        walk-forward performance per strategy (current 20 tokens, 365 days)
+    longrun_*.csv, longrun.md v2: point-in-time universe from 2016, long backtest, regimes,
+                              capacity over time, liquidity trend, coverage (desk/longrun.py)
     data_provenance.csv       every payload used: source, origin (network/cache/snapshot), timestamp
     *.png                     one chart per question
     summary.md                headline findings, generated from the numbers above
@@ -23,11 +25,15 @@ import pandas as pd
 
 from desk import charts
 from desk import facts as FA
-from desk.config import PARAMS, REPORTS_DIR, ROOT, UNIVERSE
+from desk.config import (HISTORY_CANDIDATES, LONGRUN, MEMO_HISTORY_MAP, PARAMS, REPORTS_DIR, ROOT,
+                         UNIVERSE)
 from desk.data.cache import Cache, DataUnavailable
 from desk.data import fetchers as F
+from desk.data.binance import BinanceStore
+from desk.data.coinmetrics import open_store
 from desk import fundamentals as FU
 from desk import liquidity as L
+from desk import longrun as LRN
 from desk import portfolio as P
 
 log = logging.getLogger("desk")
@@ -331,6 +337,8 @@ def main(argv=None) -> int:
                     help="live: cache then network (default); offline: cache only; snapshot: committed snapshot only")
     ap.add_argument("--save-snapshot", action="store_true",
                     help="copy the raw files used in this run into data/snapshot/")
+    ap.add_argument("--refresh-history", action="store_true",
+                    help="live mode: re-pull the whole long history instead of only the recent days")
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args(argv)
     logging.basicConfig(level=logging.INFO if args.verbose else logging.WARNING,
@@ -370,6 +378,10 @@ def main(argv=None) -> int:
     charts.equity_curves(equity[eq_cols], btc_eq, REPORTS_DIR / "backtest.png")
     write_summary(REPORTS_DIR / "summary.md", as_of, status_df, liq, fund, stats, capacity, diag, prov)
 
+    # ---- v2: long-history, point-in-time layer (its own stores, its own outputs)
+    lr, lr_served = longrun_analysis(args.mode, args.refresh_history)
+    write_longrun(lr, lr_served)
+
     snapshot_paths = None
     if args.save_snapshot:
         n = cache.save_snapshot()
@@ -378,17 +390,146 @@ def main(argv=None) -> int:
                           for r in cache.served if r.get("file")}
 
     # ---- facts registry: the only place a memo may take a number from
-    served = [{**r, "file": _rel(r["file"]) if r.get("file") else None} for r in cache.served]
+    served = [{**r, "file": _rel(r["file"]) if r.get("file") else None} for r in cache.served + lr_served]
     facts, labels = FA.build_facts(
         params=PARAMS, universe=UNIVERSE, markets=markets, liq=liq, fund=fund, risk=risk,
         capacity=capacity, stats=stats, diag=diag, status_df=status_df,
-        provenance=FA.provenance_index(served, snapshot_paths), market_as_of=as_of)
+        provenance=FA.provenance_index(served, snapshot_paths), market_as_of=as_of,
+        longrun=lr, lr_params=LONGRUN)
     sha = FA.write_registry(REPORTS_DIR / "facts.json", facts, labels, args.mode)
     print(f"facts: {len(facts)} facts -> reports/facts.json (sha256 {sha[:12]})")
     print(f"as of {as_of} UTC | liquidity {len(liq)} | fundamentals {len(fund)} | "
           f"portfolio {diag['n_assets']} assets | reports -> {REPORTS_DIR.relative_to(ROOT)}/")
     print(f"data origins: {prov['origin'].value_counts().to_dict()}")
+    st = lr["stats"]
+    print(f"long run: {lr['dates'][0]:%Y-%m} to {lr['panels']['sample_end']:%Y-%m-%d}, "
+          f"{int(st['days'].iloc[0])} days, {len(lr['lifetimes'])} candidates, "
+          f"{int(lr['universe']['eligible'].groupby(lr['universe']['symbol']).any().sum())} ever eligible")
     return 0
+
+
+# ====================================================================== v2 long-run layer
+def longrun_analysis(mode: str, refresh: bool = False):
+    """Open the two history stores (update them in live mode) and run desk.longrun.analyze."""
+    cm = open_store(mode, refresh)
+    bn = BinanceStore([h.price_asset for h in HISTORY_CANDIDATES if h.price_source == "binance"])
+    if mode == "live":
+        bn.update(full=refresh)
+    else:
+        bn.load()
+    lr = LRN.analyze(cm, bn, HISTORY_CANDIDATES, PARAMS, LONGRUN, MEMO_HISTORY_MAP)
+    return lr, cm.served + bn.served
+
+
+def _dates(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.copy()
+    for c in df.columns:
+        if pd.api.types.is_datetime64_any_dtype(df[c]):
+            df[c] = df[c].dt.strftime("%Y-%m-%d")
+    if isinstance(df.index, pd.DatetimeIndex):
+        df.index = df.index.strftime("%Y-%m-%d")
+    return df
+
+
+def write_longrun(lr: dict, served: list[dict]) -> None:
+    R = REPORTS_DIR
+    ff = "%.6g"
+    life = lr["lifetimes"].drop(columns=["note"]).join(lr["lifetimes"][["note"]])
+    _dates(life).to_csv(R / "longrun_candidates.csv", float_format=ff)
+    u = lr["universe"]
+    u = u[u["eligible"]].merge(life[["price_source"]], left_on="symbol", right_index=True)
+    _dates(u.drop(columns=["eligible", "reason"]).sort_values(["date", "rank"])).to_csv(
+        R / "longrun_universe.csv", index=False, float_format=ff)
+    lr["stats"].to_csv(R / "longrun_backtest_stats.csv", float_format=ff)
+    lr["regimes"].to_csv(R / "longrun_regimes.csv", index=False, float_format=ff)
+    lr["sensitivity"].to_csv(R / "longrun_sensitivity.csv", float_format=ff)
+    _dates(lr["capacity"]).to_csv(R / "longrun_capacity.csv", float_format=ff)
+    _dates(lr["liquidity"]).to_csv(R / "longrun_liquidity.csv", float_format=ff)
+    _dates(lr["coverage"]).to_csv(R / "longrun_coverage.csv", float_format=ff)
+    lr["tokens"].to_csv(R / "longrun_tokens.csv", float_format=ff)
+    ex = lr["exits"]
+    (_dates(ex) if len(ex) else pd.DataFrame(columns=["strategy", "date", "asset", "weight"])).to_csv(
+        R / "longrun_exits.csv", index=False, float_format=ff)
+    pv = pd.DataFrame(served)
+    pv[["source", "key", "origin", "fetched_at", "file", "url"]].to_csv(R / "longrun_provenance.csv", index=False)
+    write_longrun_summary(R / "longrun.md", lr)
+
+
+
+def write_longrun_summary(path, lr: dict) -> None:
+    """reports/longrun.md: the long-run layer's tables and findings, generated from its outputs."""
+    LR, st, life = LONGRUN, lr["stats"], lr["lifetimes"]
+    u = lr["universe"]
+    elig = u[u["eligible"]]
+    per_month = elig.groupby("date").size()
+    ever = sorted(set(elig["symbol"]))
+    died_ever = [s for s in ever if life.loc[s, "died"]]
+    cap, cov = lr["capacity"], lr["coverage"]
+    fmt_d = lambda t: f"{pd.Timestamp(t):%Y-%m-%d}"
+    reg = lr["regimes"].pivot(index="regime", columns="strategy", values="sharpe_rf0")
+    reg_se = lr["regimes"].pivot(index="regime", columns="strategy", values="sharpe_se")
+    labels = {r[0]: r[1] for r in LR.regimes}
+    cols = ["Inverse vol", "Min-var (LW)", "Inverse vol, capped @ $1B", "BTC buy & hold"]
+    reg_rows = ["| Regime | Dates | " + " | ".join(cols) + " |", "|---|---|" + "---|" * len(cols)]
+    rg = lr["regimes"]
+    for slug_ in [r[0] for r in LR.regimes if r[0] in reg.index]:
+        d = rg[rg["regime"] == slug_].iloc[0]
+        reg_rows.append(f"| {labels[slug_]} | {d['start']} to {d['end']} | " + " | ".join(
+            f"{reg.loc[slug_, c]:.2f} ± {reg_se.loc[slug_, c]:.2f}" for c in cols) + " |")
+    sens = lr["sensitivity"]
+    cs = lr.get("capacity_summary", {})
+    out = [
+        f"# Long-run research layer -- {fmt_d(lr['dates'][0])} to {fmt_d(lr['panels']['sample_end'])}", "",
+        "Generated by `python -m desk.run` from the committed history stores in `data/history/` "
+        "(Coin Metrics Community API; Binance public data archive for prices Coin Metrics does not publish). "
+        "Method and reasoning: ARCHITECTURE.md, section 13. Nothing here is investment advice.", "",
+        "## Point-in-time universe", "",
+        f"- {len(life)} candidates from a rule-based scan; {int((life['price_source'] == 'coinmetrics').sum())} priced by "
+        f"Coin Metrics, {int((life['price_source'] == 'binance').sum())} by the Binance archive, "
+        f"{int((life['price_source'] == 'none').sum())} with volume but no usable price (`longrun_candidates.csv`).",
+        f"- Monthly rebalance; eligible = at least {LR.min_history_days} days of prices, trading on the previous day, "
+        f"median reported volume over {LR.rank_window_days} days of at least {_money(LR.liquidity_floor_usd)}, top "
+        f"{LR.top_k} by that median. All inputs use data strictly before the rebalance date.",
+        f"- Eligible assets per month: {int(per_month.min())} to {int(per_month.max())} (median {per_month.median():.0f}); "
+        f"the universe first reaches {LR.top_k} names on {fmt_d(per_month[per_month >= LR.top_k].index.min())}.",
+        f"- {len(ever)} assets were eligible at some point; {len(died_ever)} of them later stopped trading "
+        f"({', '.join(died_ever) or 'none'}). They stay in the returns for every day they traded.",
+        f"- Exits forced by a held asset's death: {int(st.loc['Inverse vol', 'exits'])} in the inverse-vol run "
+        f"(`longrun_exits.csv`).", "",
+        "## Backtest, full sample (daily, out of sample only)", "",
+        md_table(st, {"ann_return": _pct(1), "ann_vol": _pct(1), "sharpe_rf0": _num(2), "sharpe_se": _num(2),
+                      "boot_lo": _num(2), "boot_hi": _num(2), "sharpe_diff_vs_btc": _num(2), "sharpe_diff_se": _num(2),
+                      "max_drawdown": _pct(1), "ann_return_net": _pct(1), "sharpe_net": _num(2)}), "",
+        "- `sharpe_se`: Lo (2002) iid standard error. `boot_lo`/`boot_hi`: 95% circular block bootstrap "
+        f"({LR.bootstrap_reps} resamples, {LR.bootstrap_block_days}-day blocks). `sharpe_diff_vs_btc`: gap to BTC buy and "
+        "hold, with its Jobson-Korkie-Memmel standard error.",
+        f"- Net columns charge a flat {PARAMS.cost_bps_assumption:g} bps per unit of turnover on each rebalance day "
+        "(an assumption, not a measured cost).", "",
+        "## Per regime (Sharpe ± standard error)", "",
+        *reg_rows, "",
+        "Regime boundaries are Bitcoin cycle turning points picked with hindsight; they describe, and no decision uses them.", "",
+        "## Sensitivity (inverse vol, uncapped)", "",
+        md_table(sens, {"top_k": str, "exit_haircut": _pct(0), "ann_return": _pct(1), "sharpe_rf0": _num(2),
+                        "sharpe_se": _num(2), "max_drawdown": _pct(1), "exits": lambda x: str(int(x))}), "",
+        "## Capacity over time (inverse vol, cap = 10% of 30-day median reported volume)", "",
+        md_table(_dates(cap.loc[[t for t in cap.index if t.month == 1]]), {
+            "eligible_count": str, "max_aum_before_any_cap_usd": _money, "first_binding_name": str,
+            "effective_n_target": _num(1), "effective_n_10m": _num(1), "effective_n_100m": _num(1),
+            "effective_n_1b": _num(1), "weight_moved_100m": _pct(0), "weight_moved_1b": _pct(0)}, "January of"), "",
+        *[f"- {k.replace('_', ' ')}: {v if isinstance(v, str) else f'{v:.4g}'}" for k, v in cs.items()], "",
+        "## Liquidity trend (trailing-year Amihud, bps of price move per $1M of reported volume)", "",
+        md_table(_dates(lr["liquidity"].loc[[t for t in lr["liquidity"].index if t.month == 1]]), {
+            "BTC_amihud_bps_per_1m": lambda x: "n/a" if not np.isfinite(x) else f"{x:.3g}",
+            "BTC_median_volume_usd": _money,
+            "ETH_amihud_bps_per_1m": lambda x: "n/a" if not np.isfinite(x) else f"{x:.3g}",
+            "ETH_median_volume_usd": _money}, "January of"), "",
+        "Reported volume includes wash trading, most heavily before 2019, which makes early markets look deeper "
+        "than they were: the early Amihud values are understated, so the measured improvement is a lower bound.", "",
+        "## Coverage: top names by reported volume that the universe could not price", "",
+        md_table(_dates(cov.loc[[t for t in cov.index if t.month in (1, 7)]]), {
+            "top_k_size": str, "unpriced_count": str, "unpriced_volume_share": _pct(1), "unpriced_names": str}, "date"),
+        "", "## Parameters", "", "```", *(f"{k} = {v}" for k, v in asdict(LR).items()), "```", ""]
+    path.write_text("\n".join(out))
 
 
 if __name__ == "__main__":
