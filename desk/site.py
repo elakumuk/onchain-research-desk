@@ -142,6 +142,13 @@ svg .bar{fill:var(--s1)}
 svg .bar.dim{fill:var(--accent-dim);opacity:.5}
 svg .whisker{stroke:var(--ink-soft);stroke-width:1.5}
 svg .dot{fill:var(--ink)}
+svg .ring{stroke:var(--surface);stroke-width:2}
+svg .whisker.l1{stroke:var(--s1)} svg .whisker.l2{stroke:var(--s2)} svg .whisker.l3{stroke:var(--s3)}
+svg .hit{fill:transparent}
+svg .band{fill:var(--rule-soft);opacity:.55}
+svg .rowrule{stroke:var(--rule-soft);stroke-width:1}
+svg text.note{font-size:10px;fill:var(--muted)}
+svg text.strong{fill:var(--ink);font-weight:500}
 svg .dot.em{fill:var(--s2)}
 
 /* tables */
@@ -443,6 +450,168 @@ def fig_sharpe(reg: Registry) -> str:
     return "".join(out)
 
 
+# ------------------------------------------------------------------ v2 long-run figures
+LR_STRATS = [("inverse_vol", "Inverse vol", "s1"), ("inverse_vol_capped_1b", "Inverse vol, capped at $1B", "s2"),
+             ("btc_buy_hold", "BTC buy and hold", "s3")]
+LR_TABLE_STRATS = [("equal", "Equal weight"), ("inverse_vol", "Inverse vol"), ("min_var", "Min variance"),
+                   ("inverse_vol_capped_10m", "Inverse vol, capped at $10M"),
+                   ("inverse_vol_capped_100m", "Inverse vol, capped at $100M"),
+                   ("inverse_vol_capped_1b", "Inverse vol, capped at $1B"), ("btc_buy_hold", "BTC buy and hold")]
+
+
+def _month_date(tag: str):
+    import datetime as _dt
+    return _dt.date(int(tag[1:5]), int(tag[6:8]), 1)
+
+
+def _time_axis(months, x0, x1):
+    d0, d1 = _month_date(months[0]), _month_date(months[-1])
+    span = (d1 - d0).days or 1
+    return lambda tag: x0 + (_month_date(tag) - d0).days / span * (x1 - x0)
+
+
+def _year_ticks(out, months, X, y_top, y_bot, H):
+    for m in months:
+        if m.endswith("_01"):
+            yr = int(m[1:5])
+            out.append(f'<line class="grid" x1="{X(m):.1f}" y1="{y_top}" x2="{X(m):.1f}" y2="{y_bot}"/>')
+            if yr % 2 == 0:
+                out.append(_t(X(m), H - 12, str(yr), anchor="middle"))
+
+
+def _inflated_band(out, months, X, y_top, y_bot):
+    """Shade the months before 2019: reported volume heavily inflated by wash trading."""
+    pre = [m for m in months if m < "m2019_01"]
+    if not pre:
+        return
+    x_end = X("m2019_01") if "m2019_01" in months else X(pre[-1])
+    out.append(f'<rect class="band" x="{X(months[0]):.1f}" y="{y_top}" width="{x_end - X(months[0]):.1f}" '
+               f'height="{y_bot - y_top}"/>')
+    out.append(_t(X(months[0]), y_top - 9, "shaded: before 2019, reported volume heavily inflated", "note"))
+
+
+def fig_lr_regimes(reg: Registry) -> str:
+    lab = reg.labels.get("longrun") or {}
+    rows = [("", "Full sample", f"{lab.get('sample_start', '')} to {lab.get('sample_end', '')}")]
+    for slug, r in (lab.get("regimes") or {}).items():
+        rows.append((slug, r["label"], ""))
+    def fid(slug, k, what):
+        return f"lr.bt.{k}.{what}" if not slug else f"lr.regime.{slug}.{k}.{what}"
+    vals = [(slug, k, _val(reg, fid(slug, k, "sharpe")), _val(reg, fid(slug, k, "sharpe_se")))
+            for slug, _, _ in rows for k, _, _ in LR_STRATS]
+    vals = [v for v in vals if v[2] is not None and v[3] is not None]
+    lo = math.floor(min(s - 1.96 * se for *_, s, se in vals))
+    hi = math.ceil(max(s + 1.96 * se for *_, s, se in vals))
+    W, L, R, T, rh = 720, 250, 24, 14, 46
+    H = T + rh * len(rows) + 30
+    x0, x1 = L, W - R
+    X = lambda v: x0 + (v - lo) / (hi - lo) * (x1 - x0)
+    out = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="Sharpe ratio with 95 percent interval, full sample '
+           f'and each market regime, for inverse volatility, inverse volatility capped at one billion dollars, and '
+           f'bitcoin buy and hold">']
+    step = 1 if hi - lo <= 8 else 2
+    for v in range(math.ceil(lo / step) * step, hi + 1, step):     # multiples of step, so 0 is a tick
+        out.append(f'<line class="{"zero" if v == 0 else "grid"}" x1="{X(v):.1f}" y1="{T}" x2="{X(v):.1f}" y2="{H - 26}"/>')
+        out.append(_t(X(v), H - 12, str(v), anchor="middle"))
+    for i, (slug, name, sub) in enumerate(rows):
+        yc = T + rh * i + rh / 2
+        if i:
+            out.append(f'<line class="rowrule" x1="12" y1="{T + rh * i:.1f}" x2="{x1}" y2="{T + rh * i:.1f}"/>')
+        out.append(_t(L - 14, yc - (6 if sub else 0), name, "lab" + (" strong" if not slug else ""), "end"))
+        if sub:
+            out.append(_t(L - 14, yc + 8, sub, "", "end"))
+        for j, (k, _, cls) in enumerate(LR_STRATS):
+            s_, se = _val(reg, fid(slug, k, "sharpe")), _val(reg, fid(slug, k, "sharpe_se"))
+            if s_ is None or se is None:
+                continue
+            y = yc + (j - 1) * 11
+            f_s, f_se = fid(slug, k, "sharpe"), fid(slug, k, "sharpe_se")
+            out.append(f'<line class="whisker l{cls[-1]}" x1="{X(s_ - 1.96 * se):.1f}" y1="{y:.1f}" '
+                       f'x2="{X(s_ + 1.96 * se):.1f}" y2="{y:.1f}"/>')
+            out.append(f'<circle class="c{cls[-1]} ring" cx="{X(s_):.1f}" cy="{y:.1f}" r="4.5"><title>{f_s} = '
+                       f'{_fmt(reg, f_s)}; {f_se} = {_fmt(reg, f_se)}</title></circle>')
+    out.append("</svg>")
+    return "".join(out)
+
+
+def fig_lr_capacity(reg: Registry) -> str:
+    months = (reg.labels.get("longrun") or {}).get("months") or []
+    W, H, L, R, T, B = 720, 316, 52, 110, 32, 40
+    x0, x1, y0, y1 = L, W - R, H - B, T
+    X = _time_axis(months, x0, x1)
+    Y = lambda v: y0 - v / 100 * (y0 - y1)
+    out = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="Share of the inverse volatility portfolio that the '
+           f'liquidity cap forces elsewhere, each month since 2016, for funds of ten million, one hundred million '
+           f'and one billion dollars">']
+    _inflated_band(out, months, X, y1, y0)
+    for v in (0, 25, 50, 75, 100):
+        out.append(f'<line class="grid" x1="{x0}" y1="{Y(v):.1f}" x2="{x1}" y2="{Y(v):.1f}"/>')
+        out.append(_t(x0 - 10, Y(v), f"{v}%", anchor="end"))
+    _year_ticks(out, months, X, y1, y0, H)
+    ends = []
+    for (tag, name), cls in zip(AUMS, ("1", "2", "3")):
+        pts = [(m, _val(reg, f"lr.cap.{m}.weight_moved_{tag}_pct")) for m in months]
+        pts = [(m, v) for m, v in pts if v is not None]
+        if not pts:
+            continue
+        d = " ".join(f"{'M' if j == 0 else 'L'}{X(m):.1f},{Y(v):.1f}" for j, (m, v) in enumerate(pts))
+        out.append(f'<path class="l{cls}" d="{d}" fill="none" stroke-width="2"/>')
+        for m, v in pts:          # invisible hover targets carrying the fact id
+            f = f"lr.cap.{m}.weight_moved_{tag}_pct"
+            out.append(f'<circle class="hit" cx="{X(m):.1f}" cy="{Y(v):.1f}" r="5"><title>{f} = {_fmt(reg, f)}</title></circle>')
+        m, v = pts[-1]
+        ends.append([Y(v), f"{name} fund", f"lr.cap.{m}.weight_moved_{tag}_pct"])
+    ends.sort()
+    for j in range(1, len(ends)):
+        ends[j][0] = max(ends[j][0], ends[j - 1][0] + 14)
+    for y, txt, f in ends:
+        out.append(_t(x1 + 10, y, txt, "lab", fid=f))
+    out.append("</svg>")
+    return "".join(out)
+
+
+def fig_lr_liquidity(reg: Registry) -> str:
+    months = (reg.labels.get("longrun") or {}).get("months") or []
+    series = [(sym, cls, [(m, _val(reg, f"lr.liq.{sym}.{m}.amihud_bps_per_1m")) for m in months])
+              for sym, cls in (("BTC", "1"), ("ETH", "2"))]
+    series = [(s, c, [(m, v) for m, v in pts if v is not None and v > 0]) for s, c, pts in series]
+    allv = [v for _, _, pts in series for _, v in pts]
+    if not allv:
+        return ""
+    ticks = _log_ticks(min(allv), max(allv))
+    W, H, L, R, T, B = 720, 316, 60, 110, 32, 40
+    x0, x1, y0, y1 = L, W - R, H - B, T
+    X = _time_axis(months, x0, x1)
+    lg0, lg1 = math.log10(ticks[0]), math.log10(ticks[-1])
+    Y = lambda v: y0 - (math.log10(v) - lg0) / (lg1 - lg0) * (y0 - y1)
+    out = [f'<svg viewBox="0 0 {W} {H}" role="img" aria-label="Trailing-year Amihud illiquidity of bitcoin and '
+           f'ether, basis points of price move per one million dollars of reported volume, log scale">']
+    _inflated_band(out, months, X, y1, y0)
+    for tv in ticks:
+        out.append(f'<line class="grid" x1="{x0}" y1="{Y(tv):.1f}" x2="{x1}" y2="{Y(tv):.1f}"/>')
+        out.append(_t(x0 - 10, Y(tv), _tick_label(tv), anchor="end"))
+    _year_ticks(out, months, X, y1, y0, H)
+    ends = []
+    for sym, cls, pts in series:
+        if not pts:
+            continue
+        d = " ".join(f"{'M' if j == 0 else 'L'}{X(m):.1f},{Y(v):.1f}" for j, (m, v) in enumerate(pts))
+        out.append(f'<path class="l{cls}" d="{d}" fill="none" stroke-width="2"/>')
+        for m, v in pts:
+            f = f"lr.liq.{sym}.{m}.amihud_bps_per_1m"
+            out.append(f'<circle class="hit" cx="{X(m):.1f}" cy="{Y(v):.1f}" r="5"><title>{f} = {_fmt(reg, f)}</title></circle>')
+        m, v = pts[-1]
+        f = f"lr.liq.{sym}.{m}.amihud_bps_per_1m"
+        ends.append([Y(v), f"{sym}  {_fmt(reg, f)}", f])
+    ends.sort()
+    for j in range(1, len(ends)):
+        ends[j][0] = max(ends[j][0], ends[j - 1][0] + 14)
+    for y, txt, f in ends:
+        out.append(_t(x1 + 10, y, txt, "lab", fid=f))
+    out.append("</svg>")
+    return "".join(out)
+
+
 def _figure(label: str, svg: str, caption: str, key: str = "") -> str:
     return (f'<figure class="fig"><div class="fig__bar"><span class="eyebrow">{label}</span>{key}</div>'
             f'<div class="fig__body">{svg}</div><figcaption>{caption}</figcaption></figure>')
@@ -548,6 +717,12 @@ def build(out: Path, reports: Path = REPORTS_DIR) -> Path:
                         "Sharpe &plusmn; one standard error.")),
     ]
 
+    if reg.labels.get("longrun") and "lr.bt.btc_buy_hold.sharpe" in reg:
+        parts.append(_longrun_part(reg))
+        parts[3] = parts[3].replace("<p>Walk-forward, out of sample only", "<p>The current tokens, over the one "
+                                    "year of history the keyless CoinGecko endpoint returns. Section 05 repeats the test "
+                                    "on a long, point-in-time universe. Walk-forward, out of sample only", 1)
+
     index = f"""<div class="hero">
 <p class="eyebrow">Weekly research note &middot; {len(toks)} tokens &middot; data as of {html.escape(as_of)}</p>
 <h1>Reported volume says one thing. <em>The order book says another.</em></h1>
@@ -558,7 +733,7 @@ registry of facts; a language model may add commentary, but a deterministic veri
 </div>
 <div class="tiles">{"".join(tiles)}</div>
 {"".join(parts)}
-<section class="part"><div class="side"><span class="num">05</span><span class="eyebrow">Memos</span></div><div>
+<section class="part"><div class="side"><span class="num">{len(parts) + 1:02d}</span><span class="eyebrow">Memos</span></div><div>
 <h2>All tokens</h2>
 <p>Ordered by circulating market cap. Each symbol opens its memo, where every number is footnoted to its source.</p>
 <div class="table-wrap"><table>
@@ -627,6 +802,102 @@ checked against the exact data that produced it: every snapshot is re-verified a
     (out / "track-record.html").write_text(_page(f"Track record | {SITE_TITLE}", track, "", "track-record.html"),
                                            encoding="utf-8")
     return out
+
+
+def longrun_headline(sharpes: dict, diffs: dict, names: dict) -> tuple[str, str]:
+    """Pick the long-run headline from the intervals: (sharpe, se) per strategy, (gap, se) to BTC.
+
+    'not distinguishable from zero' only if every Sharpe interval spans zero;
+    'no scheme distinguishable from Bitcoin' only if every gap interval spans zero;
+    otherwise name the schemes whose gap to BTC is outside its interval.
+    """
+    if all(abs(s) < 1.96 * se for s, se in sharpes.values()):
+        return ("Even over the long sample, not distinguishable from zero.",
+                "Every Sharpe interval spans zero, so the desk reports these and does not rank them.")
+    differ = [k for k, (d, se) in diffs.items() if abs(d) >= 1.96 * se]
+    if not differ:
+        return ("Over the long run, no scheme is distinguishable from holding Bitcoin.",
+                "Sharpe ratios are estimated well enough to tell some apart from zero, but not from one another: "
+                "every scheme's gap to BTC buy and hold lies within 1.96 standard errors of zero.")
+    return ("Over the long run, some schemes differ from holding Bitcoin.",
+            "The Sharpe gap to BTC buy and hold is more than 1.96 standard errors from zero for "
+            + ", ".join(f"{names.get(k, k)} ({'below' if diffs[k][0] < 0 else 'above'} BTC)" for k in differ)
+            + "; every other scheme's gap is within its interval.")
+
+
+def _longrun_part(reg: Registry) -> str:
+    """Section 05: the v2 long-run layer. The headline is chosen from the intervals, never written ahead."""
+    lab = reg.labels["longrun"]
+    strats = [k for k, _ in LR_TABLE_STRATS if f"lr.bt.{k}.sharpe" in reg]
+    others = [k for k in strats if k != "btc_buy_hold"]
+    iv = lambda f: (reg[f"{f}"].value, reg[f"{f}_se"].value)
+    names = dict(LR_TABLE_STRATS)
+    title, verdict = longrun_headline({k: iv(f"lr.bt.{k}.sharpe") for k in strats},
+                                      {k: iv(f"lr.bt.{k}.sharpe_diff_btc") for k in others
+                                       if f"lr.bt.{k}.sharpe_diff_btc_se" in reg}, names)
+    rows = []
+    for k in strats:
+        d = (f'{_v(reg, f"lr.bt.{k}.sharpe_diff_btc")} &plusmn; {_v(reg, f"lr.bt.{k}.sharpe_diff_btc_se")}'
+             if f"lr.bt.{k}.sharpe_diff_btc" in reg else '<span class="muted">benchmark</span>')
+        rows.append(f"<tr><td>{html.escape(names[k])}</td>"
+                    f'<td class="num">{_v(reg, f"lr.bt.{k}.ann_return_pct")}</td>'
+                    f'<td class="num">{_v(reg, f"lr.bt.{k}.ann_vol_pct")}</td>'
+                    f'<td class="num">{_v(reg, f"lr.bt.{k}.sharpe")} &plusmn; {_v(reg, f"lr.bt.{k}.sharpe_se")}</td>'
+                    f'<td class="num">{_v(reg, f"lr.bt.{k}.sharpe_boot_lo")} to {_v(reg, f"lr.bt.{k}.sharpe_boot_hi")}</td>'
+                    f'<td class="num">{d}</td>'
+                    f'<td class="num">{_v(reg, f"lr.bt.{k}.max_drawdown_pct")}</td></tr>')
+    table = ('<div class="table-wrap"><table><thead><tr><th>Strategy</th><th class="num">Return</th>'
+             '<th class="num">Vol</th><th class="num">Sharpe &plusmn; SE</th><th class="num">Bootstrap 95%</th>'
+             '<th class="num">vs BTC &plusmn; SE</th><th class="num">Max DD</th></tr></thead><tbody>'
+             + "".join(rows) + "</tbody></table></div>")
+    months = lab.get("months") or []
+    jan = [m for m in months if m.endswith("_01")]
+    crow = []
+    for m in jan:
+        crow.append(f"<tr><td>{m[1:5]}</td>"
+                    f'<td class="num">{_v(reg, f"lr.cap.{m}.max_aum_uncapped_usd")}</td>'
+                    f'<td class="num">{_v(reg, f"lr.cap.{m}.weight_moved_100m_pct")}</td>'
+                    f'<td class="num">{_v(reg, f"lr.cap.{m}.weight_moved_1b_pct")}</td>'
+                    f'<td class="num">{_v(reg, f"lr.cap.{m}.eff_n_1b")}</td>'
+                    f'<td class="num">{_v(reg, f"lr.liq.BTC.{m}.amihud_bps_per_1m")}</td>'
+                    f'<td class="num">{_v(reg, f"lr.cov.{m}.unpriced_count")}</td></tr>')
+    ctable = ('<div class="table-wrap"><table><thead><tr><th>January</th><th class="num">First cap binds</th>'
+              '<th class="num">Moved, $100M</th><th class="num">Moved, $1B</th><th class="num">Eff. N, $1B</th>'
+              '<th class="num">BTC Amihud, bps</th><th class="num">Unpriced in top K</th></tr></thead><tbody>'
+              + "".join(crow) + "</tbody></table></div>")
+    body = (
+        f"<p>The same schemes, rebuilt on a universe chosen the way it could have been chosen at the time: each "
+        f"month from {html.escape(lab.get('sample_start', ''))}, the top {_v(reg, 'param.lr_top_k_count')} assets by "
+        f"reported volume among those with at least {_v(reg, 'param.lr_min_history_days')} of prices, from "
+        f"{_v(reg, 'lr.universe.candidates_count')} candidates that include assets which later collapsed or were "
+        f"delisted. {_v(reg, 'lr.universe.ever_eligible_count')} assets were eligible at some point, "
+        f"{_v(reg, 'lr.universe.ever_eligible_died_count')} of which later stopped trading; each stays in the "
+        f"returns for every day it traded. {verdict}</p>"
+        + _figure("Sharpe ratio with 95% interval, full sample and by regime", fig_lr_regimes(reg),
+                  "Interval = Sharpe &plusmn; 1.96 &times; its standard error (Lo 2002). Regime boundaries are Bitcoin "
+                  "cycle turning points chosen with hindsight: they describe, and no portfolio decision uses them. "
+                  "Hover a point for its fact ids.",
+                  _key([(c, n) for _, n, c in LR_STRATS]))
+        + table
+        + "<p>When did the market become deep enough for a fund? Each month each position of the inverse-vol "
+          f"portfolio is capped at {_v(reg, 'param.max_adv_fraction_pct')} of the asset's median reported "
+          f"volume over the previous {_v(reg, 'param.adv_window_days')}, and the chart shows how much of the designed "
+          "portfolio the cap forces into other names or cash. Zero means the market absorbs the whole design.</p>"
+        + _figure("Weight the liquidity cap forces off the inverse-vol design", fig_lr_capacity(reg),
+                  "Monthly, inverse volatility over the point-in-time universe. The shaded years use exchange-reported "
+                  "volume that was heavily inflated by wash trading, so capacity there is overstated. Early 2016 holds "
+                  "one or two assets, which is why even a small fund is capped.",
+                  _key([("s1", "$10M fund"), ("s2", "$100M fund"), ("s3", "$1B fund")]))
+        + _figure("Liquidity trend: trailing-year Amihud illiquidity, log scale", fig_lr_liquidity(reg),
+                  "Basis points of price move per $1M of reported volume; lower is more liquid. Reported volume "
+                  "flatters the early years most: if later volume is less inflated, the true improvement is larger "
+                  "than it looks here.",
+                  _key([("s1", "BTC"), ("s2", "ETH")]))
+        + ctable
+        + '<p class="note">Values in January of each year; every month is in <code>reports/longrun_capacity.csv</code>. '
+          '&ldquo;Unpriced in top K&rdquo; counts assets in the top K by reported volume that no keyless source prices; '
+          'the universe could not hold them.</p>')
+    return _part("05", "Long run", title, body)
 
 
 def _doc_link(url: str) -> str:

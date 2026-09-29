@@ -59,7 +59,8 @@ UNITS = {
     "number": "dimensionless statistic (Sharpe ratio, correlation, condition number)",
 }
 API_NAMES = {"coingecko": "CoinGecko", "defillama": "DefiLlama",
-             "coinbase": "Coinbase Exchange", "kraken": "Kraken"}
+             "coinbase": "Coinbase Exchange", "kraken": "Kraken",
+             "coinmetrics": "Coin Metrics Community API", "binance": "Binance public data archive"}
 SIG_FIGS = 6
 
 
@@ -274,7 +275,7 @@ def _param_facts(b: _Builder, params) -> None:
 
 
 def build_facts(*, params, universe, markets, liq, fund, risk, capacity, stats, diag,
-                status_df, provenance: dict, market_as_of) -> tuple[list[Fact], dict]:
+                status_df, provenance: dict, market_as_of, longrun=None, lr_params=None) -> tuple[list[Fact], dict]:
     """Assemble every citable number from the run's tables. Returns (facts, labels)."""
     b = _Builder(provenance)
     tok = {t.symbol: t for t in universe}
@@ -434,10 +435,157 @@ def build_facts(*, params, universe, markets, liq, fund, risk, capacity, stats, 
     labels["backtest_window"] = {"oos_start": diag["oos_start"], "oos_end": diag["oos_end"]}
     labels["market_as_of"] = iso_z(str(market_as_of.tz_localize("UTC")) if market_as_of.tzinfo is None else str(market_as_of))
 
+    if longrun is not None:
+        labels["longrun"] = _longrun_facts(b, longrun, lr_params, params)
+
     labels["_sources"] = dict(sorted(b.used.items()))
     labels["_source_groups"] = b.groups
     facts = sorted(b.facts.values(), key=lambda f: f.id)
     return facts, labels
+
+
+def month_tag(t) -> str:
+    """Timestamp('2019-01-01') -> 'm2019_01' (no dashes, so an id never looks like an ISO date)."""
+    return f"m{t:%Y_%m}"
+
+
+def _longrun_facts(b: _Builder, lr: dict, LR, params) -> dict:
+    """Facts and labels for the v2 long-run layer (desk/longrun.py). No analytics here either."""
+    life = lr["lifetimes"]
+    cm_ids = sorted({str(x) for x in life["price_id"][life["price_source"] == "coinmetrics"]}
+                    | {str(x) for x in life["volume_id"]} | {"usdt"})
+    bn_ids = sorted(str(x) for x in life["price_id"][life["price_source"] == "binance"])
+    src = b.src(*[("coinmetrics", a) for a in cm_ids], *[("binance", a) for a in bn_ids])
+    allh = b.group("all_long_histories", src)
+    one = lambda sym: b.src((life.loc[sym, "price_source"], str(life.loc[sym, "price_id"])),
+                            *([("coinmetrics", "usdt")] if life.loc[sym, "price_source"] == "binance" else []),
+                            ("coinmetrics", str(life.loc[sym, "volume_id"])))
+
+    def cfg(name):
+        sid = f"config:{name}"
+        b.used[sid] = {"api": "config", "endpoint": f"desk/config.py LongRunParams.{name}",
+                       "cache_file": None, "fetched_at": None}
+        return (sid,)
+    P = lambda fid, v, unit, desc, name, scale=1.0: b.add(fid, v, unit, desc, cfg(name), scale=scale, timeless=True)
+    P("param.lr_top_k_count", LR.top_k, "count", "Long run: at most this many assets held (top K by volume)", "top_k")
+    P("param.lr_min_history_days", LR.min_history_days, "days", "Long run: days of prices needed before an asset is eligible", "min_history_days")
+    P("param.lr_rank_window_days", LR.rank_window_days, "days", "Long run: window of the median volume that ranks assets", "rank_window_days")
+    P("param.lr_liquidity_floor_usd", LR.liquidity_floor_usd, "usd", "Long run: minimum median daily reported volume", "liquidity_floor_usd")
+    P("param.lr_death_grace_days", LR.death_grace_days, "days", "Long run: data ending closer than this to the sample end is not a death", "death_grace_days")
+    P("param.lr_exit_haircut_pct", LR.exit_haircut, "pct", "Long run: haircut on the last price when a held asset stops trading", "exit_haircut", 100)
+    P("param.lr_amihud_window_days", LR.amihud_roll_days, "days", "Long run: rolling window of the Amihud series", "amihud_roll_days")
+    P("param.lr_min_memo_history_days", LR.min_memo_history_days, "days", "Long run: price history a memo needs for long-run context", "min_memo_history_days")
+    P("param.lr_deep_enough_moved_pct", LR.deep_enough_moved, "pct", "Capacity: a month is deep enough when the cap moves at most this share", "deep_enough_moved", 100)
+    P("param.lr_bootstrap_block_days", LR.bootstrap_block_days, "days", "Block length of the bootstrap", "bootstrap_block_days")
+
+    # -- universe
+    u = lr["universe"]
+    elig = u[u["eligible"]]
+    ever = set(elig["symbol"])
+    per_month = elig.groupby("date").size()
+    b.add("lr.universe.candidates_count", len(life), "count", "Long run: candidate assets (rule-based list)", allh)
+    b.add("lr.universe.priced_count", int((life["price_source"] != "none").sum()), "count", "Long run: candidates with a usable daily price", allh)
+    b.add("lr.universe.binance_priced_count", int((life["price_source"] == "binance").sum()), "count", "Long run: candidates priced from the Binance archive", allh)
+    b.add("lr.universe.died_count", int(life["died"].sum()), "count", "Long run: candidates whose trading stopped before the sample end", allh)
+    b.add("lr.universe.ever_eligible_count", len(ever), "count", "Long run: assets eligible in at least one month", allh)
+    b.add("lr.universe.ever_eligible_died_count", int(life.loc[sorted(ever), "died"].sum()), "count",
+          "Long run: assets eligible at some point that later stopped trading", allh)
+    b.add("lr.universe.months_count", len(lr["dates"]), "count", "Long run: monthly rebalance dates", allh)
+    b.add("lr.universe.min_eligible_count", int(per_month.min()), "count", "Long run: fewest eligible assets in a month", allh)
+
+    # -- backtest, full sample
+    st = lr["stats"]
+    b.add("lr.bt.oos_days", st["days"].iloc[0], "days", "Long run: out-of-sample days in the backtest", allh)
+    for name, r in st.iterrows():
+        s = scheme_slug(name)
+        base = f"lr.bt.{s}"
+        b.add(f"{base}.total_return_pct", r["total_return"], "pct", f"Long run, {name}: total return", allh, scale=100)
+        b.add(f"{base}.ann_return_pct", r["ann_return"], "pct", f"Long run, {name}: annualized return", allh, scale=100)
+        b.add(f"{base}.ann_vol_pct", r["ann_vol"], "pct", f"Long run, {name}: annualized volatility", allh, scale=100)
+        b.add(f"{base}.sharpe", r["sharpe_rf0"], "number", f"Long run, {name}: Sharpe ratio, 0% risk-free rate", allh)
+        b.add(f"{base}.sharpe_se", r["sharpe_se"], "number", f"Long run, {name}: standard error of the Sharpe ratio (Lo 2002)", allh)
+        b.add(f"{base}.max_drawdown_pct", r["max_drawdown"], "pct", f"Long run, {name}: maximum drawdown", allh, scale=100)
+        b.add(f"{base}.sharpe_boot_lo", r.get("boot_lo"), "number", f"Long run, {name}: block-bootstrap 2.5th percentile of the Sharpe ratio", allh)
+        b.add(f"{base}.sharpe_boot_hi", r.get("boot_hi"), "number", f"Long run, {name}: block-bootstrap 97.5th percentile of the Sharpe ratio", allh)
+        b.add(f"{base}.sharpe_diff_btc", r.get("sharpe_diff_vs_btc"), "number", f"Long run, {name}: Sharpe minus BTC's", allh)
+        b.add(f"{base}.sharpe_diff_btc_se", r.get("sharpe_diff_se"), "number", f"Long run, {name}: standard error of the Sharpe gap to BTC (Jobson-Korkie-Memmel)", allh)
+        b.add(f"{base}.ann_return_net_pct", r.get("ann_return_net"), "pct", f"Long run, {name}: annualized return net of the assumed cost", allh, scale=100)
+        b.add(f"{base}.sharpe_net", r.get("sharpe_net"), "number", f"Long run, {name}: Sharpe ratio net of the assumed cost", allh)
+
+    # -- regimes
+    for _, r in lr["regimes"].iterrows():
+        s = scheme_slug(r["strategy"])
+        base = f"lr.regime.{r['regime']}.{s}"
+        b.add(f"{base}.sharpe", r["sharpe_rf0"], "number", f"{r['label']}, {r['strategy']}: Sharpe ratio", allh)
+        b.add(f"{base}.sharpe_se", r["sharpe_se"], "number", f"{r['label']}, {r['strategy']}: Sharpe standard error", allh)
+        b.add(f"{base}.ann_return_pct", r["ann_return"], "pct", f"{r['label']}, {r['strategy']}: annualized return", allh, scale=100)
+        b.add(f"{base}.max_drawdown_pct", r["max_drawdown"], "pct", f"{r['label']}, {r['strategy']}: maximum drawdown", allh, scale=100)
+        if f"lr.regime.{r['regime']}.n_days" not in b.facts:
+            b.add(f"lr.regime.{r['regime']}.n_days", r["days"], "days", f"{r['label']}: days in the regime", allh)
+
+    # -- sensitivity
+    for v, r in lr["sensitivity"].iterrows():
+        tag = slug(v.replace("(base)", ""))
+        b.add(f"lr.sens.{tag}.sharpe", r["sharpe_rf0"], "number", f"Long run, inverse vol, {v}: Sharpe ratio", allh)
+        b.add(f"lr.sens.{tag}.ann_return_pct", r["ann_return"], "pct", f"Long run, inverse vol, {v}: annualized return", allh, scale=100)
+        b.add(f"lr.sens.{tag}.exits_count", r["exits"], "count", f"Long run, inverse vol, {v}: held assets that stopped trading", allh)
+
+    # -- capacity over time (inverse vol)
+    cap = lr["capacity"]
+    for t, r in cap.iterrows():
+        m = month_tag(t)
+        b.add(f"lr.cap.{m}.max_aum_uncapped_usd", r["max_aum_before_any_cap_usd"], "usd", f"Inverse vol on {t:%Y-%m-%d}: AUM at which the first ADV cap binds", allh)
+        b.add(f"lr.cap.{m}.eff_n_target", r["effective_n_target"], "number", f"Inverse vol on {t:%Y-%m-%d}: effective positions before caps", allh)
+        for a in params.aum_scenarios:
+            tag = size_tag(a)
+            b.add(f"lr.cap.{m}.eff_n_{tag}", r[f"effective_n_{tag}"], "number", f"Inverse vol on {t:%Y-%m-%d}: effective positions at ${_h(tag)}", allh)
+            b.add(f"lr.cap.{m}.weight_moved_{tag}_pct", r[f"weight_moved_{tag}"], "pct", f"Inverse vol on {t:%Y-%m-%d}: weight moved by the cap at ${_h(tag)}", allh, scale=100)
+    for k, v in lr.get("capacity_summary", {}).items():
+        if isinstance(v, (int, float)) and not isinstance(v, bool):
+            unit = "pct" if k.endswith("_pct") else "count" if k.endswith("_count") else "usd" if k.endswith("_usd") else "number"
+            b.add(f"lr.capsum.{k}", v, unit, f"Capacity over time: {k.replace('_', ' ')}", allh)
+
+    # -- liquidity trend
+    liqt = lr["liquidity"]
+    for sym in ("BTC", "ETH"):
+        for t, v in liqt[f"{sym}_amihud_bps_per_1m"].items():
+            b.add(f"lr.liq.{sym}.{month_tag(t)}.amihud_bps_per_1m", v, "bps",
+                  f"{sym}: Amihud illiquidity over the trailing year to {t:%Y-%m-%d}, bps per $1M (reported volume)", one(sym))
+
+    # -- coverage
+    for t, r in lr["coverage"].iterrows():
+        b.add(f"lr.cov.{month_tag(t)}.unpriced_count", r["unpriced_count"], "count",
+              f"Top-K by reported volume on {t:%Y-%m-%d} with no usable price", allh)
+    cov = lr["coverage"]
+    if len(cov):
+        b.add("lr.cov.max_unpriced_count", cov["unpriced_count"].max(), "count", "Most top-K names without a usable price in any month", allh)
+        b.add("lr.cov.last_unpriced_count", cov["unpriced_count"].iloc[-1], "count", "Top-K names without a usable price, latest month", allh)
+
+    # -- per-token long-run context (memos)
+    tok_labels = {}
+    for sym, r in lr["tokens"].iterrows():
+        src = one(r["symbol"])
+        base = f"lr.tok.{sym}"
+        b.add(f"{base}.history_days", r["history_days"], "days", "Days of daily price history", src)
+        b.add(f"{base}.max_drawdown_pct", r["max_drawdown"], "pct", "Worst peak-to-trough fall over the full price history", src, scale=100)
+        b.add(f"{base}.drawdown_now_pct", r["drawdown_now"], "pct", "Latest close versus the highest close in the history", src, scale=100)
+        b.add(f"{base}.vol_ann_pct", r["vol_ann"], "pct", "Annualized volatility of daily log returns, full history", src, scale=100)
+        b.add(f"{base}.amihud_first_year_bps_per_1m", r["amihud_first_year"], "bps", "Amihud illiquidity, first year of history (reported volume)", src)
+        b.add(f"{base}.amihud_last_year_bps_per_1m", r["amihud_last_year"], "bps", "Amihud illiquidity, last year (reported volume)", src)
+        b.add(f"{base}.median_volume_first_year_usd", r["median_volume_first_year"], "usd", "Median daily reported volume, first year of history", src)
+        b.add(f"{base}.median_volume_last_year_usd", r["median_volume_last_year"], "usd", "Median daily reported volume, last year", src)
+        b.add(f"{base}.months_in_universe_count", r["months_in_universe"], "count", "Months the token was in the point-in-time universe", allh)
+        b.add(f"{base}.months_listed_count", r["months_listed"], "count", "Monthly rebalance dates since the token had a price", allh)
+        tok_labels[sym] = {"price_source": r["price_source"], "history_start": r["history_start"], "history_end": r["history_end"],
+                           "max_drawdown_peak": r["max_drawdown_peak"], "max_drawdown_trough": r["max_drawdown_trough"]}
+
+    reg = {r[0]: {"label": r[1], "start": r[2], "end": r[3]} for r in LR.regimes}
+    return {"sample_start": f"{lr['series']['BTC buy & hold'].index[0]:%Y-%m-%d}",
+            "sample_end": f"{lr['panels']['sample_end']:%Y-%m-%d}",
+            "first_full_k_month": f"{per_month[per_month >= LR.top_k].index.min():%Y-%m-%d}" if (per_month >= LR.top_k).any() else None,
+            "regimes": reg, "tokens": tok_labels,
+            "months": [month_tag(t) for t in lr["dates"]],
+            "capacity_summary": {k: v for k, v in lr.get("capacity_summary", {}).items() if isinstance(v, str)}}
 
 
 def _s(v):

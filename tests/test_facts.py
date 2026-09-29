@@ -102,3 +102,23 @@ def test_tags():
     assert FA.pct_tag(0.005) == "0p5pct" and FA.pct_tag(0.02) == "2pct"
     assert FA.scheme_slug("Min-var (LW)") == "min_var"
     assert FA.scheme_slug("Inverse vol, capped @ $1B") == "inverse_vol_capped_1b"
+
+
+def test_longrun_facts_agree_with_the_longrun_tables(reg):
+    if "lr.bt.btc_buy_hold.sharpe" not in reg:
+        pytest.skip("registry has no long-run layer")
+    st = pd.read_csv(REPORTS_DIR / "longrun_backtest_stats.csv", index_col=0)
+    for name, r in st.iterrows():
+        s = FA.scheme_slug(name)
+        assert reg[f"lr.bt.{s}.sharpe"].value == pytest.approx(r["sharpe_rf0"], rel=1e-5)
+        assert reg[f"lr.bt.{s}.max_drawdown_pct"].value == pytest.approx(100 * r["max_drawdown"], rel=1e-5)
+    cap = pd.read_csv(REPORTS_DIR / "longrun_capacity.csv", index_col=0)
+    for d, r in cap.iterrows():
+        m = FA.month_tag(pd.Timestamp(d))
+        assert reg[f"lr.cap.{m}.weight_moved_1b_pct"].value == pytest.approx(100 * r["weight_moved_1b"], rel=1e-5, abs=1e-9)
+    months = reg.labels["longrun"]["months"]
+    assert len(months) == reg["lr.universe.months_count"].value
+    # memos get long-run context only with enough history
+    need = reg["param.lr_min_memo_history_days"].value
+    for sym in reg.labels["longrun"]["tokens"]:
+        assert reg[f"lr.tok.{sym}.history_days"].value >= need

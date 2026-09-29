@@ -372,6 +372,33 @@ def build_template(sym: str, reg: Registry) -> str:
         add(["This token is not in the portfolio analysis."])
     add([""])
 
+    # ------------------------------------------------------------ 7. long-run context (v2)
+    lrl = ((reg.labels.get("longrun") or {}).get("tokens") or {}).get(sym)
+    if lrl and t("lr.tok.{S}.history_days"):
+        add(["## 7. Long-run context", ""])
+        src_name = ("Coin Metrics" if lrl.get("price_source") == "coinmetrics" else
+                    "Binance archive (USDT close converted to USD)")
+        add([t.s(f"{src_name} daily prices for this token start on {lrl['history_start']}, {{d}} of history "
+                 f"to {lrl['history_end']}. Over that span the maximum drawdown was {{m}}, from the close on "
+                 f"{lrl['max_drawdown_peak']} to the close on {lrl['max_drawdown_trough']}, and the latest close is "
+                 "{n} relative to the highest close in the series. Annualized volatility of daily returns over the whole "
+                 "history is {v}.", d="lr.tok.{S}.history_days", m="lr.tok.{S}.max_drawdown_pct",
+                 n="lr.tok.{S}.drawdown_now_pct", v="lr.tok.{S}.vol_ann_pct"), ""])
+        add([t.s("Liquidity over the long run: median daily reported volume was {v0} in the first year of the "
+                 "series and {v1} in the last year; Amihud illiquidity went from {a0} to {a1} of price move per "
+                 "{o} traded. These use Coin Metrics' reported spot volume, a narrower set of exchanges than the "
+                 "CoinGecko volume in the liquidity section above, so the two volume figures are not comparable. Reported volume "
+                 "includes wash trading, which was worst in the market's early years, so both figures flatter "
+                 "real liquidity, the earlier one most.",
+                 v0="lr.tok.{S}.median_volume_first_year_usd", v1="lr.tok.{S}.median_volume_last_year_usd",
+                 a0="lr.tok.{S}.amihud_first_year_bps_per_1m", a1="lr.tok.{S}.amihud_last_year_bps_per_1m",
+                 o="param.order_size_1m_usd"), ""])
+        add([t.s("In the desk's point-in-time universe (each month, the top {k} assets by reported volume among "
+                 "those with at least {h} of prices, dead assets included) the token was eligible in {m} of the "
+                 "{n} monthly rebalances since its price history began.",
+                 k="param.lr_top_k_count", h="param.lr_min_history_days",
+                 m="lr.tok.{S}.months_in_universe_count", n="lr.tok.{S}.months_listed_count"), ""])
+
     # ------------------------------------------------------------ commentary slot
     add(["## Analyst commentary", "", "{{COMMENTARY}}", ""])
 
@@ -390,6 +417,11 @@ def build_template(sym: str, reg: Registry) -> str:
     if lab.get("slippage_na"):
         add(["- **Execution cost at size.** Larger orders exceed the visible book, and the desk does not "
              "extrapolate beyond it."])
+    if (reg.labels.get("longrun") is not None
+            and sym not in ((reg.labels.get("longrun") or {}).get("tokens") or {})):
+        add(["- **Long-run behaviour.** The desk's long-history price sources (Coin Metrics, and the "
+             "Binance archive where Coin Metrics has no price) do not cover enough of this token's life, so the memo gives no long-run drawdown or "
+             "liquidity trend for it."])
     if not lab.get("in_portfolio"):
         add(["- **Portfolio fit.** The token lacked a complete price history for the portfolio test."])
     add([""])

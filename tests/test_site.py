@@ -120,3 +120,25 @@ def test_history_archive_refuses_unverified_memos(tmp_path):
     (rep / "memos" / "AAVE.md").write_text((rep / "memos" / "AAVE.md").read_text() + "\nMade up: 42%.\n")
     with pytest.raises(SystemExit, match="unverified"):
         H.archive(rep, rep / "history")
+
+
+def test_longrun_headline_is_chosen_from_the_intervals():
+    names = {"a": "A", "b": "B"}
+    t, _ = S.longrun_headline({"a": (0.5, 0.4), "b": (-0.2, 0.3)}, {"a": (0.7, 0.5)}, names)
+    assert "not distinguishable from zero" in t
+    t, v = S.longrun_headline({"a": (1.5, 0.4), "b": (1.0, 0.3)}, {"a": (0.5, 0.3)}, names)
+    assert "no scheme is distinguishable" in t
+    t, v = S.longrun_headline({"a": (1.5, 0.4), "b": (1.0, 0.3)}, {"a": (0.7, 0.3)}, names)
+    assert "some schemes differ" in t and "A" in v
+
+
+def test_longrun_section_and_figures_are_drawn_from_facts(site):
+    from desk.facts import load_registry
+    reg = load_registry(REPORTS_DIR / "facts.json")
+    if "lr.bt.btc_buy_hold.sharpe" not in reg:
+        pytest.skip("registry has no long-run layer")
+    text = (site / "index.html").read_text()
+    assert text.count("<svg") >= 7                      # four v1 figures + three long-run figures
+    m = reg.labels["longrun"]["months"][-1]
+    assert f"lr.cap.{m}.weight_moved_1b_pct" in text and f"lr.liq.BTC.{m}.amihud_bps_per_1m" in text
+    assert "lr.regime." in text and "Long run" in text
