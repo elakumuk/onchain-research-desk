@@ -1,0 +1,458 @@
+asset,name,has_cm_price,risk_asset,excluded_because,best_rank,months_in_top_n,first_month_in_top_n
+btc,Bitcoin,True,True,,1,129,2016-01-01
+dash,Dash,True,True,,2,79,2016-01-01
+eth,Ethereum,True,True,,2,129,2016-01-01
+xmr,Monero,True,True,,2,110,2016-01-01
+xrp,XRP,True,True,,2,129,2016-01-01
+ada,Cardano,True,True,,3,104,2018-02-01
+bch,Bitcoin Cash,True,True,,3,107,2017-10-01
+bnb,BNB,True,True,,3,109,2017-09-01
+doge,Dogecoin,True,True,,3,117,2016-01-01
+eos,EOS,True,True,,3,85,2017-09-01
+etc,Ethereum Classic,True,True,,3,104,2016-10-01
+link,Chainlink,True,True,,3,101,2017-12-01
+lsk,Lisk,False,True,,3,27,2016-08-01
+ltc,Litecoin,True,True,,3,129,2016-01-01
+luna,Terra Classic,False,True,,3,28,2021-04-01
+maid,MaidSafeCoin,True,True,,3,27,2016-01-01
+sol,Solana,False,True,,3,65,2021-05-01
+btg,Bitcoin Gold,True,True,,4,20,2018-01-01
+bts,BitShares,False,True,,4,37,2016-01-01
+fct,Factom,False,True,,4,25,2016-01-01
+pepe,Pepe,False,True,,4,37,2023-09-01
+shib,Shiba Inu,False,True,,4,63,2021-07-01
+zb,ZB,False,True,,4,14,2019-05-01
+apt,Aptos,False,True,,5,42,2023-01-01
+avax,Avalanche,False,True,,5,64,2021-04-01
+dot,Polkadot,True,True,,5,77,2019-11-01
+hype,Hyperliquid,False,True,,5,12,2025-10-01
+matic,Polygon,False,True,,5,58,2019-07-01
+trx,TRON,True,True,,5,105,2018-01-01
+yfi,yearn.finance,True,True,,5,9,2020-10-01
+zec,Zcash,True,True,,5,75,2017-01-01
+bsv,Bitcoin SV,True,True,,6,36,2019-01-01
+chz,Chiliz,False,True,,6,28,2019-12-01
+sui,Sui,False,True,,6,37,2023-09-01
+arb,Arbitrum,False,True,,7,38,2023-06-01
+trump,OFFICIAL TRUMP,False,True,,7,18,2025-04-01
+xlm,Stellar,True,True,,7,113,2016-01-01
+bcn,Bytecoin,False,True,,8,35,2016-01-01
+ftm,Fantom,False,True,,8,35,2019-10-01
+miota,IOTA,False,True,,8,38,2017-08-01
+near,NEAR Protocol,False,True,,8,58,2021-11-01
+neo,Neo,True,True,,8,52,2017-09-01
+okb,OKB,False,True,,8,27,2020-05-01
+rep,Augur,True,True,,8,29,2016-01-01
+sc,Siacoin,False,True,,8,29,2016-01-01
+sei,Sei,False,True,,8,27,2023-10-01
+wif,dogwifhat,False,True,,8,24,2024-05-01
+ape,ApeCoin,False,True,,9,18,2022-06-01
+atom,Cosmos,False,True,,9,65,2019-07-01
+btt,BitTorrent (old),False,True,,9,31,2019-04-01
+gnt,Golem (gnt),True,True,,9,13,2017-05-01
+luna2,Terra 2.0,False,True,,9,16,2021-10-01
+not,Notcoin,False,True,,9,5,2024-08-01
+omg,OMG Network,True,True,,9,56,2017-09-01
+ont,Ontology,False,True,,9,39,2018-05-01
+qtum,Qtum,False,True,,9,50,2017-10-01
+sys,Syscoin,False,True,,9,24,2016-01-01
+wld,Worldcoin,False,True,,9,36,2023-10-01
+aster,Aster,False,True,,10,10,2025-12-01
+axs,Axie Infinity,False,True,,10,21,2021-09-01
+bonk,Bonk,False,True,,10,26,2024-02-01
+cfx,Conflux,False,True,,10,6,2023-04-01
+hbar,Hedera,False,True,,10,34,2020-04-01
+nxt,Nxt,False,True,,10,28,2016-01-01
+ordi,ORDI,False,True,,10,12,2024-01-01
+strat,Stratis (strat),False,True,,10,22,2017-03-01
+xem,NEM,True,True,,10,61,2016-01-01
+aave,Aave,True,True,,11,75,2016-01-01
+dgb,DigiByte,True,True,,11,27,2016-01-01
+ena,Ethena,False,True,,11,26,2024-06-01
+fil,Filecoin,False,True,,11,70,2020-12-01
+gala,Gala,False,True,,11,33,2022-01-01
+neirocto,First Neiro On Ethereum,False,True,,11,6,2024-11-01
+pengu,Pudgy Penguins,False,True,,11,18,2025-03-01
+sand,The Sandbox,False,True,,11,32,2021-09-01
+uni,Uniswap,True,True,,11,71,2020-11-01
+xtz,Tezos,True,True,,11,37,2017-09-01
+icx,ICON,False,True,,12,33,2018-03-01
+op,Optimism,False,True,,12,39,2022-09-01
+steem,Steem,False,True,,12,16,2016-10-01
+waves,Waves,False,True,,12,49,2017-02-01
+ae,Aeternity,False,True,,13,25,2017-08-01
+dcr,Decred,True,True,,13,18,2016-07-01
+nav,Navcoin,False,True,,13,23,2016-01-01
+rndr,Render Token,False,True,,13,15,2023-04-01
+seele,Seele,False,True,,13,15,2019-11-01
+tao_bittensor,Bittensor,False,True,,13,23,2024-11-01
+vet,VeChain,False,True,,13,49,2018-10-01
+wtc,Waltonchain,True,True,,13,20,2017-11-01
+bome,BOOK OF MEME,False,True,,14,9,2024-05-01
+ht,Huobi Token,True,True,,14,28,2019-05-01
+ondo,Ondo,False,True,,14,30,2024-04-01
+tia,Celestia,False,True,,14,17,2024-01-01
+blur,Blur,False,True,,15,10,2023-05-01
+fet,Artificial Superintelligence Alliance,False,True,,15,43,2019-05-01
+floki,FLOKI,False,True,,15,17,2024-05-01
+knc,Kyber Network Crystal,True,True,,15,21,2017-12-01
+lbc,LBRY Credits,False,True,,15,15,2016-09-01
+mana,Decentraland,True,True,,15,33,2018-02-01
+mnt,Mantle,False,True,,15,33,2023-11-01
+sushi,SushiSwap,True,True,,15,26,2020-11-01
+yfii,DFI.Money,False,True,,15,4,2020-11-01
+ardr,Ardor,False,True,,16,12,2016-12-01
+ark,Ark,False,True,,16,2,2018-01-01
+mask,Mask Network,False,True,,16,16,2023-01-01
+pump,Pump Fun,False,True,,16,13,2025-09-01
+stx,Stacks,False,True,,16,21,2023-04-01
+cro,Cronos,True,True,,17,11,2020-04-01
+grt,The Graph,False,True,,17,24,2021-02-01
+ldo,Lido DAO,True,True,,17,27,2022-10-01
+mco,MCO,False,True,,17,16,2017-11-01
+pnut,Peanut the Squirrel,False,True,,17,9,2025-01-01
+sxp,Solar,False,True,,17,14,2020-09-01
+vtc,Vertcoin,True,True,,17,25,2016-01-01
+zil,Zilliqa,False,True,,17,42,2018-05-01
+etp,Metaverse ETP,False,True,,18,6,2017-12-01
+gmt,GMT,False,True,,18,12,2022-07-01
+nano,Nano (New),False,True,,18,16,2018-04-01
+people,ConstitutionDAO,False,True,,18,12,2022-04-01
+virtual,Virtuals Protocol,False,True,,18,19,2025-03-01
+xpl,Plasma,False,True,,18,10,2025-12-01
+mith,Mithril,False,True,,19,11,2018-06-01
+powr,Powerledger,True,True,,19,7,2018-01-01
+theta,Theta Network,False,True,,19,32,2018-09-01
+xvg,Verge,True,True,,19,14,2018-02-01
+elf,aelf,True,True,,20,21,2018-03-01
+icp,Internet Computer,True,True,,20,38,2021-07-01
+loom,Loom Network,False,True,,20,4,2018-08-01
+via,Viacoin,False,True,,20,23,2016-01-01
+wlfi,World Liberty Financial,False,True,,20,9,2025-11-01
+zrx,0x,True,True,,20,38,2017-10-01
+algo,Algorand,True,True,,21,52,2019-09-01
+iost,IOST,False,True,,21,38,2018-04-01
+mxc,MXC,False,True,,21,4,2019-03-01
+snt,Status,True,True,,21,27,2017-08-01
+00,00 Token,False,True,,22,20,2016-01-01
+inj,Injective,False,True,,22,17,2023-05-01
+jst,JUST,False,True,,22,21,2020-11-01
+ncash,Nitro Network,False,True,,22,4,2018-05-01
+qkc,QuarkChain,False,True,,22,13,2018-08-01
+0g,0G,False,True,,23,20,2016-01-01
+dydx,dYdX,False,True,,23,21,2021-11-01
+ftt,FTX Token,True,True,,23,17,2020-01-01
+layer,Solayer,False,True,,23,4,2025-04-01
+1,Ucan fix life in1day,False,True,,24,19,2016-01-01
+bat,Basic Attention Token,True,True,,24,24,2018-11-01
+crv,Curve DAO Token,True,True,,24,55,2020-10-01
+dgd,DigixDAO,False,True,,24,5,2017-07-01
+htx,HTX,False,True,,24,2,2026-08-01
+id,SPACE ID,False,True,,24,5,2023-06-01
+jasmy,JasmyCoin,False,True,,24,15,2022-05-01
+lamb,Lambda,False,True,,24,9,2019-08-01
+1000sats,1000SATS (Ordinals),False,True,,25,19,2016-01-01
+band,Band,False,True,,25,7,2020-09-01
+enj,Enjin Coin,False,True,,25,25,2018-03-01
+nft,APENFT,False,True,,25,12,2021-09-01
+om,MANTRA (Old),False,True,,25,4,2025-04-01
+10set,Tenset,False,True,,26,19,2016-01-01
+mda,Moeda Loyalty Points,False,True,,26,4,2019-01-01
+mkr,Maker,True,True,,26,4,2023-09-01
+mtl_metal,Metal DAO,False,True,,26,14,2018-01-01
+rune,THORChain,False,True,,26,27,2021-08-01
+wan,Wanchain,False,True,,26,9,2018-06-01
+1cat,Bitcoin Cats,False,True,,27,19,2016-01-01
+hot_holo,Holo,False,True,,27,12,2018-10-01
+irr,Iranian Rial,False,True,,27,10,2016-11-01
+kite,Kite,False,True,,27,5,2026-03-01
+mln,Enzyme,False,True,,27,6,2017-05-01
+move,Movement,False,True,,27,5,2025-02-01
+nas,Nebulas,False,True,,27,4,2018-09-01
+s,Sonic (prev. FTM),False,True,,27,4,2025-04-01
+slp,Smooth Love Potion,False,True,,27,5,2021-12-01
+storj,Storj,False,True,,27,3,2018-01-01
+zro,LayerZero,False,True,,27,5,2024-09-01
+1inch,1inch,True,True,,28,21,2016-01-01
+aion,Aion,False,True,,28,6,2018-04-01
+magic,Treasure,False,True,,28,5,2023-03-01
+qsp,Quantstamp,False,True,,28,2,2018-02-01
+rdn,Raiden Network Token,False,True,,28,2,2018-01-01
+1mbabydoge,Baby Doge Coin (1 Million),False,True,,29,19,2016-01-01
+adx,AdEx,False,True,,29,6,2017-09-01
+cnd,Cindicator,False,True,,29,4,2018-02-01
+gno,Gnosis,True,True,,29,5,2017-07-01
+ksm,Kusama,False,True,,29,4,2021-07-01
+manta,Manta Network,False,True,,29,1,2024-04-01
+npxs,Pundi X (Old),False,True,,29,10,2018-09-01
+pi,Pi,False,True,,29,2,2025-06-01
+rvn,Ravencoin,False,True,,29,17,2018-12-01
+yoyow,YOYOW,False,True,,29,3,2018-01-01
+2z,DoubleZero,False,True,,30,19,2016-01-01
+dogs,Dogs,False,True,,30,2,2024-11-01
+dop,Data Ownership Protocol,False,True,,30,7,2017-03-01
+lab,LAB,False,True,,30,1,2026-08-01
+lend,Aave (lend),True,True,,30,6,2018-02-01
+lrc,Loopring,False,True,,30,16,2017-12-01
+one_harmony,Harmony,False,True,,30,7,2019-08-01
+qash,QASH,True,True,,30,2,2018-02-01
+win_wink,WINkLink,False,True,,30,8,2019-10-01
+4,4,False,True,,31,18,2016-01-01
+celr,Celer Network,False,True,,31,4,2019-06-01
+dnt,district0x,False,True,,31,3,2017-11-01
+ethfi,ether.fi,False,True,,31,9,2024-06-01
+ethos,Voyager Token (ethos),False,True,,31,12,2017-09-01
+flow,Flow,True,True,,31,15,2021-09-01
+lit_lighter,Lighter,False,True,,31,2,2026-08-01
+42,Semantic Layer,False,True,,32,18,2016-01-01
+allo,Allora,False,True,,32,2,2026-08-01
+avnt,Avantis,False,True,,32,3,2025-11-01
+crc,Costa Rican Colon,False,True,,32,6,2017-04-01
+fartcoin,Fartcoin,False,True,,32,13,2025-05-01
+jup,Jupiter,False,True,,32,9,2024-04-01
+lina,Linear,False,True,,32,2,2023-07-01
+mew,cat in a dogs world,False,True,,32,3,2024-11-01
+mon_monad,Monad,False,True,,32,6,2026-02-01
+srm,Serum,True,True,,32,7,2020-10-01
+wemix,WEMIX,False,True,,32,2,2022-12-01
+4stock,4Stock,False,True,,33,18,2016-01-01
+agix,SingularityNET,False,True,,33,3,2023-08-01
+bit,BitDAO,False,True,,33,3,2022-09-01
+bnt,Bancor,False,True,,33,7,2017-08-01
+init,Initia,False,True,,33,2,2025-07-01
+ip,Story,False,True,,33,9,2025-11-01
+key,SelfKey,False,True,,33,4,2018-09-01
+mona,MonaCoin,False,True,,33,7,2019-07-01
+rcn_ripiocreditnetwork,Ripio Credit Network,False,True,,33,2,2018-01-01
+ubtc_unitbitcoin,Unit Bitcoin,False,True,,33,6,2026-04-01
+a,Vaulta,False,True,,34,18,2016-01-01
+bcd,Bitcoin Diamond,False,True,,34,6,2018-04-01
+cake,PancakeSwap,False,True,,34,5,2021-05-01
+comp,Compound,True,True,,34,12,2020-09-01
+ens,Ethereum Name Service,False,True,,34,12,2022-08-01
+gas,Gas,True,True,,34,5,2017-10-01
+kava,Kava,False,True,,34,6,2020-01-01
+ren,Ren,True,True,,34,10,2019-09-01
+req,Request,False,True,,34,3,2018-01-01
+snx,Synthetix,True,True,,34,8,2020-10-01
+sun,Sun Token,False,True,,34,8,2020-12-01
+uxlink,UXLINK,False,True,,34,3,2024-12-01
+a2z,Arena-Z,False,True,,35,17,2016-01-01
+mof,Molecular Future,False,True,,35,3,2020-04-01
+nuls,NULS,False,True,,35,10,2018-05-01
+pab,Panamanian Balboa,False,True,,35,5,2017-06-01
+tlm,Alien Worlds,False,True,,35,2,2021-09-01
+turbo,Turbo,False,True,,35,2,2024-12-01
+a47,AGENDA 47,False,True,,36,17,2016-01-01
+abbc,ABBC Coin,False,True,,36,14,2016-01-01
+bcpt,Blockmason Credit Protocol,False,True,,36,3,2018-04-01
+hifi,Hifi Finance,False,True,,36,2,2023-10-01
+ocn,Odyssey,False,True,,36,3,2018-12-01
+sundog,SUNDOG,False,True,,36,2,2024-11-01
+a8,Ancient8,False,True,,37,16,2016-01-01
+amp,Amp,False,True,,37,3,2017-06-01
+cmt,CyberMiles,False,True,,37,5,2018-06-01
+egld,MultiversX,False,True,,37,14,2021-02-01
+meme,Memecoin,False,True,,37,2,2024-01-01
+stmx,StormX,False,True,,37,2,2023-10-01
+swftc,SwftCoin,False,True,,37,2,2020-07-01
+wrx,WazirX,False,True,,37,2,2020-05-01
+aaa,Abulaba,False,True,,38,16,2016-01-01
+apex,ApeX,False,True,,38,2,2024-08-01
+gt,GateToken,False,True,,38,4,2019-07-01
+hook,Hooked Protocol,False,True,,38,3,2023-03-01
+rose,Oasis,False,True,,38,3,2022-02-01
+sngls,SingularDTV,False,True,,38,3,2017-07-01
+trb,Tellor,False,True,,38,3,2020-12-01
+aark,Aark Digital,False,True,,39,15,2016-01-01
+btm,BytomDAO,False,True,,39,8,2018-07-01
+gtc_gamecom,Game.com,False,True,,39,3,2019-01-01
+kmd,Komodo,False,True,,39,1,2018-01-01
+mft,Hifi Finance (Old),False,True,,39,8,2018-10-01
+render,Render,False,True,,39,6,2025-06-01
+rlc,iExec RLC,False,True,,39,2,2017-07-01
+moodeng,Moo Deng (moodengsol.com),False,True,,40,1,2025-08-01
+tomi,TOMI,False,True,,40,3,2023-10-01
+aave0,AAVE spot asset deployed by HyBridge,False,True,,41,14,2016-01-01
+ach,Alchemy Pay,False,True,,41,2,2023-05-01
+edu,Open Campus,False,True,,41,2,2023-07-01
+h,Humanity,False,True,,41,2,2026-07-01
+w,Wormhole,False,True,,41,1,2024-07-01
+aave3l,Aave 3x Leveraged Long Token,False,True,,42,13,2016-01-01
+jto,Jito,False,True,,42,4,2024-06-01
+kcs,KuCoin Token,False,True,,42,3,2020-06-01
+lun,Lunyr,False,True,,42,3,2018-07-01
+tmtg,The Midas Touch Gold,False,True,,42,2,2019-02-01
+twt,Trust Wallet Token,False,True,,42,2,2023-01-01
+aave3s,Aave 3x Leveraged Short Token,False,True,,43,13,2016-01-01
+astr,Astar,False,True,,43,1,2024-03-01
+dock,Dock,False,True,,43,2,2018-11-01
+goat,Goatseus Maximus,False,True,,43,2,2025-01-01
+gxs,GXChain,False,True,,43,2,2018-04-01
+lym,Lympo,False,True,,43,1,2018-08-01
+qnt,Quant,True,True,,43,3,2022-12-01
+ab,AB,False,True,,44,11,2016-01-01
+cvc,Civic,True,True,,44,6,2017-08-01
+eigen,EigenLayer,False,True,,44,5,2024-12-01
+ftn,Fasttoken,False,True,,44,1,2024-11-01
+home,HOME,False,True,,44,1,2026-09-01
+linea,Linea,False,True,,44,1,2025-12-01
+strk,Starknet,False,True,,44,2,2024-05-01
+syrup,Maple Finance,False,True,,44,2,2025-08-01
+tomo,TomoChain,False,True,,44,2,2020-02-01
+act,Act I The AI Prophecy,False,True,,45,2,2025-02-01
+alice,My Neighbor Alice,False,True,,45,2,2021-09-01
+arpa,ARPA,False,True,,45,2,2023-07-01
+bttc,BitTorrent (new),False,True,,45,3,2022-05-01
+enso,Enso,False,True,,45,1,2026-05-01
+fun,FUNToken,True,True,,45,2,2017-12-01
+gram,Gram (prev. Toncoin),False,True,,45,1,2026-09-01
+imx,Immutable,False,True,,45,3,2024-01-01
+mega,MegaETH,False,True,,45,2,2026-07-01
+mina,Mina,False,True,,45,4,2023-04-01
+omr,Omani Rial,False,True,,45,1,2017-08-01
+phx,Phoenix Global,False,True,,45,1,2019-02-01
+poa,POA Network,False,True,,45,2,2018-06-01
+sahara,Sahara AI,False,True,,45,3,2026-06-01
+strax,Stratis,False,True,,45,1,2023-12-01
+abt,Arcblock,False,True,,46,10,2016-01-01
+appc,AppCoins,False,True,,46,1,2018-04-01
+ctxc,Cortex,False,True,,46,2,2020-06-01
+eng,Enigma,False,True,,46,5,2018-04-01
+gal,Galxe,False,True,,46,1,2022-08-01
+grs,Groestlcoin,False,True,,46,2,2019-05-01
+lqty,Liquity,False,True,,46,1,2023-06-01
+pol,POL (ex-MATIC),False,True,,46,3,2025-10-01
+pyg,Paraguayan Guarani,False,True,,46,1,2017-08-01
+santos,Santos FC Fan Token,False,True,,46,2,2022-11-01
+ac,ArtCoin,False,True,,47,9,2016-01-01
+bake,BakeryToken,False,True,,47,1,2021-08-01
+ethw,EthereumPoW,False,True,,47,2,2022-12-01
+ghst,Aavegotchi,False,True,,47,1,2021-01-01
+hc_hypercash,HyperCash,False,True,,47,2,2019-08-01
+io,io.net,False,True,,47,1,2024-09-01
+popcat,Popcat (SOL),False,True,,47,2,2024-11-01
+pyth,Pyth Network,False,True,,47,2,2024-04-01
+rsr,Reserve Rights,False,True,,47,3,2021-01-01
+vvv,Venice Token,False,True,,47,1,2026-08-01
+aca,Acala Token,False,True,,48,9,2016-01-01
+bard,Lombard,False,True,,48,1,2026-05-01
+bera,Berachain,False,True,,48,1,2025-06-01
+blz,Bluzelle,False,True,,48,1,2023-11-01
+giggle,Giggle Fund,False,True,,48,1,2026-02-01
+ace,ACENT,False,True,,49,8,2016-01-01
+aixbt,aixbt by Virtuals,False,True,,49,2,2025-04-01
+bgb,Bitget Token,False,True,,49,1,2026-06-01
+ctc,Creditcoin,False,True,,49,1,2023-10-01
+dent,Dent,False,True,,49,1,2017-09-01
+dusk,Dusk,False,True,,49,1,2019-11-01
+poly,Polymath,True,True,,49,1,2019-06-01
+tnb,Time New Bank,False,True,,49,2,2018-02-01
+tnt,Tierion,False,True,,49,2,2017-10-01
+ace_fusionist,Fusionist,False,True,,50,7,2016-01-01
+anc,Anchor Protocol,False,True,,50,1,2022-08-01
+ankr,Ankr,False,True,,50,3,2020-09-01
+avt,Aventus,False,True,,50,1,2017-12-01
+hft,Hashflow,False,True,,50,1,2023-03-01
+lpt,Livepeer,True,True,,50,2,2023-10-01
+nexo,Nexo,False,True,,50,1,2020-01-01
+oax,OAX,False,True,,50,2,2017-10-01
+pay,TenX,True,True,,50,1,2021-01-01
+ppt,Populous,True,True,,50,1,2018-05-01
+slx,Solstice,False,True,,50,1,2026-09-01
+zen,Horizen,False,True,,50,1,2026-01-01
+ageur_eth,Angle Protocol on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+aud,Australian Dollar,False,False,fiat currency (or a stablecoin named like one),,0,
+ausd,AUSD,False,False,stablecoin / wrapped / staked ticker,,0,
+bnsol,Binance Staked SOL,False,False,stablecoin / wrapped / staked name,,0,
+brl,Brazilian Real,False,False,fiat currency (or a stablecoin named like one),,0,
+busd,Binance USD,True,False,stablecoin (designed not to move; not a risk asset),,0,
+cbbtc_eth,Coinbase Wrapped Bitcoin on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+cbeth,Coinbase Wrapped Staked ETH,False,False,stablecoin / wrapped / staked ticker,,0,
+chf,Swiss Franc,False,False,fiat currency (or a stablecoin named like one),,0,
+chip,USD.AI,False,False,stablecoin / wrapped / staked name,,0,
+cny,Chinese Yuan,False,False,fiat currency (or a stablecoin named like one),,0,
+crvusd_eth,crvUSD on Ethereum,True,False,stablecoin (designed not to move; not a risk asset),,0,
+dai,Dai,True,False,stablecoin (designed not to move; not a risk asset),,0,
+eur,Euro,False,False,fiat currency (or a stablecoin named like one),,0,
+eurc,EURC,False,False,stablecoin / wrapped / staked ticker,,0,
+eurc_eth,EURC on Ethereum,True,False,stablecoin (designed not to move; not a risk asset),,0,
+eurcv,EUR CoinVertible,False,False,stablecoin / wrapped / staked ticker,,0,
+eure_eth,Monerium EUR emoney on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+eurt,Tether EURt,False,False,stablecoin / wrapped / staked name,,0,
+fdusd,First Digital USD,False,False,stablecoin / wrapped / staked ticker,,0,
+fei_eth,Fei Protocol on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+fidd,Fidelity Digital Dollar,False,False,stablecoin / wrapped / staked name,,0,
+fox_eth,Shapeshift FOX Token on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+frax,Legacy Frax Dollar (previously Frax),False,False,stablecoin / wrapped / staked ticker,,0,
+frax_eth,Legacy Frax Dollar (previously Frax) on Ethereum,True,False,stablecoin (designed not to move; not a risk asset),,0,
+gbp,British Pound,False,False,fiat currency (or a stablecoin named like one),,0,
+gho_eth,Gho Token on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+gusd,Gemini Dollar,True,False,stablecoin (designed not to move; not a risk asset),,0,
+hkd,Hong Kong Dollar,False,False,fiat currency (or a stablecoin named like one),,0,
+husd,HUSD,True,False,stablecoin (designed not to move; not a risk asset),,0,
+idr,Indonesian Rupiah,False,False,fiat currency (or a stablecoin named like one),,0,
+jpy,Japanese Yen,False,False,fiat currency (or a stablecoin named like one),,0,
+krw,Korean won,False,False,fiat currency (or a stablecoin named like one),,0,
+leo_eth,UNUS SED LEO on Ethereum,True,False,chain-specific representation (the base id carries the volume),,0,
+lusd_eth,Liquity USD on Ethereum,True,False,stablecoin (designed not to move; not a risk asset),,0,
+meth,Mantle Staked Ether,False,False,stablecoin / wrapped / staked ticker,,0,
+pax,Paxos Standard,True,False,stablecoin (designed not to move; not a risk asset),,0,
+paxg,PAX Gold,True,False,wrapped or pegged to another asset (double-counts the underlying),,0,
+pepe_eth,Pepe on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+php,Philippine Peso,False,False,fiat currency (or a stablecoin named like one),,0,
+pyusd,PayPal USD,False,False,stablecoin / wrapped / staked ticker,,0,
+pyusd_eth,PayPal USD on Ethereum,True,False,stablecoin (designed not to move; not a risk asset),,0,
+qc,Qcash,False,False,"stablecoin (Qcash, pegged to the Chinese yuan)",,0,
+rlp_eth,Resolv Liquidity Pool on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+rlusd,Ripple USD,False,False,stablecoin / wrapped / staked ticker,,0,
+rlusd_eth,Ripple USD on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+ron,Ronin,False,False,id collides with the Romanian leu; its volume history starts years before the Ronin token,,0,
+rseth_eth,Kelp DAO Restaked ETH on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+rub,Russian Ruble,False,False,fiat currency (or a stablecoin named like one),,0,
+sdai_eth,Savings Dai on Ethereum,True,False,stablecoin (designed not to move; not a risk asset),,0,
+sgd,Singapore Dollar,False,False,fiat currency (or a stablecoin named like one),,0,
+sndkb,SanDisk (bStocks Tokenized Stock),False,False,stablecoin / wrapped / staked name,,0,
+spcxb,SpaceX (bStocks Tokenized Stock),False,False,stablecoin / wrapped / staked name,,0,
+spyx_eth,S&P 500 xStock on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+stable,Stable,False,False,fiat currency (or a stablecoin named like one),,0,
+steth,Lido Staked ETH,False,False,stablecoin / wrapped / staked ticker,,0,
+steth_eth,Staked Ether on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+steth_lido,Staked Ether By Lido,False,False,chain-specific representation (the base id carries the volume),,0,
+susd_eth,sUSD on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+susde_eth,Ethena Staked USDe on Ethereum,True,False,stablecoin (designed not to move; not a risk asset),,0,
+sweth_eth,Swell Ethereum on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+top,Tongan Paanga,False,False,fiat currency (or a stablecoin named like one),,0,
+trx_eth,Tron on Ethereum,True,False,duplicate chain representation of a candidate,,0,
+try,Turkish Lira,False,False,fiat currency (or a stablecoin named like one),,0,
+tusd,TrueUSD,True,False,stablecoin (designed not to move; not a risk asset),,0,
+u_unitedstables,United Stables,False,False,fiat currency (or a stablecoin named like one),,0,
+usd,US Dollar,False,False,fiat currency (or a stablecoin named like one),,0,
+usd0_eth,Usual on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+usd1,USD1,False,False,stablecoin / wrapped / staked ticker,,0,
+usdc,USDC (USD Coin),True,False,stablecoin (designed not to move; not a risk asset),,0,
+usdcv,USD CoinVertible,False,False,stablecoin / wrapped / staked ticker,,0,
+usdd,USDD,False,False,stablecoin / wrapped / staked ticker,,0,
+usde,Ethena USDe,False,False,stablecoin / wrapped / staked ticker,,0,
+usde_eth,Ethena USDe on Ethereum,True,False,stablecoin (designed not to move; not a risk asset),,0,
+usdg,Global Dollar,False,False,stablecoin / wrapped / staked ticker,,0,
+usdg_eth,Global Dollar on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+usdk,USDK,True,False,stablecoin (designed not to move; not a risk asset),,0,
+usdp,Pax Dollar,False,False,stablecoin / wrapped / staked ticker,,0,
+usdq,Quantoz USDQ,False,False,stablecoin / wrapped / staked ticker,,0,
+usds,USDS,False,False,stablecoin / wrapped / staked ticker,,0,
+usds_eth,USDS on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+usdt,Tether,True,False,stablecoin (designed not to move; not a risk asset),,0,
+usdt_eth,Tether on Ethereum,True,False,stablecoin (designed not to move; not a risk asset),,0,
+ust,TerraClassicUSD,False,False,stablecoin / wrapped / staked ticker,,0,
+waxl,Wrapped Axelar,False,False,stablecoin / wrapped / staked name,,0,
+wbeth,Wrapped Beacon ETH,False,False,stablecoin / wrapped / staked name,,0,
+wbtc,Wrapped Bitcoin,True,False,wrapped or pegged to another asset (double-counts the underlying),,0,
+weeth_eth,Wrapped eETH on Ethereum,False,False,chain-specific representation (the base id carries the volume),,0,
+weth,Wrapped Ether,True,False,wrapped or pegged to another asset (double-counts the underlying),,0,
+wluna,Wrapped LUNA Token,False,False,stablecoin / wrapped / staked name,,0,
+wncg,Wrapped NCG (Nine Chronicles),False,False,stablecoin / wrapped / staked name,,0,
+wnxm,Wrapped NXM,True,False,wrapped or pegged to another asset (double-counts the underlying),,0,
+wsteth,Wrapped liquid staked Ether 2.0,False,False,stablecoin / wrapped / staked ticker,,0,
+wust,Wrapped TerraUSD (ERC-20),False,False,stablecoin / wrapped / staked name,,0,
+xaut,Tether Gold,True,False,wrapped or pegged to another asset (double-counts the underlying),,0,
