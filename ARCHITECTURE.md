@@ -32,7 +32,8 @@ defended in a technical interview.
 
 Sections 1 to 6 describe the analytics (v0). Sections 7 to 12 describe the v1 research pipeline
 built on top of it: how a number gets from an API into a sentence without anyone, human or LLM,
-being able to change it on the way.
+being able to change it on the way. Section 13 describes v2: a ten-year, point-in-time research
+layer (universe chosen without hindsight, dead assets kept) added beside the weekly snapshot.
 
 **Why three layers (data -> analytics -> report)?**
 The analytics modules never make network calls and never read files. They take pandas or numpy
@@ -243,7 +244,7 @@ future data leaked into an earlier decision, that test would fail.
 ## 6. Testing strategy
 
 The tests target the places where a silent error would produce a plausible-looking wrong number.
-v0 had 27; v1 brings the suite to 105.
+v0 had 27; v1 brought the suite to 105; v2 adds the long-run tests (section 13).
 
 | Test | Guards against |
 |---|---|
@@ -263,6 +264,14 @@ v0 had 27; v1 brings the suite to 105.
 | memo: 400 random values rendered then verified | the renderer and verifier disagreeing about rounding |
 | memo: missing facts, unreported holder revenue, stale commentary | guessing, or zero standing in for unknown |
 | site: HTML nesting, unique ids, every local link and footnote anchor resolves, escaping | a broken or injectable site |
+| v2: universe at *t* unchanged when every row on or after *t* is rewritten | look-ahead in asset selection |
+| v2: no look-ahead in the point-in-time backtest (universe and returns) | future data leaking into past decisions |
+| v2: a synthetic asset dies while held: in the returns until death, haircut on exit, differs from dropping it | survivorship bias |
+| v2: death detection and grace period; Binance ticker reuse never spliced | a dead asset carried at a stale price, two tokens joined |
+| v2: caps with zero-weight columns give cash, not 0/0 | the NaN bug described in section 13.5 |
+| v2: store merges the tail, keeps closed years byte-identical, never deletes on an empty answer, batches requests | an irreproducible or shrinking history |
+| v2: Sharpe gap test, deterministic bootstrap, rolling Amihud = v1 Amihud, coverage count | wrong statistics |
+| v2: site headline chosen from the intervals; long-run facts equal the CSVs | a headline written ahead of the data |
 
 Tests that read the committed outputs derive their expectations from `facts.json` rather than
 hard-coding this week's values, so they keep passing after the weekly job commits new data.
@@ -280,7 +289,7 @@ After each run, every citable number is written to one file, one fact per line:
 ```
 
 and each source id resolves, in a `sources` table in the same file, to the API, the endpoint with
-its parameters, the cached file on disk and the fetch time. This run has 1,152 facts.
+its parameters, the cached file on disk and the fetch time. The v1 run had 1,152 facts; with the v2 long-run layer the registry has 2,968 (about 890 KB, mostly the monthly capacity, liquidity and coverage series the site draws).
 
 **Why a registry at all?** A memo needs to cite numbers, and the CSVs are the wrong thing to cite. A
 CSV cell has no stable name ("row 6, column 17" changes when a column is added), no unit, no
@@ -489,3 +498,288 @@ only the Markdown subset this repo writes.
   diff module that writes `delta.*` facts from two registries, so changes become citable facts too.
 - No offshore or DEX liquidity yet. The two-venue limitation is disclosed and not hidden.
 - No check of the *meaning* of a sentence. That is the human reviewer's job, by design.
+
+---
+
+## 13. v2: the long-history, point-in-time layer (`desk/longrun.py`)
+
+The v1 backtest has 365 days of prices, because that is all CoinGecko's keyless endpoint returns.
+A year is one market regime, and a Sharpe ratio over a year has a standard error above 1. v2 adds
+a second research layer beside the weekly snapshot. It covers ten years, uses a universe chosen the
+way it could have been chosen at the time, and keeps the assets that died. The snapshot pipeline
+(order books, value accrual, the current capacity table, the v1 backtest) is unchanged: every v1
+table, chart and fact is byte-identical to before.
+
+```
+ Coin Metrics Community API ---+                         data/history/coinmetrics/  (price + reported volume)
+ Binance public data archive --+-- append-only stores -> data/history/binance/      (daily close, for assets
+                               |                                                      Coin Metrics does not price)
+ desk/data/scan.py (one-off) --+-> data/history/universe_scan.csv (which assets to keep)
+                                        |
+                          desk/longrun.py: panels -> point-in-time universe -> backtests (the v1 engine)
+                                        |              -> regimes, capacity over time, liquidity trend, coverage
+                          reports/longrun*.csv, longrun.md -> facts.json (lr.* facts) -> memos, site
+```
+
+### 13.1 Data: two keyless sources, one volume definition
+
+**Coin Metrics Community API** (`/v4/timeseries/asset-metrics`, keyless). `PriceUSD` is its daily
+reference close. `volume_reported_spot_usd_1d` is spot volume *as reported* by the exchanges it
+covers. The catalog (`/v4/catalog/assets`, keyless) flags which series are free. Two findings shaped
+the design:
+
+- Reported volume is free for about 3,200 assets, but **a daily price is free for only about 140**,
+  mostly assets with network data (BTC, ETH, LTC, LINK, UNI, FTT...). SOL, LUNA, ATOM, AVAX's native
+  id and most tokens launched after 2020 have volume but no free price. (AVAX, MATIC, SHIB and a few
+  others do have a price under a chain-specific id such as `avaxc` or `matic_eth`; those are paired
+  with the base id's volume, by one rule applied to every such case.)
+- A universe of "only what Coin Metrics prices for free" would miss 5 to 9 of the 20 largest assets
+  by volume in every month from 2021 on, including SOL and LUNA. That is not a universe a fund could
+  have chosen.
+
+**Binance public data archive** (`data.binance.vision`, static files, keyless). It keeps every spot
+pair Binance ever listed, **including delisted ones** (LUNAUSDT up to the Terra collapse, SRMUSDT,
+HNTUSDT). The Binance REST API is blocked from the US, but this archive is not. It supplies one thing
+only: the daily close of assets Coin Metrics does not price, as `<TICKER>USDT` converted to USD with
+Coin Metrics' own USDT price for the same day. That conversion matters because USDT traded near
+$0.95 in May 2022.
+
+*Why not Coinbase candles for SOL and the other gaps?* Coinbase lists mostly assets that survived and
+never listed LUNA. Filling SOL from Coinbase while LUNA stays missing would add survivors and leave
+out a famous failure, which *creates* survivorship bias. Binance listed LUNA, FTT, SRM and most of the
+large failures, and the archive keeps them.
+
+**One volume definition.** Everything that ranks assets or caps positions uses Coin Metrics'
+reported volume, for every asset, whatever the price source. Binance's own volume is a single venue
+and is never mixed in. It is used only to check the ticker mapping (13.2). This volume is *not* the
+CoinGecko volume the v1 snapshot uses: it covers a narrower set of exchanges. For example, AAVE's
+median reported volume over the last year is $98.5M against a CoinGecko 30-day median of $256M. The
+two layers' capacity numbers are therefore not comparable, and the memos say so where both appear.
+
+### 13.2 Which assets are candidates (and why this is not survivorship bias)
+
+`desk/data/scan.py` pulls reported volume for all ~3,200 assets, removes fiat currencies (Coin
+Metrics reports KRW, JPY, TRY... as "assets"), stablecoins, and wrapped, staked and bridged
+representations (name and ticker rules plus a short list with a reason for each entry). It then keeps every asset that
+was **ever in the top 50 by 90-day median reported volume at any month start since 2016**. The
+result is committed as `data/history/universe_scan.csv`, and `config.py` reads it. Together with every
+Coin Metrics-priced risk asset, that gives 373 candidates: 91 priced by Coin Metrics, 183 by the
+Binance archive, and 99 with volume but no usable price.
+
+*Why "ever in the top 50" is safe.* The backtest holds at most the top 20 (30 in the sensitivity
+run). An asset that never came near the top can never be selected, so leaving it out of the download
+changes no number. An asset that was large *and then died* was large, so it is in: LUNA ranked as
+high as 3rd. The rule chooses what to download, not what the backtest may hold.
+
+**Ticker check.** A Binance ticker can belong to a different token than the Coin Metrics id with the
+same letters. Binance is one of the venues inside Coin Metrics' reported volume, so Binance's own USD
+volume divided by the all-venue figure should be a fraction. If the median ratio is outside 0.002 to
+1.25, the price is not used. This caught two real collisions: `GTC` (Game.com at Coin Metrics,
+Gitcoin at Binance; ratio 99) and `ACE` (ratio 40). **Ticker reuse:** Binance reused `LUNAUSDT` for
+Terra 2.0 after the collapse, so a Binance series is used only up to its first gap of 5 days or more.
+Two tokens' histories are never spliced together.
+
+### 13.3 The point-in-time universe
+
+At every monthly rebalance date *t* (the first of the month), using only rows strictly before *t*:
+
+| Rule | Value (`config.LongRunParams`) | Why |
+|---|---|---|
+| price history | at least 90 days, and a price on every day of the 90-day estimation window | the covariance needs 90 returns; a gap would be filled with a guess |
+| trading | a price and positive reported volume on the day before *t* | never buy something that has stopped trading |
+| liquidity floor | median reported volume over 90 days of at least $1M | below that, even a $10M fund's positions would be capped |
+| rank | top 20 by that 90-day median (ties by symbol) | see below |
+
+*Rank by volume, not market cap.* (1) Volume is what a fund needs in order to trade. (2) Coin
+Metrics' free market cap exists for fewer assets, and for several it stops mid-sample (BNB after
+2019, DOT after 2022), so a market-cap ranking would drop assets for data reasons. (3) Volume uses one
+definition across every asset. *Cost:* wash-traded volume can promote an asset. An exchange token with
+inflated volume ranks higher than it should. The median, rather than the mean, blunts single-day spikes.
+
+*Why a 90-day median for ranking but 30 days for the caps?* Ranking decides membership, and a short
+window would churn the universe every month. The cap is about what can be traded now, so it keeps
+the v1 30-day window.
+
+The universe holds 1 asset in January 2016 (BTC) and first reaches 20 on 2017-12-01. 108 assets were
+eligible at some point. `reports/longrun_universe.csv` lists every month's members and ranks.
+
+**Test:** `test_eligibility_ignores_every_row_on_or_after_the_date` rewrites every price and volume on
+or after *t* (deaths, zero volume, a huge spike) and checks the universe at *t* is unchanged.
+`test_pit_backtest_has_no_look_ahead` does the same for the universe and every portfolio return
+before a cut-off.
+
+### 13.4 Deaths and delistings
+
+An asset has **died** when its last day with both a price and positive reported volume falls more
+than 30 days before the end of the sample. Its prices after that day are removed. If the portfolio
+holds it on the next day, the engine sells it at its last traded price times (1 - haircut) and the
+proceeds become cash. Every return up to its last traded day stays in the portfolio's history.
+19 of the 108 ever-eligible assets later stopped trading: AION, BTG, BTT, EOS, FTM, GNT, LOOM, LUNA,
+MAID, MATIC, MCO, NAS, REP, RNDR, SXP, VTC, WAVES, WTC and YFII. Some are true failures. Others were
+migrations (MATIC to POL, RNDR to RENDER, FTM to S, GNT to GLM), and for a Binance-priced asset,
+"stopped trading" means Binance delisted it.
+
+*Is knowing the death date look-ahead?* The date is known only afterwards, but it changes nothing
+before it. It only says the market never reopened. The haircut (0% in the base case) is the stated
+assumption about what a holder recovered, and a stress run sets it to 100%.
+
+*What happened in this sample:* the only held asset that died was **LUNA**. It was in the universe
+from September 2021 to the May 2022 rebalance, as high as 3rd by volume. Its collapse, from a Binance close of $82 on 5 May 2022
+to under a cent by 12 May, is in the daily returns. By the day trading stopped, its
+weight had drifted to about 0.000003%, so the haircut assumption changes nothing (the 100% stress run
+gives the same Sharpe ratio). Other failures (FTT, SRM, EOS) had already fallen out of the top 20 by
+volume before they collapsed or delisted. FTT's reported volume never ranked in the top 20. The liquidity rule exits fading assets before their data ends. That is
+realistic for a volume-ranked universe, but it means the long backtest says little about sudden
+defaults of assets that were still large, apart from LUNA.
+
+**Test:** `test_asset_that_dies_stays_in_the_returns_until_its_death` builds a synthetic asset that
+stops trading mid-sample while held. It checks that the portfolio return on every day up to the
+death equals a hand calculation that includes the asset, that the exit day applies the haircut,
+that the asset leaves the universe, and that deleting the asset from the data (what survivorship
+bias does) gives a different history.
+
+### 13.5 The backtest
+
+The v1 engine (`portfolio.backtest`) with three optional arguments: explicit monthly rebalance
+dates, a `universe_fn` (weights are estimated only on the assets eligible at *t*) and the exit rule.
+Called the v1 way, it behaves exactly as before, and the v1 outputs are byte-identical. The daily
+arithmetic moved to numpy for speed (373 columns x 3,900 days). Only assets eligible at some point
+are passed in, which changes no number. The schemes are equal weight, inverse volatility and minimum
+variance (Ledoit-Wolf), plus inverse vol capped at 10% of 30-day median reported volume at
+$10M / $100M / $1B, with BTC buy and hold as the benchmark. Costs are the flat 10 bps per unit of
+turnover from v1, now charged on each rebalance day inside the return series. That gives a net
+Sharpe ratio, not just a net total return.
+
+*A bug the long universe exposed:* `apply_caps` divided by the uncapped names' target weight. In a
+point-in-time universe, most columns have a target of zero. When every held name was capped, that was
+0/0, and the $1B run produced 1,889 undefined daily returns. The first set of results was quietly
+computed without them. The fix returns cash, as the docstring always said. A test pins it down, and
+the engine now refuses to return undefined returns at all.
+
+**Statistics, and why three of them.**
+
+- *Lo (2002) standard error*, as in v1: `sqrt((1 + SR^2/2) / years)` on the annualized Sharpe
+  ratio. This is the annual-observation form. It is slightly more conservative than the daily-data
+  form, and it is kept so the long and short samples are on one footing.
+- *Jobson-Korkie test with Memmel's (2003) correction* for the gap between each scheme and BTC, in
+  the same form. The question an allocator asks is "is this better than just holding Bitcoin", not
+  "is this different from zero". Both returns come from the same days and are highly correlated, so
+  the gap is estimated much more precisely than either Sharpe ratio alone.
+- *Circular block bootstrap* (2,000 resamples, 20-day blocks, fixed seed, so deterministic). Crypto
+  returns are fat-tailed and their volatility clusters, and the iid formulas assume neither. Resampling
+  blocks of consecutive days keeps both. The bootstrap intervals are close to the Lo intervals here,
+  which is reassuring rather than guaranteed.
+
+**Results (2016-01-01 to 2026-09-27, 3,923 days, from `reports/longrun.md`):**
+
+| Strategy | Return, ann. | Sharpe ± SE | Bootstrap 95% | Gap to BTC ± SE | Max drawdown |
+|---|---|---|---|---|---|
+| Equal weight | 54.6% | 0.94 ± 0.37 | 0.27 to 1.60 | -0.13 ± 0.29 | -92.5% |
+| Inverse vol | 60.9% | 1.00 ± 0.37 | 0.32 to 1.66 | -0.08 ± 0.28 | -91.8% |
+| Min-var (LW) | 133.5% | 1.53 ± 0.45 | 0.86 to 2.18 | +0.46 ± 0.33 | -83.7% |
+| Inverse vol, capped @ $10M | 41.8% | 0.84 ± 0.36 | 0.17 to 1.49 | -0.23 ± 0.26 | -91.8% |
+| Inverse vol, capped @ $100M | 25.0% | 0.68 ± 0.34 | 0.02 to 1.32 | -0.40 ± 0.27 | -91.2% |
+| Inverse vol, capped @ $1B | 11.0% | 0.48 ± 0.32 | -0.11 to 1.13 | -0.59 ± 0.28 | -84.8% |
+| BTC buy & hold | 63.4% | 1.08 ± 0.38 | 0.42 to 1.70 | | -83.8% |
+
+What ten years can and cannot tell us:
+
+- **Can:** most Sharpe ratios are now distinguishable from zero. The *capacity cost* is
+  distinguishable too: the $1B capped portfolio trails BTC by 0.59 ± 0.28, more than 1.96 standard
+  errors. A billion-dollar fund could not have held the diversified book it wanted, and what it could
+  hold did measurably worse than BTC.
+- **Cannot:** rank the uncapped schemes against BTC. Min-var's +0.46 is 1.4 standard errors, and
+  equal weight and inverse vol sit within a third of a standard error of BTC. Ten years of crypto are
+  still only about three bull-bear cycles. The regimes are not independent draws, and one period
+  (2016-17, when the universe had 1 to 20 names and prices rose many-fold) carries much of every
+  scheme's return.
+- **Min-variance's lead** comes from concentrating in the least volatile, most correlated assets
+  (mostly BTC and ETH). It had the least-bad Sharpe ratio in both drawdown regimes (2018 and 2022). That is a real property of the scheme, but it is estimated from few episodes.
+
+**Regimes.** The boundaries are Bitcoin cycle turning points: the 2017-12-17 peak, the 2018-12-15
+trough, the March 2020 COVID crash, the 2021-11-10 peak and the 2022-11-21 post-FTX trough. The last
+regime also contains the January 2024 spot-ETF approvals. They were chosen with hindsight, so they
+label periods for description and no portfolio decision uses them. Each regime is one to four years,
+so its standard errors are 0.5 to 1.9. Per-regime numbers show *where* returns came from, not which
+scheme is better. `reports/longrun_regimes.csv` and the site's regime figure have them all.
+
+**Sensitivity** (inverse vol): K = 10 gives Sharpe 1.01, K = 30 gives 0.95, and a 100% exit
+haircut gives 1.00, against 1.00 for the base case. The headline does not hinge on K or on the exit
+assumption.
+
+### 13.6 Capacity over time: when was crypto deep enough?
+
+For each month, from the inverse-vol run's target weights and the 30-day median reported volume
+before *t* (`reports/longrun_capacity.csv`): the AUM at which the first cap binds, the effective
+number of positions at $10M / $100M / $1B, and the share of the designed portfolio the cap forces
+elsewhere (`weight_moved`, as in v1). A month counts as **deep enough** for a fund size when the cap
+moves at most 10% of the design. That threshold was declared in `config.py` before the results were
+read.
+
+- **$10M:** deep enough in every month since January 2018.
+- **$100M:** deep enough in every month since August 2020, and in 62% of all months.
+- **$1B:** never sustained. It was deep enough in 7.8% of months, the first in May 2021, and the best
+  was January 2022, when only 4.25% of weight moved. It was deep enough in none of the last 36 months.
+  In January 2026 the cap moved 42% of the design at $1B.
+
+So the answer depends on what "institutional" means. A $100M diversified top-20 book has been
+feasible since mid-2020. A $1B one was feasible only near the 2021 peak, because the binding
+constraint is the 20th name's volume, not BTC's. The binding name is usually a mid-ranked alt (TRX,
+LTC and APT in recent Januaries). *Caveat:* before 2019 the capacity is overstated, because
+reported volume then was mostly wash trading (Bitwise's 2019 report to the SEC estimated about 95% of
+reported BTC volume was not real). The site shades those years.
+
+### 13.7 Liquidity trend
+
+Rolling one-year Amihud illiquidity (the v1 definition, on a rolling window) for BTC and ETH, sampled
+at month starts. BTC went from 11.9 bps of price move per $1M in the year to January 2016 to 0.0106
+in the year to January 2026, about 1,000 times more liquid by this measure. ETH went from 65.5
+(January 2017) to 0.0273. *Honest reading:* early reported volume was inflated, so early Amihud
+values are too *low* (flattering). If later volume is less inflated, the true improvement is larger
+than measured. If wash trading persists on some venues today, today's figure is flattering too.
+Amihud measures price impact per reported dollar, not per real dollar.
+
+### 13.8 Coverage: what the universe still cannot price
+
+At each month start, the top 20 by reported volume among *all* candidates, priced or not, is
+compared with the ones that have a usable price (`reports/longrun_coverage.csv`). The median month
+has 1 top-20 name without a price. The worst was 8, in October 2017, when several large 2017 assets
+(SC, BTS, FCT, STRAT, NXT, STEEM) traded only against BTC on Binance, so no USDT price exists. The
+latest month has 1: HYPE, whose Binance listing is too recent to pass the ticker check. The site
+shows this count next to every year.
+
+### 13.9 Storage, weekly updates, reproducibility
+
+- **Layout.** `data/history/<source>/<YYYY>.csv.gz` for closed years and `<YYYY>.csv` (plain text)
+  for the open year, plus `manifest.json`: per asset, which metrics, first and last day, and when and
+  from where it was fetched. Closed years never change, and files are rewritten only when their content
+  changes (with a fixed gzip header). The open year is plain text so that git stores each week's
+  change as a small delta instead of a new compressed blob.
+- **Size.** 11 MB on disk: Coin Metrics 8.0 MB (391 ids: price and/or volume), Binance 3.4 MB (186
+  listed pairs), 8 significant figures for prices and 5 for volumes.
+- **Weekly run.** Each live run re-pulls only the last 7 days per asset. Coin Metrics requests are
+  batched (40 assets per call for everything recent), and only the Binance files for the months not
+  yet stored are downloaded. Measured on a copy of the stores: about 2.5 minutes for Coin Metrics and
+  4.5 for Binance, with only the open-year files and manifests changing. `--refresh-history` re-pulls
+  everything, which picks up any older revisions.
+- **Snapshot mode** reads the committed stores and never touches the network. `python -m desk.run
+  --mode snapshot` reproduces every long-run output byte for byte, in about 80 seconds.
+- **Registry size.** v2 adds 1,816 facts, about 1,400 of them the monthly series behind the site's figures; the full
+  monthly tables stay in the CSVs, and only what a figure, table or memo cites is a fact.
+- **Freshness.** Long-run facts carry the store's fetch time as `as_of`, so the verifier's
+  48-hour lag rule and the CI clock check apply to them as to everything else.
+
+### 13.10 What the long sample still cannot tell us
+
+- It measures **reported** volume, which is wash-traded to an unknown and changing degree. Capacity and
+  Amihud numbers are upper bounds on real liquidity, most of all before 2019.
+- Prices for 183 candidates are **one venue's closes** (Binance), converted with USDT/USD. A daily
+  close on one venue can differ from a multi-venue reference in stressed markets.
+- **Deaths are measured, not modelled.** Only one held asset died, and it had already gone to zero.
+  The exit haircut is untested by this sample.
+- **Execution** is at the daily close with information up to that close, and costs are a flat
+  assumption. Order-book slippage from the snapshot layer is not applied historically, because that
+  would apply today's depth to the past.
+- **Regime labels use hindsight.** They are for reading the results, not for trading.
+- **The candidate scan is frozen** as of 2026-09-29. A new token that enters the top 50 later needs
+  `python -m desk.data.scan` to be re-run before it can join the universe.
