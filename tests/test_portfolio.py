@@ -28,6 +28,15 @@ def test_cascading_caps_respected():
     assert out.sum() == pytest.approx(1.0)
 
 
+def test_caps_with_zero_weight_names_leave_cash_not_nan():
+    """Point-in-time universes carry zero-weight columns; capping every held name must give cash, not 0/0."""
+    base = pd.Series({"A": 0.6, "B": 0.4, "X": 0.0, "Y": 0.0})
+    out = P.apply_caps(base, pd.Series({"A": 0.1, "B": 0.1, "X": 1.0, "Y": 1.0}))
+    assert out.notna().all()
+    assert out["A"] == pytest.approx(0.1) and out["B"] == pytest.approx(0.1) and out[["X", "Y"]].sum() == 0
+    assert out.sum() == pytest.approx(0.2)
+
+
 def test_capacity_binds_as_aum_grows_and_leaves_cash():
     adv = pd.Series({"A": 1e9, "B": 5e7})
     base = pd.Series({"A": 0.5, "B": 0.5})

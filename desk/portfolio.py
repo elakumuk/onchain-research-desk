@@ -92,8 +92,8 @@ def apply_caps(base: pd.Series, caps: pd.Series, tol: float = 1e-12) -> pd.Serie
         w[over] = caps[over]
         free &= ~over
         budget = 1.0 - w[~free].sum()
-        if not free.any() or budget <= 0:
-            break
+        if not free.any() or budget <= 0 or base[free].sum() <= 0:
+            break                    # nothing uncapped with a positive target is left: the rest is cash
         w[free] = base[free] / base[free].sum() * budget
     return w.clip(upper=caps)
 
@@ -127,42 +127,88 @@ def rebalance_dates(index: pd.DatetimeIndex, first_valid: int, every: int) -> li
 
 
 def backtest(prices: pd.DataFrame, dollar_volume: pd.DataFrame, weight_fn,
-             est_window: int, every: int, adv_window: int,
-             aum: float | None = None, max_adv_fraction: float | None = None) -> dict:
+             est_window: int, every: int | None, adv_window: int,
+             aum: float | None = None, max_adv_fraction: float | None = None, *,
+             rebalance_on=None, universe_fn=None, exit_haircut: float = 0.0) -> dict:
     """Walk-forward backtest with drifting weights between rebalances.
 
     weight_fn(log_returns_window) -> target weights (sums to 1).
     If `aum` is given, target weights are capped at max_adv_fraction x ADV / aum,
     with ADV = median dollar volume over the `adv_window` days *before* the
     rebalance date. Uninvested weight earns 0 (cash, no yield assumed).
+
+    v2 options (the v1 call, with none of them, behaves exactly as before):
+
+    rebalance_on   explicit rebalance dates (e.g. the first day of every month)
+                   instead of every `every` days after the estimation window.
+    universe_fn    universe_fn(t) -> the columns eligible at t. It must use
+                   only data before t (desk.longrun.eligibility does); the
+                   weights are estimated on those columns only.
+    exit_haircut   death handling. A column whose price is missing (NaN) on a
+                   day while the portfolio holds it has stopped trading. On that
+                   first missing day the position is sold at its last available
+                   price times (1 - exit_haircut), the proceeds go to cash, and
+                   the exit is recorded. The asset is never dropped from the
+                   history: every return up to its last traded day is counted.
     """
     simple = simple_returns(prices)
     logr = log_returns(prices)
+    alive = prices.notna().iloc[1:]
     dates = simple.index
-    rb = set(rebalance_dates(dates, est_window, every))
-    w = pd.Series(0.0, index=prices.columns)
-    port, invested, turnover, shrink = [], [], [], []
-    for t in dates[est_window:]:
+    if rebalance_on is None:
+        start = est_window
+        rb = set(rebalance_dates(dates, est_window, every))
+    else:
+        rb = set(pd.DatetimeIndex(rebalance_on))
+        start = int(dates.searchsorted(min(rb)))
+    cols = prices.columns
+    S = simple.to_numpy()                        # daily arithmetic in numpy; decisions stay in pandas
+    A = alive.to_numpy()
+    pos = {t: i for i, t in enumerate(dates)}
+    w = np.zeros(len(cols))
+    port, invested, turnover, targets, exits = [], [], [], [], []
+    for t in dates[start:]:
         if t in rb:
-            hist = logr.loc[logr.index < t].tail(est_window)
-            target = weight_fn(hist)
-            if aum is not None:
+            hist = logr.loc[logr.index < t]
+            if universe_fn is not None:
+                hist = hist[list(universe_fn(t))]
+            hist = hist.tail(est_window)
+            target = weight_fn(hist).reindex(cols).fillna(0.0) if universe_fn is not None else weight_fn(hist)
+            adv_t = None
+            if aum is not None or universe_fn is not None:
                 adv_t = dollar_volume.loc[dollar_volume.index < t].tail(adv_window).median()
+            uncapped = target
+            if aum is not None:
                 target = apply_caps(target, capacity_caps(adv_t, aum, max_adv_fraction))
-            turnover.append(float((target - w).abs().sum()))
-            w = target
-        r_t = simple.loc[t].fillna(0.0)
-        port_r = float((w * r_t).sum())
-        port.append((t, port_r))
+            tv = target.reindex(cols).to_numpy(dtype=float)
+            turnover.append(float(np.abs(tv - w).sum()))
+            targets.append({"date": t, "target": uncapped, "weights": target, "adv": adv_t})
+            w = tv
+        i = pos[t]
+        r_t = S[i].copy()
+        dead = None
+        if universe_fn is not None:
+            dead = (w > 0) & ~A[i]
+            for j in np.flatnonzero(dead):
+                exits.append({"date": t, "asset": cols[j], "weight": float(w[j])})
+            r_t[dead] = -exit_haircut
+        r_t = np.nan_to_num(r_t, nan=0.0)
+        port.append((t, float((w * r_t).sum())))
         invested.append(float(w.sum()))
         # drift: each position grows with its own return; cash stays put
         gross = w * (1 + r_t)
         total = gross.sum() + (1 - w.sum())
+        if dead is not None and dead.any():
+            gross[dead] = 0.0                    # sold: the value is now cash, inside `total`
         w = gross / total
     s = pd.Series(dict(port)).sort_index()
+    if s.isna().any():
+        raise RuntimeError(f"backtest produced {int(s.isna().sum())} undefined daily returns")
     return {"returns": s, "avg_invested": float(np.mean(invested)),
             "avg_turnover": float(np.mean(turnover)) if turnover else 0.0,
-            "n_rebalances": len(turnover)}
+            "n_rebalances": len(turnover),
+            "turnover": pd.Series([x for x in turnover], index=[d["date"] for d in targets], dtype=float),
+            "invested": pd.Series(invested, index=s.index), "targets": targets, "exits": exits}
 
 
 def perf_stats(r: pd.Series, periods: int, turnover_per_rebalance: float = 0.0,
