@@ -1,98 +1,92 @@
 {
  "00": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "00",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "0g": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-09-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "0g",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "1": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "1",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "1000sats": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-03-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "1000sats",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "10set": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "10set",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "1cat": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-01-23",
-  "last": "2026-09-28",
+  "last": "2026-10-01",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "1cat",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "1inch": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-12-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -100,58 +94,54 @@
   "params": {
    "assets": "1inch",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "1mbabydoge": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "1mbabydoge",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "2z": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-11-04",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "2z",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "4": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-11-04",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "4",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "42": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-11-04",
   "last": "2026-04-11",
   "metrics": [
@@ -160,88 +150,82 @@
   "params": {
    "assets": "42",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "4stock": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-09-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "4stock",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "a": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-05-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "a",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "a2z": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-07-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "a2z",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "a47": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "a47",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "a8": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-07-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "a8",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aaa": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
   "last": "2026-09-06",
   "metrics": [
@@ -250,30 +234,28 @@
   "params": {
    "assets": "aaa",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aark": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "aark",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aave": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-10-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -281,103 +263,96 @@
   "params": {
    "assets": "aave",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aave0": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "aave0",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aave3l": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "aave3l",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aave3s": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "aave3s",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ab": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-07-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ab",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "abbc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-03-20",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "abbc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "abt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-02-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "abt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ac": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-07-08",
   "last": "2026-07-24",
   "metrics": [
@@ -386,90 +361,84 @@
   "params": {
    "assets": "ac",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aca": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-02-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "aca",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ace": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-04-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ace",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ace_fusionist": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-12-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ace_fusionist",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ach": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-10-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ach",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "act": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-04-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "act",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ada": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -477,58 +446,54 @@
   "params": {
    "assets": "ada",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "adx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-28",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "adx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ae": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-05-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ae",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ae_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "ae_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "agix": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-09-28",
   "last": "2024-09-03",
   "metrics": [
@@ -537,13 +502,12 @@
   "params": {
    "assets": "agix",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aion": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-22",
   "last": "2026-01-12",
   "metrics": [
@@ -552,13 +516,12 @@
   "params": {
    "assets": "aion",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-01-05"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aion_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-22",
   "last": "2023-03-03",
   "metrics": [
@@ -567,30 +530,28 @@
   "params": {
    "assets": "aion_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2023-02-24"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aixbt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-12-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "aixbt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "algo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-06-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -598,45 +559,42 @@
   "params": {
    "assets": "algo",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "alice": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-03-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "alice",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "allo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-11-11",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "allo",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "alpha": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-10-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -644,28 +602,26 @@
   "params": {
    "assets": "alpha",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "amp": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-04-13",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "amp",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "anc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-03-18",
   "last": "2025-07-19",
   "metrics": [
@@ -674,30 +630,28 @@
   "params": {
    "assets": "anc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ankr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-03-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ankr",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ant": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-08-29",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -705,43 +659,40 @@
   "params": {
    "assets": "ant",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ape": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-03-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ape",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "apex": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-04-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "apex",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "appc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-01-06",
   "last": "2024-10-13",
   "metrics": [
@@ -750,225 +701,210 @@
   "params": {
    "assets": "appc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "apt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-06-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "apt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "arb": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-03-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "arb",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ardr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2016-10-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ardr",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ark": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ark",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "arpa": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-07-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "arpa",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "aster": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-09-19",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "aster",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "astr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-02-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "astr",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "atom": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-04-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "atom",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "avax": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-07-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "avax",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "avaxc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-09-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "avaxc",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "avnt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-09-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "avnt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "avt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-11",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "avt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "axs": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-11-04",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "axs",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bake": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-09-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bake",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bal": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-06-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -976,45 +912,42 @@
   "params": {
    "assets": "bal",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "band": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-09-19",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "band",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bard": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-09-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bard",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bat": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1022,13 +955,12 @@
   "params": {
    "assets": "bat",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bcd": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-25",
   "last": "2025-08-06",
   "metrics": [
@@ -1037,15 +969,14 @@
   "params": {
    "assets": "bcd",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bch": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-28",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1053,28 +984,26 @@
   "params": {
    "assets": "bch",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bcn": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bcn",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bcpt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-15",
   "last": "2022-11-10",
   "metrics": [
@@ -1083,90 +1012,84 @@
   "params": {
    "assets": "bcpt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bera": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-03-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bera",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bgb": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-07-19",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bgb",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bit": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-08-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bit",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "blur": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-02-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "blur",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "blz": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-02-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "blz",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bnb": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1174,60 +1097,56 @@
   "params": {
    "assets": "bnb",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bnt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bnt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bome": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-03-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bome",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bonk": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-01-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bonk",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bsv": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-11-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1235,15 +1154,14 @@
   "params": {
    "assets": "bsv",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "btc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1251,13 +1169,12 @@
   "params": {
    "assets": "btc",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "btg": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-25",
   "last": "2026-08-25",
   "metrics": [
@@ -1267,13 +1184,12 @@
   "params": {
    "assets": "btg",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-08-18"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "btm": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-02",
   "last": "2025-07-11",
   "metrics": [
@@ -1282,13 +1198,12 @@
   "params": {
    "assets": "btm",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2025-07-04"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "btm_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-02",
   "last": "2025-06-25",
   "metrics": [
@@ -1297,28 +1212,26 @@
   "params": {
    "assets": "btm_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2025-06-18"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bts": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bts",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "btt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-02-01",
   "last": "2025-05-28",
   "metrics": [
@@ -1327,38 +1240,35 @@
   "params": {
    "assets": "btt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "bttc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-12-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "bttc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "cake": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-09-29",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "cake",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
@@ -1378,52 +1288,49 @@
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "celr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-03-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "celr",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "cfx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-11-11",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "cfx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "chz": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-09-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "chz",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "cmt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-06",
   "last": "2023-05-12",
   "metrics": [
@@ -1432,13 +1339,12 @@
   "params": {
    "assets": "cmt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "cnd": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-08-29",
   "last": "2024-07-02",
   "metrics": [
@@ -1447,15 +1353,14 @@
   "params": {
    "assets": "cnd",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "comp": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-06-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1463,13 +1368,12 @@
   "params": {
    "assets": "comp",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "crc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-08-23",
   "last": "2022-06-16",
   "metrics": [
@@ -1478,15 +1382,14 @@
   "params": {
    "assets": "crc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "cro": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-03-20",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1494,15 +1397,14 @@
   "params": {
    "assets": "cro",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "crv": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-08-13",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1510,28 +1412,26 @@
   "params": {
    "assets": "crv",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ctc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-01-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ctc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ctxc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-08-18",
   "last": "2026-07-15",
   "metrics": [
@@ -1540,15 +1440,14 @@
   "params": {
    "assets": "ctxc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "cvc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1556,15 +1455,14 @@
   "params": {
    "assets": "cvc",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dash": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1572,15 +1470,14 @@
   "params": {
    "assets": "dash",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dcr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2016-05-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1588,30 +1485,28 @@
   "params": {
    "assets": "dcr",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dent": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "dent",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dgb": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-02-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1619,13 +1514,12 @@
   "params": {
    "assets": "dgb",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dgd": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-05-06",
   "last": "2024-09-23",
   "metrics": [
@@ -1634,28 +1528,26 @@
   "params": {
    "assets": "dgd",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dnt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-08-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "dnt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dock": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-04-27",
   "last": "2024-12-27",
   "metrics": [
@@ -1664,15 +1556,14 @@
   "params": {
    "assets": "dock",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "doge": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1680,28 +1571,26 @@
   "params": {
    "assets": "doge",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dogs": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-07-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "dogs",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dop": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-03-12",
   "last": "2025-11-01",
   "metrics": [
@@ -1710,15 +1599,14 @@
   "params": {
    "assets": "dop",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dot": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-08-28",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1726,15 +1614,14 @@
   "params": {
    "assets": "dot",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "drgn": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-01-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1742,90 +1629,84 @@
   "params": {
    "assets": "drgn",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dusk": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-07-12",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "dusk",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "dydx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-09-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "dydx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "edu": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-11-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "edu",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "egld": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-09-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "egld",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "eigen": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-10-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "eigen",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "elf": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1833,88 +1714,82 @@
   "params": {
    "assets": "elf",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ena": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-04-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ena",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "eng": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-08-05",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "eng",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "enj": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "enj",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ens": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-11-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ens",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "enso": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-11-04",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "enso",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "eos": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-29",
   "last": "2026-08-01",
   "metrics": [
@@ -1924,15 +1799,14 @@
   "params": {
    "assets": "eos",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-07-25"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "etc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2016-07-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1940,15 +1814,14 @@
   "params": {
    "assets": "etc",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-08-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -1956,28 +1829,26 @@
   "params": {
    "assets": "eth",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ethfi": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-03-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ethfi",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ethos": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-24",
   "last": "2026-07-29",
   "metrics": [
@@ -1986,28 +1857,26 @@
   "params": {
    "assets": "ethos",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ethw": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-08-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ethw",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "etp": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-21",
   "last": "2025-04-30",
   "metrics": [
@@ -2016,28 +1885,26 @@
   "params": {
    "assets": "etp",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "fartcoin": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-11-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "fartcoin",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "fct": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-10-06",
   "last": "2024-06-25",
   "metrics": [
@@ -2046,60 +1913,56 @@
   "params": {
    "assets": "fct",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "fet": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-03-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "fet",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "fil": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-10-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "fil",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "floki": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-09-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "floki",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "flow": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-02-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2107,28 +1970,26 @@
   "params": {
    "assets": "flow",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ftm": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-05-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ftm",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ftn": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-05-10",
   "last": "2026-02-12",
   "metrics": [
@@ -2137,15 +1998,14 @@
   "params": {
    "assets": "ftn",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ftt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-09-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2153,15 +2013,14 @@
   "params": {
    "assets": "ftt",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "fun": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2169,13 +2028,12 @@
   "params": {
    "assets": "fun",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gal": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-05-13",
   "last": "2025-12-05",
   "metrics": [
@@ -2184,30 +2042,28 @@
   "params": {
    "assets": "gal",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gala": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-08-12",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "gala",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gas": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-08-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2215,60 +2071,56 @@
   "params": {
    "assets": "gas",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ghst": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-09-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ghst",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "giggle": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-11-04",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "giggle",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gmt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-03-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "gmt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gno": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-05-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2276,15 +2128,14 @@
   "params": {
    "assets": "gno",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gnt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-02-19",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2292,45 +2143,42 @@
   "params": {
    "assets": "gnt",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "goat": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-10-13",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "goat",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gram": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-06-29",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "gram",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "grin": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-01-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2338,13 +2186,12 @@
   "params": {
    "assets": "grin",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "grs": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-04-05",
   "last": "2026-02-14",
   "metrics": [
@@ -2353,43 +2200,40 @@
   "params": {
    "assets": "grs",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "grt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-12-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "grt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-04-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "gt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gtc_gamecom": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-01-03",
   "last": "2026-02-19",
   "metrics": [
@@ -2398,13 +2242,12 @@
   "params": {
    "assets": "gtc_gamecom",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "gxs": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-18",
   "last": "2022-06-15",
   "metrics": [
@@ -2413,43 +2256,40 @@
   "params": {
    "assets": "gxs",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "h": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-06-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "h",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "hbar": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-09-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "hbar",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "hc_hypercash": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-05-04",
   "last": "2025-04-26",
   "metrics": [
@@ -2458,15 +2298,14 @@
   "params": {
    "assets": "hc_hypercash",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "hedg": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-11-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2474,38 +2313,35 @@
   "params": {
    "assets": "hedg",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "hft": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-11-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "hft",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "hifi": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-12-28",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "hifi",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
@@ -2525,54 +2361,51 @@
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "home": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-06-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "home",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "hook": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-12-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "hook",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "hot_holo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-07-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "hot_holo",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ht": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-06-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2580,45 +2413,42 @@
   "params": {
    "assets": "ht",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "htx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-02-19",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "htx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "hype": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-10-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "hype",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "icp": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-05-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2626,148 +2456,138 @@
   "params": {
    "assets": "icp",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "icx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "icx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "icx_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "icx_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "id": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-03-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "id",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "imx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-11-05",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "imx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "init": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-04-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "init",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "inj": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-10-21",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "inj",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "io": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-11-06",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "io",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "iost": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-01-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "iost",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ip": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-03-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ip",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "irr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
   "last": "2021-05-11",
   "metrics": [
@@ -2776,68 +2596,63 @@
   "params": {
    "assets": "irr",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "jasmy": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-02-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "jasmy",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "jst": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-05-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "jst",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "jto": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-01-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "jto",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "jup": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-04-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "jup",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
@@ -2857,37 +2672,35 @@
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "kava": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-10-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "kava",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "kcs": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-04-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "kcs",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "key": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-01-18",
   "last": "2026-09-08",
   "metrics": [
@@ -2896,45 +2709,42 @@
   "params": {
    "assets": "key",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "kite": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-11-04",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "kite",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "kmd": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-08",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "kmd",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "knc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-27",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -2942,43 +2752,40 @@
   "params": {
    "assets": "knc",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ksm": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-06-12",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ksm",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lab": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-11-04",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "lab",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lamb": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-03-16",
   "last": "2026-04-28",
   "metrics": [
@@ -2987,45 +2794,42 @@
   "params": {
    "assets": "lamb",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "layer": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-04-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "layer",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lbc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2016-07-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "lbc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ldo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-01-05",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -3033,15 +2837,14 @@
   "params": {
    "assets": "ldo",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lend": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -3049,75 +2852,70 @@
   "params": {
    "assets": "lend",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "leo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-05-21",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "leo",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "leo_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-05-21",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "leo_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lina": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-12-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "lina",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "linea": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-09-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "linea",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "link": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-29",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -3125,45 +2923,42 @@
   "params": {
    "assets": "link",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lit_lighter": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-12-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "lit_lighter",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "loom": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-05-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "loom",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lpt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-12-20",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -3171,75 +2966,70 @@
   "params": {
    "assets": "lpt",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lqty": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-04-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "lqty",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lrc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "lrc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lrc_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "lrc_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lsk": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2016-05-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "lsk",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ltc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -3247,13 +3037,12 @@
   "params": {
    "assets": "ltc",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lun": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-05-27",
   "last": "2024-08-21",
   "metrics": [
@@ -3262,43 +3051,40 @@
   "params": {
    "assets": "lun",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "luna": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-02-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "luna",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "luna2": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-07-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "luna2",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "lym": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-03-08",
   "last": "2025-07-11",
   "metrics": [
@@ -3307,28 +3093,26 @@
   "params": {
    "assets": "lym",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "magic": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-02-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "magic",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "maid": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
   "last": "2025-06-28",
   "metrics": [
@@ -3338,15 +3122,14 @@
   "params": {
    "assets": "maid",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2025-06-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mana": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -3354,43 +3137,40 @@
   "params": {
    "assets": "mana",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "manta": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-01-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "manta",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mask": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-02-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mask",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "matic": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-04-27",
   "last": "2025-11-12",
   "metrics": [
@@ -3399,13 +3179,12 @@
   "params": {
    "assets": "matic",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2025-11-05"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "matic_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-04-27",
   "last": "2025-10-22",
   "metrics": [
@@ -3414,88 +3193,82 @@
   "params": {
    "assets": "matic_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2025-10-15"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mco": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-08-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mco",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mda": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-06",
-  "last": "2025-10-14",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mda",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mega": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-04-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mega",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "meme": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-04-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "meme",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mew": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-03-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mew",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mft": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-07-06",
   "last": "2026-01-13",
   "metrics": [
@@ -3504,60 +3277,56 @@
   "params": {
    "assets": "mft",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mina": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-05-28",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mina",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "miota": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-13",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "miota",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mith": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-04-13",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mith",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mkr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -3565,43 +3334,40 @@
   "params": {
    "assets": "mkr",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mln": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-03-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mln",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mnt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-07-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mnt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mof": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-11-25",
   "last": "2023-05-12",
   "metrics": [
@@ -3610,88 +3376,82 @@
   "params": {
    "assets": "mof",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mon_monad": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-11-04",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mon_monad",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mona": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mona",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "moodeng": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-09-19",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "moodeng",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "move": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-12-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "move",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mtl_metal": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "mtl_metal",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "mxc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-12-06",
   "last": "2026-07-28",
   "metrics": [
@@ -3700,28 +3460,26 @@
   "params": {
    "assets": "mxc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "nano": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-02-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "nano",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "nas": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-19",
   "last": "2025-01-03",
   "metrics": [
@@ -3730,13 +3488,12 @@
   "params": {
    "assets": "nas",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2024-12-27"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "nas_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-26",
   "last": "2024-12-12",
   "metrics": [
@@ -3745,28 +3502,26 @@
   "params": {
    "assets": "nas_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2024-12-05"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "nav": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "nav",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ncash": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-02-27",
   "last": "2023-09-15",
   "metrics": [
@@ -3775,45 +3530,42 @@
   "params": {
    "assets": "ncash",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "near": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-10-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "near",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "neirocto": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-09-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "neirocto",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "neo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -3821,58 +3573,54 @@
   "params": {
    "assets": "neo",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "nexo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-05-12",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "nexo",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "nft": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-05-22",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "nft",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "not": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-05-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "not",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "npxs": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-06-22",
   "last": "2021-06-15",
   "metrics": [
@@ -3881,13 +3629,12 @@
   "params": {
    "assets": "npxs",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "nuls": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-09",
   "last": "2025-12-18",
   "metrics": [
@@ -3896,28 +3643,26 @@
   "params": {
    "assets": "nuls",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "nxt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "nxt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "oax": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-20",
   "last": "2025-12-31",
   "metrics": [
@@ -3926,13 +3671,12 @@
   "params": {
    "assets": "oax",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ocn": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-01-25",
   "last": "2025-07-04",
   "metrics": [
@@ -3941,28 +3685,26 @@
   "params": {
    "assets": "ocn",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "okb": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-06-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "okb",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "om": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-08-18",
   "last": "2026-04-01",
   "metrics": [
@@ -3971,15 +3713,14 @@
   "params": {
    "assets": "om",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "omg": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -3987,13 +3728,12 @@
   "params": {
    "assets": "omg",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "omr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-06-26",
   "last": "2022-06-16",
   "metrics": [
@@ -4002,88 +3742,82 @@
   "params": {
    "assets": "omr",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ondo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-01-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ondo",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "one_harmony": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-06-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "one_harmony",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ont": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-03-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ont",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "op": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-05-31",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "op",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ordi": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-10-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ordi",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pab": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-01-27",
   "last": "2022-06-16",
   "metrics": [
@@ -4092,13 +3826,12 @@
   "params": {
    "assets": "pab",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pay": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-03",
   "last": "2026-01-14",
   "metrics": [
@@ -4108,60 +3841,56 @@
   "params": {
    "assets": "pay",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-01-07"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pengu": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-12-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "pengu",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "people": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-11-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "people",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pepe": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-06-27",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "pepe",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "perp": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-09-09",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4169,58 +3898,54 @@
   "params": {
    "assets": "perp",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "phx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-08-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "phx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pi": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-03-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "pi",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pnut": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-11-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "pnut",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "poa": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-03-01",
   "last": "2023-10-12",
   "metrics": [
@@ -4229,45 +3954,42 @@
   "params": {
    "assets": "poa",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pol": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-04-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "pol",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pol_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-10-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "pol_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "poly": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-06-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4275,30 +3997,28 @@
   "params": {
    "assets": "poly",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "popcat": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-03-04",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "popcat",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "powr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4306,15 +4026,14 @@
   "params": {
    "assets": "powr",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ppt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-20",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4322,28 +4041,26 @@
   "params": {
    "assets": "ppt",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pump": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-06-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "pump",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pyg": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-03-12",
   "last": "2022-06-16",
   "metrics": [
@@ -4352,30 +4069,28 @@
   "params": {
    "assets": "pyg",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "pyth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-01-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "pyth",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "qash": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-06",
-  "last": "2026-09-28",
+  "last": "2026-10-03",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4383,30 +4098,28 @@
   "params": {
    "assets": "qash",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "qkc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-06-06",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "qkc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "qnt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-03-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4414,13 +4127,12 @@
   "params": {
    "assets": "qnt",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "qsp": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-22",
   "last": "2026-06-04",
   "metrics": [
@@ -4429,43 +4141,40 @@
   "params": {
    "assets": "qsp",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "qtum": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-28",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "qtum",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "qtum_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-28",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "qtum_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rcn_ripiocreditnetwork": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-09",
   "last": "2025-05-02",
   "metrics": [
@@ -4474,13 +4183,12 @@
   "params": {
    "assets": "rcn_ripiocreditnetwork",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rdn": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-11-10",
   "last": "2025-06-20",
   "metrics": [
@@ -4489,15 +4197,14 @@
   "params": {
    "assets": "rdn",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ren": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-12-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4505,30 +4212,28 @@
   "params": {
    "assets": "ren",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "render": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-06-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "render",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rep": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-10-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4536,30 +4241,28 @@
   "params": {
    "assets": "rep",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "req": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-21",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "req",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rev_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-03-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4567,268 +4270,250 @@
   "params": {
    "assets": "rev_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rlc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-04-21",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "rlc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rndr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-03-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "rndr",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rose": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-11-19",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "rose",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rsr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-05-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "rsr",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rune": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-07-20",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "rune",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "rvn": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-10-13",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "rvn",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "s": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-01-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "s",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sahara": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-06-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sahara",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sand": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-08-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sand",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "santos": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-12-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "santos",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-08-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "seele": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-03-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "seele",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sei": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-08-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sei",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "shib": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-07-31",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "shib",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "shib_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-05-11",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "shib_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "slp": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-11-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "slp",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "slx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-06-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "slx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sngls": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-05-11",
   "last": "2024-08-19",
   "metrics": [
@@ -4837,15 +4522,14 @@
   "params": {
    "assets": "sngls",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "snt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4853,15 +4537,14 @@
   "params": {
    "assets": "snt",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "snx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-06-21",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4869,30 +4552,28 @@
   "params": {
    "assets": "snx",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sol": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-04-11",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sol",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "srm": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-08-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -4900,58 +4581,54 @@
   "params": {
    "assets": "srm",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "steem": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2016-07-20",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "steem",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "stmx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-06-11",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "stmx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "storj": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "storj",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "strat": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2016-12-20",
   "last": "2022-11-10",
   "metrics": [
@@ -4960,105 +4637,98 @@
   "params": {
    "assets": "strat",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "strax": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-11-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "strax",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "strk": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-05-13",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "strk",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "stx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-09-06",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "stx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sui": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-06-27",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sui",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sun": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-09-11",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sun",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sundog": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-08-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sundog",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sushi": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-08-28",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5066,30 +4736,28 @@
   "params": {
    "assets": "sushi",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "swftc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-05-05",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "swftc",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "swrv": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-09-05",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5097,118 +4765,110 @@
   "params": {
    "assets": "swrv",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sxp": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-03-27",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sxp",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "syrup": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-11-19",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "syrup",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "sys": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-10",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "sys",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "tao_bittensor": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-11-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "tao_bittensor",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "theta": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-01-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "theta",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "tia": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-11-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "tia",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "tlm": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2021-04-13",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "tlm",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "tmtg": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-11-23",
   "last": "2022-07-27",
   "metrics": [
@@ -5217,13 +4877,12 @@
   "params": {
    "assets": "tmtg",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "tnb": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-12-16",
   "last": "2023-09-02",
   "metrics": [
@@ -5232,13 +4891,12 @@
   "params": {
    "assets": "tnb",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "tnt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-07-26",
   "last": "2022-06-16",
   "metrics": [
@@ -5247,13 +4905,12 @@
   "params": {
    "assets": "tnt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "tomi": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-04-01",
   "last": "2026-07-28",
   "metrics": [
@@ -5262,13 +4919,12 @@
   "params": {
    "assets": "tomi",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "tomo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-03-15",
   "last": "2023-12-19",
   "metrics": [
@@ -5277,45 +4933,42 @@
   "params": {
    "assets": "tomo",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "trb": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-08-12",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "trb",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "trump": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-01-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "trump",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "trx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-10-07",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5323,60 +4976,56 @@
   "params": {
    "assets": "trx",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "turbo": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-06-27",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "turbo",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "twt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-12-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "twt",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "ubtc_unitbitcoin": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2026-01-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "ubtc_unitbitcoin",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "uma": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-05-19",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5384,15 +5033,14 @@
   "params": {
    "assets": "uma",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "uni": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-09-17",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5400,73 +5048,68 @@
   "params": {
    "assets": "uni",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "usdt": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "usdt",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2015-01-01"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "uxlink": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-07-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "uxlink",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "vet": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-07-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "vet",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "vet_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-07-14",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "vet_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "via": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
   "last": "2026-04-16",
   "metrics": [
@@ -5475,28 +5118,26 @@
   "params": {
    "assets": "via",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "virtual": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-11-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "virtual",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "vtc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
   "last": "2025-06-08",
   "metrics": [
@@ -5506,163 +5147,152 @@
   "params": {
    "assets": "vtc",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2025-06-01"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "vvv": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-03-15",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "vvv",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "w": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-04-03",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "w",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "wan": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-03-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "wan",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "waves": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2016-11-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "waves",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "wemix": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2022-02-16",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "wemix",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "wif": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-01-23",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "wif",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "win_wink": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-08-02",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "win_wink",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "wld": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2023-07-26",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "wld",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "wlfi": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-09-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "wlfi",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "wrx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-02-06",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "wrx",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "wtc": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-08-28",
   "last": "2024-12-04",
   "metrics": [
@@ -5672,15 +5302,14 @@
   "params": {
    "assets": "wtc",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2024-11-27"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "xem": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-04-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5688,15 +5317,14 @@
   "params": {
    "assets": "xem",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "xlm": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5704,15 +5332,14 @@
   "params": {
    "assets": "xlm",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "xmr": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5720,30 +5347,28 @@
   "params": {
    "assets": "xmr",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "xpl": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2025-09-25",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "xpl",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "xrp": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2015-01-01",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5751,15 +5376,14 @@
   "params": {
    "assets": "xrp",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "xtz": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-06-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5767,15 +5391,14 @@
   "params": {
    "assets": "xtz",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "xvg": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5783,15 +5406,14 @@
   "params": {
    "assets": "xvg",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "yfi": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-07-18",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5799,28 +5421,26 @@
   "params": {
    "assets": "yfi",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "yfii": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2020-07-30",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "yfii",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "yoyow": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-09-04",
   "last": "2023-06-24",
   "metrics": [
@@ -5829,13 +5449,12 @@
   "params": {
    "assets": "yoyow",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "zb": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2019-03-16",
   "last": "2022-08-24",
   "metrics": [
@@ -5844,15 +5463,14 @@
   "params": {
    "assets": "zb",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "zec": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2016-10-29",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5860,75 +5478,70 @@
   "params": {
    "assets": "zec",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "zen": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-05-24",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "zen",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "zil": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-01-27",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "zil",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "zil_eth": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2018-01-27",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD"
   ],
   "params": {
    "assets": "zil_eth",
    "frequency": "1d",
-   "metrics": "PriceUSD",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "zro": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2024-06-20",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "volume_reported_spot_usd_1d"
   ],
   "params": {
    "assets": "zro",
    "frequency": "1d",
-   "metrics": "volume_reported_spot_usd_1d",
-   "start_time": "2015-01-01"
+   "metrics": "volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  },
  "zrx": {
-  "fetched_at": "2026-09-29T01:38:29Z",
+  "fetched_at": "2026-10-05T14:39:47Z",
   "first": "2017-08-11",
-  "last": "2026-09-28",
+  "last": "2026-10-04",
   "metrics": [
    "PriceUSD",
    "volume_reported_spot_usd_1d"
@@ -5936,8 +5549,7 @@
   "params": {
    "assets": "zrx",
    "frequency": "1d",
-   "metrics": "PriceUSD,volume_reported_spot_usd_1d",
-   "start_time": "2026-09-21"
+   "metrics": "PriceUSD,volume_reported_spot_usd_1d"
   },
   "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics"
  }

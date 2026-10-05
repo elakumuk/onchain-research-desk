@@ -1,1 +1,1 @@
-{"fetched_at": "2026-09-28T19:06:18.755972+00:00", "url": "https://api.llama.fi/summary/fees/ethena", "params": {"dataType": "dailyHoldersRevenue"}, "payload": null, "http_status": 400}
+{"fetched_at": "2026-10-05T14:39:04.702091+00:00", "url": "https://api.llama.fi/summary/fees/ethena", "params": {"dataType": "dailyHoldersRevenue"}, "payload": null, "http_status": 400}

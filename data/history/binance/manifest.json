@@ -1,6 +1,6 @@
 {
  "00USDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -11,29 +11,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/00USDT/1d/"
  },
  "0GUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-09-22",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 39,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/0GUSDT/1d/"
  },
  "1000SATSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-12-12",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 60,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/1000SATSUSDT/1d/"
  },
  "10SETUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -44,7 +44,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/10SETUSDT/1d/"
  },
  "1CATUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -55,18 +55,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/1CATUSDT/1d/"
  },
  "1MBABYDOGEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-09-16",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 51,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/1MBABYDOGEUSDT/1d/"
  },
  "1USDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -77,18 +77,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/1USDT/1d/"
  },
  "2ZUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-10-02",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 38,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/2ZUSDT/1d/"
  },
  "42USDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -99,7 +99,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/42USDT/1d/"
  },
  "4STOCKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -110,7 +110,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/4STOCKUSDT/1d/"
  },
  "4USDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -121,18 +121,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/4USDT/1d/"
  },
  "A2ZUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-07-30",
   "last": "2026-04-01",
   "listed": true,
   "params": {
-   "files": 10,
-   "since": "start"
+   "files": 2,
+   "since": "2026-03"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/A2ZUSDT/1d/"
  },
  "A47USDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -143,7 +143,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/A47USDT/1d/"
  },
  "A8USDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -154,7 +154,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/A8USDT/1d/"
  },
  "AAAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -165,7 +165,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/AAAUSDT/1d/"
  },
  "AARKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -176,7 +176,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/AARKUSDT/1d/"
  },
  "AAVE0USDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -187,7 +187,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/AAVE0USDT/1d/"
  },
  "AAVE3LUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -198,7 +198,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/AAVE3LUSDT/1d/"
  },
  "AAVE3SUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -209,7 +209,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/AAVE3SUSDT/1d/"
  },
  "ABBCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -220,7 +220,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/ABBCUSDT/1d/"
  },
  "ABTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -231,7 +231,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/ABTUSDT/1d/"
  },
  "ABUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -242,51 +242,51 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/ABUSDT/1d/"
  },
  "ACAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-01-25",
   "last": "2026-02-13",
   "listed": true,
   "params": {
-   "files": 50,
-   "since": "start"
+   "files": 1,
+   "since": "2026-02"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ACAUSDT/1d/"
  },
  "ACEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-12-18",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 60,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ACEUSDT/1d/"
  },
  "ACHUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-01-10",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 83,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ACHUSDT/1d/"
  },
  "ACTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-11-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 49,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ACTUSDT/1d/"
  },
  "ACUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -297,106 +297,106 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/ACUSDT/1d/"
  },
  "ADXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-10-29",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 86,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ADXUSDT/1d/"
  },
  "AGIXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-02-17",
   "last": "2024-07-01",
   "listed": true,
   "params": {
-   "files": 18,
-   "since": "start"
+   "files": 2,
+   "since": "2024-06"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/AGIXUSDT/1d/"
  },
  "AIXBTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-01-10",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 47,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/AIXBTUSDT/1d/"
  },
  "ALICEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-03-15",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 93,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ALICEUSDT/1d/"
  },
  "ALLOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-11-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 37,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ALLOUSDT/1d/"
  },
  "AMPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-11-23",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 85,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/AMPUSDT/1d/"
  },
  "ANCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-01-25",
   "last": "2022-12-27",
   "listed": true,
   "params": {
-   "files": 12,
-   "since": "start"
+   "files": 1,
+   "since": "2022-12"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ANCUSDT/1d/"
  },
  "ANKRUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-07-23",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 113,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ANKRUSDT/1d/"
  },
  "APEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-03-17",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 81,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/APEUSDT/1d/"
  },
  "APEXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -407,7 +407,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/APEXUSDT/1d/"
  },
  "APPCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -418,117 +418,117 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/APPCUSDT/1d/"
  },
  "APTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-10-19",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 74,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/APTUSDT/1d/"
  },
  "ARBUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-03-23",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 69,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ARBUSDT/1d/"
  },
  "ARDRUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-05-15",
   "last": "2026-07-10",
   "listed": true,
   "params": {
-   "files": 75,
-   "since": "start"
+   "files": 1,
+   "since": "2026-07"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ARDRUSDT/1d/"
  },
  "ARKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-09-22",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 63,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ARKUSDT/1d/"
  },
  "ARPAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-11-06",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 109,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ARPAUSDT/1d/"
  },
  "ASTERUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-10-06",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 38,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ASTERUSDT/1d/"
  },
  "ASTRUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-02-28",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 82,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ASTRUSDT/1d/"
  },
  "ATOMUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-04-29",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 116,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ATOMUSDT/1d/"
  },
  "AUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-05-28",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 43,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/AUSDT/1d/"
  },
  "AVNTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-09-15",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 39,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/AVNTUSDT/1d/"
  },
  "AVTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -539,51 +539,51 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/AVTUSDT/1d/"
  },
  "AXSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-11-04",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 97,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/AXSUSDT/1d/"
  },
  "BAKEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-04-30",
   "last": "2025-09-17",
   "listed": true,
   "params": {
-   "files": 54,
-   "since": "start"
+   "files": 1,
+   "since": "2025-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BAKEUSDT/1d/"
  },
  "BANDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-09-18",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 111,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BANDUSDT/1d/"
  },
  "BARDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-09-18",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 39,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BARDUSDT/1d/"
  },
  "BCDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -594,7 +594,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/BCDUSDT/1d/"
  },
  "BCNUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -605,7 +605,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/BCNUSDT/1d/"
  },
  "BCPTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -616,18 +616,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/BCPTUSDT/1d/"
  },
  "BERAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-02-06",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 46,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BERAUSDT/1d/"
  },
  "BGBUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -638,7 +638,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/BGBUSDT/1d/"
  },
  "BITUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -649,139 +649,139 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/BITUSDT/1d/"
  },
  "BLURUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-11-24",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 61,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BLURUSDT/1d/"
  },
  "BLZUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-08-11",
   "last": "2024-12-25",
   "listed": true,
   "params": {
-   "files": 53,
-   "since": "start"
+   "files": 1,
+   "since": "2024-12"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BLZUSDT/1d/"
  },
  "BNTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-02-06",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 106,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BNTUSDT/1d/"
  },
  "BOMEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-03-16",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 57,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BOMEUSDT/1d/"
  },
  "BONKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-12-15",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 60,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BONKUSDT/1d/"
  },
  "BTSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-02-06",
   "last": "2023-12-07",
   "listed": true,
   "params": {
-   "files": 47,
-   "since": "start"
+   "files": 2,
+   "since": "2023-11"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BTSUSDT/1d/"
  },
  "BTTCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-01-25",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 83,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BTTCUSDT/1d/"
  },
  "BTTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-01-31",
   "last": "2022-01-17",
   "listed": true,
   "params": {
-   "files": 37,
-   "since": "start"
+   "files": 1,
+   "since": "2022-01"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/BTTUSDT/1d/"
  },
  "CAKEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-02-19",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 94,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/CAKEUSDT/1d/"
  },
  "CELRUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-03-25",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 117,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/CELRUSDT/1d/"
  },
  "CFXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-03-29",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 93,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/CFXUSDT/1d/"
  },
  "CHZUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-09-06",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 111,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/CHZUSDT/1d/"
  },
  "CMTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -792,7 +792,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/CMTUSDT/1d/"
  },
  "CNDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -803,7 +803,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/CNDUSDT/1d/"
  },
  "CRCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -814,7 +814,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/CRCUSDT/1d/"
  },
  "CTCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -825,29 +825,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/CTCUSDT/1d/"
  },
  "CTXCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-11-22",
   "last": "2025-04-16",
   "listed": true,
   "params": {
-   "files": 66,
-   "since": "start"
+   "files": 1,
+   "since": "2025-04"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/CTXCUSDT/1d/"
  },
  "DENTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-08-27",
   "last": "2026-04-28",
   "listed": true,
   "params": {
-   "files": 81,
-   "since": "start"
+   "files": 1,
+   "since": "2026-04"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/DENTUSDT/1d/"
  },
  "DGDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -858,40 +858,40 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/DGDUSDT/1d/"
  },
  "DNTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-11-10",
   "last": "2022-10-24",
   "listed": true,
   "params": {
-   "files": 24,
-   "since": "start"
+   "files": 1,
+   "since": "2022-10"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/DNTUSDT/1d/"
  },
  "DOCKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-08-27",
   "last": "2024-07-22",
   "listed": true,
   "params": {
-   "files": 60,
-   "since": "start"
+   "files": 1,
+   "since": "2024-07"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/DOCKUSDT/1d/"
  },
  "DOGSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-08-26",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 52,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/DOGSUSDT/1d/"
  },
  "DOPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -902,73 +902,73 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/DOPUSDT/1d/"
  },
  "DUSKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-07-22",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 113,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/DUSKUSDT/1d/"
  },
  "DYDXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-09-09",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 87,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/DYDXUSDT/1d/"
  },
  "EDUUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-04-28",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 68,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/EDUUSDT/1d/"
  },
  "EGLDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-09-03",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 99,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/EGLDUSDT/1d/"
  },
  "EIGENUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-10-01",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 50,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/EIGENUSDT/1d/"
  },
  "ENAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-04-02",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 56,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ENAUSDT/1d/"
  },
  "ENGUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -979,51 +979,51 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/ENGUSDT/1d/"
  },
  "ENJUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-04-18",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 116,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ENJUSDT/1d/"
  },
  "ENSOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-10-14",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 38,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ENSOUSDT/1d/"
  },
  "ENSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-11-10",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 85,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ENSUSDT/1d/"
  },
  "ETHFIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-03-18",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 57,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ETHFIUSDT/1d/"
  },
  "ETHOSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1034,7 +1034,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/ETHOSUSDT/1d/"
  },
  "ETHWUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1045,7 +1045,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/ETHWUSDT/1d/"
  },
  "ETPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1056,7 +1056,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/ETPUSDT/1d/"
  },
  "FARTCOINUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1067,7 +1067,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/FARTCOINUSDT/1d/"
  },
  "FCTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1078,51 +1078,51 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/FCTUSDT/1d/"
  },
  "FETUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-02-28",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 118,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/FETUSDT/1d/"
  },
  "FILUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-10-15",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 98,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/FILUSDT/1d/"
  },
  "FLOKIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-05-05",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 67,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/FLOKIUSDT/1d/"
  },
  "FTMUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-06-11",
   "last": "2025-01-13",
   "listed": true,
   "params": {
-   "files": 68,
-   "since": "start"
+   "files": 1,
+   "since": "2025-01"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/FTMUSDT/1d/"
  },
  "FTNUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1133,62 +1133,62 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/FTNUSDT/1d/"
  },
  "GALAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-09-13",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 87,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/GALAUSDT/1d/"
  },
  "GALUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-05-05",
   "last": "2024-07-15",
   "listed": true,
   "params": {
-   "files": 27,
-   "since": "start"
+   "files": 1,
+   "since": "2024-07"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/GALUSDT/1d/"
  },
  "GHSTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-08-20",
   "last": "2026-02-13",
   "listed": true,
   "params": {
-   "files": 55,
-   "since": "start"
+   "files": 1,
+   "since": "2026-02"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/GHSTUSDT/1d/"
  },
  "GIGGLEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-10-25",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 38,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/GIGGLEUSDT/1d/"
  },
  "GMTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-03-09",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 81,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/GMTUSDT/1d/"
  },
  "GOATUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1199,18 +1199,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/GOATUSDT/1d/"
  },
  "GRAMUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2026-07-02",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 29,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/GRAMUSDT/1d/"
  },
  "GRSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1221,29 +1221,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/GRSUSDT/1d/"
  },
  "GRTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-12-17",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 96,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/GRTUSDT/1d/"
  },
  "GTCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-06-10",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 90,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/GTCUSDT/1d/"
  },
  "GTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1254,95 +1254,95 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/GTUSDT/1d/"
  },
  "GXSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-05-13",
   "last": "2022-04-25",
   "listed": true,
   "params": {
-   "files": 24,
-   "since": "start"
+   "files": 1,
+   "since": "2022-04"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/GXSUSDT/1d/"
  },
  "HBARUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-09-29",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 111,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/HBARUSDT/1d/"
  },
  "HCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-09-25",
   "last": "2020-11-10",
   "listed": true,
   "params": {
-   "files": 15,
-   "since": "start"
+   "files": 1,
+   "since": "2020-11"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/HCUSDT/1d/"
  },
  "HFTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-11-07",
   "last": "2026-08-17",
   "listed": true,
   "params": {
-   "files": 46,
-   "since": "start"
+   "files": 1,
+   "since": "2026-08"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/HFTUSDT/1d/"
  },
  "HIFIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-01-12",
   "last": "2025-09-17",
   "listed": true,
   "params": {
-   "files": 33,
-   "since": "start"
+   "files": 1,
+   "since": "2025-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/HIFIUSDT/1d/"
  },
  "HOMEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-06-12",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 42,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/HOMEUSDT/1d/"
  },
  "HOOKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-12-01",
   "last": "2026-04-01",
   "listed": true,
   "params": {
-   "files": 41,
-   "since": "start"
+   "files": 2,
+   "since": "2026-03"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/HOOKUSDT/1d/"
  },
  "HOTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-02-18",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 118,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/HOTUSDT/1d/"
  },
  "HTXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1353,7 +1353,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/HTXUSDT/1d/"
  },
  "HUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1364,84 +1364,84 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/HUSDT/1d/"
  },
  "HYPEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2026-09-24",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 4,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/HYPEUSDT/1d/"
  },
  "IDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-03-22",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 69,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/IDUSDT/1d/"
  },
  "IMXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-01-10",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 83,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/IMXUSDT/1d/"
  },
  "INITUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-04-24",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 44,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/INITUSDT/1d/"
  },
  "INJUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-10-21",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 98,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/INJUSDT/1d/"
  },
  "IOSTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-03-22",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 117,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/IOSTUSDT/1d/"
  },
  "IOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-06-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 54,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/IOUSDT/1d/"
  },
  "IPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1452,7 +1452,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/IPUSDT/1d/"
  },
  "IRRUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1463,62 +1463,62 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/IRRUSDT/1d/"
  },
  "JASMYUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-11-22",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 85,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/JASMYUSDT/1d/"
  },
  "JSTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-08-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 100,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/JSTUSDT/1d/"
  },
  "JTOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-12-07",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 60,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/JTOUSDT/1d/"
  },
  "JUPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-01-31",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 59,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/JUPUSDT/1d/"
  },
  "KAVAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-10-25",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 110,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/KAVAUSDT/1d/"
  },
  "KCSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1529,51 +1529,51 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/KCSUSDT/1d/"
  },
  "KEYUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-08-27",
   "last": "2024-12-10",
   "listed": true,
   "params": {
-   "files": 65,
-   "since": "start"
+   "files": 1,
+   "since": "2024-12"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/KEYUSDT/1d/"
  },
  "KITEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-11-03",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 37,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/KITEUSDT/1d/"
  },
  "KMDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-08-11",
   "last": "2025-07-04",
   "listed": true,
   "params": {
-   "files": 60,
-   "since": "start"
+   "files": 2,
+   "since": "2025-06"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/KMDUSDT/1d/"
  },
  "KSMUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-09-04",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 99,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/KSMUSDT/1d/"
  },
  "LABUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1584,7 +1584,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/LABUSDT/1d/"
  },
  "LAMBUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1595,18 +1595,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/LAMBUSDT/1d/"
  },
  "LAYERUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-02-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 46,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/LAYERUSDT/1d/"
  },
  "LBCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1617,73 +1617,73 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/LBCUSDT/1d/"
  },
  "LINAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-03-18",
   "last": "2025-03-28",
   "listed": true,
   "params": {
-   "files": 49,
-   "since": "start"
+   "files": 1,
+   "since": "2025-03"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/LINAUSDT/1d/"
  },
  "LINEAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-09-10",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 39,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/LINEAUSDT/1d/"
  },
  "LITUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-02-04",
   "last": "2025-02-10",
   "listed": true,
   "params": {
-   "files": 49,
-   "since": "start"
+   "files": 1,
+   "since": "2025-02"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/LITUSDT/1d/"
  },
  "LOOMUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-03-24",
   "last": "2024-08-26",
   "listed": true,
   "params": {
-   "files": 18,
-   "since": "start"
+   "files": 1,
+   "since": "2024-08"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/LOOMUSDT/1d/"
  },
  "LQTYUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-02-28",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 70,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/LQTYUSDT/1d/"
  },
  "LSKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-02-06",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 106,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/LSKUSDT/1d/"
  },
  "LUNA2USDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1694,18 +1694,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/LUNA2USDT/1d/"
  },
  "LUNAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-08-21",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 100,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/LUNAUSDT/1d/"
  },
  "LUNUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1716,7 +1716,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/LUNUSDT/1d/"
  },
  "LYMUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1727,51 +1727,51 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/LYMUSDT/1d/"
  },
  "MAGICUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-12-12",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 72,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MAGICUSDT/1d/"
  },
  "MANTAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-01-18",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 59,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MANTAUSDT/1d/"
  },
  "MASKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-05-25",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 91,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MASKUSDT/1d/"
  },
  "MCOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-11-19",
   "last": "2020-10-23",
   "listed": true,
   "params": {
-   "files": 12,
-   "since": "start"
+   "files": 1,
+   "since": "2020-10"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MCOUSDT/1d/"
  },
  "MDAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1782,29 +1782,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/MDAUSDT/1d/"
  },
  "MEGAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2026-04-30",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 32,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MEGAUSDT/1d/"
  },
  "MEMEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-11-03",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 61,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MEMEUSDT/1d/"
  },
  "MEWUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1815,29 +1815,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/MEWUSDT/1d/"
  },
  "MFTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-08-27",
   "last": "2023-01-03",
   "listed": true,
   "params": {
-   "files": 42,
-   "since": "start"
+   "files": 2,
+   "since": "2022-12"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MFTUSDT/1d/"
  },
  "MINAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-08-10",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 88,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MINAUSDT/1d/"
  },
  "MIOTAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1848,29 +1848,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/MIOTAUSDT/1d/"
  },
  "MITHUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-04-19",
   "last": "2022-12-22",
   "listed": true,
   "params": {
-   "files": 45,
-   "since": "start"
+   "files": 1,
+   "since": "2022-12"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MITHUSDT/1d/"
  },
  "MLNUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-07-05",
   "last": "2026-05-27",
   "listed": true,
   "params": {
-   "files": 59,
-   "since": "start"
+   "files": 1,
+   "since": "2026-05"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MLNUSDT/1d/"
  },
  "MNTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1881,7 +1881,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/MNTUSDT/1d/"
  },
  "MOFUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1892,7 +1892,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/MOFUSDT/1d/"
  },
  "MONAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1903,7 +1903,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/MONAUSDT/1d/"
  },
  "MONUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1914,7 +1914,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/MONUSDT/1d/"
  },
  "MOODENGUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1925,29 +1925,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/MOODENGUSDT/1d/"
  },
  "MOVEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-12-09",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 48,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MOVEUSDT/1d/"
  },
  "MTLUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-08-23",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 112,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/MTLUSDT/1d/"
  },
  "MXCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1958,18 +1958,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/MXCUSDT/1d/"
  },
  "NANOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-04-03",
   "last": "2022-01-24",
   "listed": true,
   "params": {
-   "files": 34,
-   "since": "start"
+   "files": 1,
+   "since": "2022-01"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/NANOUSDT/1d/"
  },
  "NAVUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1980,7 +1980,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/NAVUSDT/1d/"
  },
  "NCASHUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -1991,18 +1991,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/NCASHUSDT/1d/"
  },
  "NEARUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-10-14",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 98,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/NEARUSDT/1d/"
  },
  "NEIROCTOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2013,18 +2013,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/NEIROCTOUSDT/1d/"
  },
  "NEXOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-04-29",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 80,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/NEXOUSDT/1d/"
  },
  "NFTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2035,40 +2035,40 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/NFTUSDT/1d/"
  },
  "NOTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-05-16",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 55,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/NOTUSDT/1d/"
  },
  "NPXSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-08-13",
   "last": "2021-04-05",
   "listed": true,
   "params": {
-   "files": 21,
-   "since": "start"
+   "files": 2,
+   "since": "2021-03"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/NPXSUSDT/1d/"
  },
  "NULSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2018-07-23",
   "last": "2025-04-16",
   "listed": true,
   "params": {
-   "files": 82,
-   "since": "start"
+   "files": 1,
+   "since": "2025-04"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/NULSUSDT/1d/"
  },
  "NXTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2079,18 +2079,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/NXTUSDT/1d/"
  },
  "OAXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-03-24",
   "last": "2024-12-10",
   "listed": true,
   "params": {
-   "files": 22,
-   "since": "start"
+   "files": 1,
+   "since": "2024-12"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/OAXUSDT/1d/"
  },
  "OCNUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2101,7 +2101,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/OCNUSDT/1d/"
  },
  "OKBUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2112,7 +2112,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/OKBUSDT/1d/"
  },
  "OMRUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2123,73 +2123,73 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/OMRUSDT/1d/"
  },
  "OMUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-03-08",
   "last": "2026-03-02",
   "listed": true,
   "params": {
-   "files": 61,
-   "since": "start"
+   "files": 2,
+   "since": "2026-02"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/OMUSDT/1d/"
  },
  "ONDOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-04-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 44,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ONDOUSDT/1d/"
  },
  "ONEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-06-01",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 114,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ONEUSDT/1d/"
  },
  "ONTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2018-06-08",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 126,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ONTUSDT/1d/"
  },
  "OPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-06-01",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 78,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/OPUSDT/1d/"
  },
  "ORDIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-11-07",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 61,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ORDIUSDT/1d/"
  },
  "PABUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2200,40 +2200,40 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/PABUSDT/1d/"
  },
  "PENGUUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-12-17",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 48,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/PENGUUSDT/1d/"
  },
  "PEOPLEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-12-23",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 84,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/PEOPLEUSDT/1d/"
  },
  "PEPEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-05-05",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 67,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/PEPEUSDT/1d/"
  },
  "PHXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2244,7 +2244,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/PHXUSDT/1d/"
  },
  "PIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2255,18 +2255,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/PIUSDT/1d/"
  },
  "PNUTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-11-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 49,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/PNUTUSDT/1d/"
  },
  "POAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2277,7 +2277,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/POAUSDT/1d/"
  },
  "POPCATUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2288,18 +2288,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/POPCATUSDT/1d/"
  },
  "PUMPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-09-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 39,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/PUMPUSDT/1d/"
  },
  "PYGUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2310,29 +2310,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/PYGUSDT/1d/"
  },
  "PYTHUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-02-02",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 58,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/PYTHUSDT/1d/"
  },
  "QKCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-03-17",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 69,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/QKCUSDT/1d/"
  },
  "QSPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2343,7 +2343,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/QSPUSDT/1d/"
  },
  "RCNUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2354,7 +2354,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/RCNUSDT/1d/"
  },
  "RDNUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2365,139 +2365,139 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/RDNUSDT/1d/"
  },
  "RENDERUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-07-26",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 53,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/RENDERUSDT/1d/"
  },
  "REQUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-08-20",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 88,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/REQUSDT/1d/"
  },
  "RLCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-11-14",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 109,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/RLCUSDT/1d/"
  },
  "RNDRUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-11-27",
   "last": "2024-07-22",
   "listed": true,
   "params": {
-   "files": 33,
-   "since": "start"
+   "files": 1,
+   "since": "2024-07"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/RNDRUSDT/1d/"
  },
  "ROSEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-11-19",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 97,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ROSEUSDT/1d/"
  },
  "RSRUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-08-27",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 100,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/RSRUSDT/1d/"
  },
  "RUNEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-09-04",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 99,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/RUNEUSDT/1d/"
  },
  "RVNUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-09-25",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 111,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/RVNUSDT/1d/"
  },
  "SAHARAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-06-26",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 42,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SAHARAUSDT/1d/"
  },
  "SANDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-08-14",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 100,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SANDUSDT/1d/"
  },
  "SANTOSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-12-01",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 84,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SANTOSUSDT/1d/"
  },
  "SCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-07-06",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 101,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SCUSDT/1d/"
  },
  "SEELEUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2508,29 +2508,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/SEELEUSDT/1d/"
  },
  "SEIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-08-15",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 64,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SEIUSDT/1d/"
  },
  "SLPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-04-30",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 92,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SLPUSDT/1d/"
  },
  "SLXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2541,7 +2541,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/SLXUSDT/1d/"
  },
  "SNGLSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2552,106 +2552,106 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/SNGLSUSDT/1d/"
  },
  "SOLUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-08-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 100,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1d/"
  },
  "STEEMUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2022-04-22",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 80,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/STEEMUSDT/1d/"
  },
  "STMXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-06-11",
   "last": "2025-02-24",
   "listed": true,
   "params": {
-   "files": 57,
-   "since": "start"
+   "files": 1,
+   "since": "2025-02"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/STMXUSDT/1d/"
  },
  "STORJUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-07-30",
   "last": "2026-09-03",
   "listed": true,
   "params": {
-   "files": 77,
-   "since": "start"
+   "files": 2,
+   "since": "2026-08"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/STORJUSDT/1d/"
  },
  "STRATUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-02-19",
   "last": "2020-11-12",
   "listed": true,
   "params": {
-   "files": 10,
-   "since": "start"
+   "files": 1,
+   "since": "2020-11"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/STRATUSDT/1d/"
  },
  "STRAXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-11-18",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 97,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/STRAXUSDT/1d/"
  },
  "STRKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-02-20",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 58,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/STRKUSDT/1d/"
  },
  "STXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-10-25",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 110,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/STXUSDT/1d/"
  },
  "SUIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-05-03",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 67,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SUIUSDT/1d/"
  },
  "SUNDOGUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2662,29 +2662,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/SUNDOGUSDT/1d/"
  },
  "SUNUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-09-21",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 99,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SUNUSDT/1d/"
  },
  "SUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-01-16",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 47,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SUSDT/1d/"
  },
  "SWFTCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2695,84 +2695,84 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/SWFTCUSDT/1d/"
  },
  "SXPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-07-20",
   "last": "2026-04-01",
   "listed": true,
   "params": {
-   "files": 70,
-   "since": "start"
+   "files": 2,
+   "since": "2026-03"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SXPUSDT/1d/"
  },
  "SYRUPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-05-06",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 43,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SYRUPUSDT/1d/"
  },
  "SYSUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-09-24",
   "last": "2026-05-27",
   "listed": true,
   "params": {
-   "files": 57,
-   "since": "start"
+   "files": 1,
+   "since": "2026-05"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/SYSUSDT/1d/"
  },
  "TAOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-04-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 56,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/TAOUSDT/1d/"
  },
  "THETAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-04-10",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 116,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/THETAUSDT/1d/"
  },
  "TIAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-10-31",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 62,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/TIAUSDT/1d/"
  },
  "TLMUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-04-13",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 92,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/TLMUSDT/1d/"
  },
  "TMTGUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2783,7 +2783,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/TMTGUSDT/1d/"
  },
  "TNBUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2794,7 +2794,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/TNBUSDT/1d/"
  },
  "TNTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2805,7 +2805,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/TNTUSDT/1d/"
  },
  "TOMIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2816,62 +2816,62 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/TOMIUSDT/1d/"
  },
  "TOMOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-08-24",
   "last": "2023-11-20",
   "listed": true,
   "params": {
-   "files": 52,
-   "since": "start"
+   "files": 1,
+   "since": "2023-11"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/TOMOUSDT/1d/"
  },
  "TRBUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-08-29",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 100,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/TRBUSDT/1d/"
  },
  "TRUMPUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-01-19",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 47,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/TRUMPUSDT/1d/"
  },
  "TURBOUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-09-16",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 51,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/TURBOUSDT/1d/"
  },
  "TWTUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2021-01-27",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 95,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/TWTUSDT/1d/"
  },
  "UBTCUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2882,7 +2882,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/UBTCUSDT/1d/"
  },
  "UXLINKUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2893,7 +2893,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/UXLINKUSDT/1d/"
  },
  "VIAUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2904,18 +2904,18 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/VIAUSDT/1d/"
  },
  "VIRTUALUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-04-11",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 44,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/VIRTUALUSDT/1d/"
  },
  "VVVUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2926,29 +2926,29 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/VVVUSDT/1d/"
  },
  "WANUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-08-27",
   "last": "2026-04-23",
   "listed": true,
   "params": {
-   "files": 81,
-   "since": "start"
+   "files": 1,
+   "since": "2026-04"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/WANUSDT/1d/"
  },
  "WAVESUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-01-18",
   "last": "2024-06-17",
   "listed": true,
   "params": {
-   "files": 66,
-   "since": "start"
+   "files": 1,
+   "since": "2024-06"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/WAVESUSDT/1d/"
  },
  "WEMIXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -2959,95 +2959,95 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/WEMIXUSDT/1d/"
  },
  "WIFUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-03-05",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 57,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/WIFUSDT/1d/"
  },
  "WINUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2019-08-01",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 112,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/WINUSDT/1d/"
  },
  "WLDUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2023-07-24",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 65,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/WLDUSDT/1d/"
  },
  "WLFIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-09-01",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 39,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/WLFIUSDT/1d/"
  },
  "WRXUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-02-05",
   "last": "2024-12-25",
   "listed": true,
   "params": {
-   "files": 59,
-   "since": "start"
+   "files": 1,
+   "since": "2024-12"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/WRXUSDT/1d/"
  },
  "WUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-04-03",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 56,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/WUSDT/1d/"
  },
  "XPLUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2025-09-25",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 39,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/XPLUSDT/1d/"
  },
  "YFIIUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-09-01",
   "last": "2023-08-22",
   "listed": true,
   "params": {
-   "files": 36,
-   "since": "start"
+   "files": 1,
+   "since": "2023-08"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/YFIIUSDT/1d/"
  },
  "YOYOWUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -3058,7 +3058,7 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/YOYOWUSDT/1d/"
  },
  "ZBUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": null,
   "last": null,
   "listed": false,
@@ -3069,24 +3069,24 @@
   "url": "https://data.binance.vision/data/spot/monthly/klines/ZBUSDT/1d/"
  },
  "ZENUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2020-07-06",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 101,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ZENUSDT/1d/"
  },
  "ZROUSDT": {
-  "fetched_at": "2026-09-29T02:02:14Z",
+  "fetched_at": "2026-10-05T14:41:41Z",
   "first": "2024-06-20",
-  "last": "2026-09-27",
+  "last": "2026-10-04",
   "listed": true,
   "params": {
-   "files": 54,
-   "since": "start"
+   "files": 5,
+   "since": "2026-09"
   },
   "url": "https://data.binance.vision/data/spot/monthly/klines/ZROUSDT/1d/"
  }

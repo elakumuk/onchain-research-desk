@@ -1,9 +1,9 @@
 {
  "ok": true,
  "facts": "reports/facts.json",
- "facts_sha256": "fd546a421555b4f8fba2f73b7aa215cc7ffbdf30db235cd4091d09d95e4ec633",
+ "facts_sha256": "462c7321a450f25d719fc3741538ded33039830027867843ae420e108e2a8bfa",
  "registry_mode": "snapshot",
- "data_as_of": "2026-09-29T01:38:29Z",
+ "data_as_of": "2026-10-05T14:39:47Z",
  "wall_clock_checked_at": null,
  "limits": {
   "max_lag_hours": 48.0,
@@ -88,8 +88,8 @@
   {
    "path": "reports/memos/AERO.md",
    "ok": true,
-   "n_claims": 61,
-   "n_verified": 61,
+   "n_claims": 64,
+   "n_verified": 64,
    "cited_ids": [
     "fund.AERO.fees_365d_usd",
     "fund.AERO.fees_runrate_usd",
@@ -114,6 +114,7 @@
     "liq.AERO.depth_1pct_usd",
     "liq.AERO.depth_2pct_usd",
     "liq.AERO.slip_100k_bps",
+    "liq.AERO.slip_1m_bps",
     "liq.AERO.spread_bps",
     "mkt.AERO.circulating_supply_count",
     "mkt.AERO.fdv_usd",
