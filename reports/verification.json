@@ -1,9 +1,9 @@
 {
  "ok": true,
  "facts": "reports/facts.json",
- "facts_sha256": "1c1220322689e9e6a4c159b0fe28bd45963c5a6da083b2a5be692e1de385045b",
+ "facts_sha256": "53ff9486df5337a09d0fca73633e12d19d7191e3680d251bd01e7c27bd62ee87",
  "registry_mode": "snapshot",
- "data_as_of": "2026-10-19T13:15:37Z",
+ "data_as_of": "2026-10-26T13:05:00Z",
  "wall_clock_checked_at": null,
  "limits": {
   "max_lag_hours": 48.0,
@@ -14,8 +14,8 @@
   {
    "path": "reports/memos/AAVE.md",
    "ok": true,
-   "n_claims": 78,
-   "n_verified": 78,
+   "n_claims": 75,
+   "n_verified": 75,
    "cited_ids": [
     "fund.AAVE.fees_365d_usd",
     "fund.AAVE.fees_runrate_usd",
@@ -40,7 +40,6 @@
     "liq.AAVE.depth_1pct_usd",
     "liq.AAVE.depth_2pct_usd",
     "liq.AAVE.slip_100k_bps",
-    "liq.AAVE.slip_1m_bps",
     "liq.AAVE.spread_bps",
     "lr.tok.AAVE.amihud_first_year_bps_per_1m",
     "lr.tok.AAVE.amihud_last_year_bps_per_1m",
@@ -351,8 +350,8 @@
   {
    "path": "reports/memos/CRV.md",
    "ok": true,
-   "n_claims": 78,
-   "n_verified": 78,
+   "n_claims": 75,
+   "n_verified": 75,
    "cited_ids": [
     "fund.CRV.fees_365d_usd",
     "fund.CRV.fees_runrate_usd",
@@ -377,7 +376,6 @@
     "liq.CRV.depth_1pct_usd",
     "liq.CRV.depth_2pct_usd",
     "liq.CRV.slip_100k_bps",
-    "liq.CRV.slip_1m_bps",
     "liq.CRV.spread_bps",
     "lr.tok.CRV.amihud_first_year_bps_per_1m",
     "lr.tok.CRV.amihud_last_year_bps_per_1m",
@@ -939,8 +937,8 @@
   {
    "path": "reports/memos/ONDO.md",
    "ok": true,
-   "n_claims": 62,
-   "n_verified": 62,
+   "n_claims": 59,
+   "n_verified": 59,
    "cited_ids": [
     "fund.ONDO.fees_365d_usd",
     "fund.ONDO.fees_coverage_days",
@@ -961,7 +959,6 @@
     "liq.ONDO.depth_1pct_usd",
     "liq.ONDO.depth_2pct_usd",
     "liq.ONDO.slip_100k_bps",
-    "liq.ONDO.slip_1m_bps",
     "liq.ONDO.spread_bps",
     "mkt.ONDO.circulating_supply_count",
     "mkt.ONDO.fdv_usd",

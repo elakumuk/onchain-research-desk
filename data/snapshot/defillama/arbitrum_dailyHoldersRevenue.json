@@ -1,1 +1,1 @@
-{"fetched_at": "2026-10-19T13:13:02.765541+00:00", "url": "https://api.llama.fi/summary/fees/arbitrum", "params": {"dataType": "dailyHoldersRevenue"}, "payload": null, "http_status": 400}
+{"fetched_at": "2026-10-26T13:01:33.567969+00:00", "url": "https://api.llama.fi/summary/fees/arbitrum", "params": {"dataType": "dailyHoldersRevenue"}, "payload": null, "http_status": 400}
