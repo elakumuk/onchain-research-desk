@@ -1,9 +1,9 @@
 {
  "ok": true,
  "facts": "reports/facts.json",
- "facts_sha256": "53ff9486df5337a09d0fca73633e12d19d7191e3680d251bd01e7c27bd62ee87",
+ "facts_sha256": "c80a24adc687722abb7c3b1c48144b507cccebb38d82ae63299d30966cb119e2",
  "registry_mode": "snapshot",
- "data_as_of": "2026-10-26T13:05:00Z",
+ "data_as_of": "2026-11-02T15:53:17Z",
  "wall_clock_checked_at": null,
  "limits": {
   "max_lag_hours": 48.0,
@@ -14,8 +14,8 @@
   {
    "path": "reports/memos/AAVE.md",
    "ok": true,
-   "n_claims": 75,
-   "n_verified": 75,
+   "n_claims": 78,
+   "n_verified": 78,
    "cited_ids": [
     "fund.AAVE.fees_365d_usd",
     "fund.AAVE.fees_runrate_usd",
@@ -40,6 +40,7 @@
     "liq.AAVE.depth_1pct_usd",
     "liq.AAVE.depth_2pct_usd",
     "liq.AAVE.slip_100k_bps",
+    "liq.AAVE.slip_1m_bps",
     "liq.AAVE.spread_bps",
     "lr.tok.AAVE.amihud_first_year_bps_per_1m",
     "lr.tok.AAVE.amihud_last_year_bps_per_1m",
@@ -213,11 +214,10 @@
   {
    "path": "reports/memos/BTC.md",
    "ok": true,
-   "n_claims": 65,
-   "n_verified": 65,
+   "n_claims": 64,
+   "n_verified": 64,
    "cited_ids": [
     "fund.BTC.fees_365d_usd",
-    "fund.BTC.fees_coverage_days",
     "fund.BTC.fees_runrate_usd",
     "fund.BTC.fees_runrate_vs_365d_x",
     "fund.BTC.float_ratio_pct",
@@ -423,8 +423,8 @@
   {
    "path": "reports/memos/ENA.md",
    "ok": true,
-   "n_claims": 51,
-   "n_verified": 51,
+   "n_claims": 54,
+   "n_verified": 54,
    "cited_ids": [
     "fund.ENA.fees_365d_usd",
     "fund.ENA.fees_runrate_usd",
@@ -442,6 +442,7 @@
     "liq.ENA.depth_1pct_usd",
     "liq.ENA.depth_2pct_usd",
     "liq.ENA.slip_100k_bps",
+    "liq.ENA.slip_1m_bps",
     "liq.ENA.spread_bps",
     "mkt.ENA.circulating_supply_count",
     "mkt.ENA.fdv_usd",
