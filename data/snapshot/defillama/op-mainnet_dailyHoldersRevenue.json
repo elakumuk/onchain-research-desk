@@ -1,1 +1,1 @@
-{"fetched_at": "2026-11-09T16:16:49.908645+00:00", "url": "https://api.llama.fi/summary/fees/op-mainnet", "params": {"dataType": "dailyHoldersRevenue"}, "payload": null, "http_status": 400}
+{"fetched_at": "2026-11-16T15:45:14.512383+00:00", "url": "https://api.llama.fi/summary/fees/op-mainnet", "params": {"dataType": "dailyHoldersRevenue"}, "payload": null, "http_status": 400}

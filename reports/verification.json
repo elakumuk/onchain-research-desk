@@ -1,9 +1,9 @@
 {
  "ok": true,
  "facts": "reports/facts.json",
- "facts_sha256": "91b299d3ebfe1b080df9ab45ef980110cc1c5f0eaf3c401b8237a3b44b0fc96c",
+ "facts_sha256": "7987835c62b088fd798b9bb553e4d9ed06ddbc82d6e04a1b49e201e3bd439471",
  "registry_mode": "snapshot",
- "data_as_of": "2026-11-09T16:20:20Z",
+ "data_as_of": "2026-11-16T15:47:55Z",
  "wall_clock_checked_at": null,
  "limits": {
   "max_lag_hours": 48.0,
@@ -423,8 +423,8 @@
   {
    "path": "reports/memos/ENA.md",
    "ok": true,
-   "n_claims": 51,
-   "n_verified": 51,
+   "n_claims": 54,
+   "n_verified": 54,
    "cited_ids": [
     "fund.ENA.fees_365d_usd",
     "fund.ENA.fees_runrate_usd",
@@ -442,6 +442,7 @@
     "liq.ENA.depth_1pct_usd",
     "liq.ENA.depth_2pct_usd",
     "liq.ENA.slip_100k_bps",
+    "liq.ENA.slip_1m_bps",
     "liq.ENA.spread_bps",
     "mkt.ENA.circulating_supply_count",
     "mkt.ENA.fdv_usd",
